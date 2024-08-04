@@ -24,5 +24,8 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+  revealjs: 
+    menu: false
+    progress: false
 
 
