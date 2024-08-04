@@ -1,0 +1,622 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BMECM",
+    "section": "",
+    "text": "This is a Quarto website!\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site!",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html",
+    "href": "comprimento_angulo.html",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "",
+    "text": "O Produto Escalar\nComprimento de um vetor\nVetor unitário:\nDistância\nÂngulo entre dois vetores\nVetores ortogonais",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#conteúdo-da-aula",
+    "href": "comprimento_angulo.html#conteúdo-da-aula",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "",
+    "text": "O Produto Escalar\nComprimento de um vetor\nVetor unitário:\nDistância\nÂngulo entre dois vetores\nVetores ortogonais",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#o-produto-escalar",
+    "href": "comprimento_angulo.html#o-produto-escalar",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "O Produto Escalar",
+    "text": "O Produto Escalar\n\n\n\n\n\n\nDefinição\n\n\n\nO Produto Escalar (produto interno) é uma operação matemática entre dois vetores em um espaço euclidiano que resulta em um escalar.\n\\[\n\\vec{u} = \\begin{pmatrix}\nu_1 \\\\\nu_2 \\\\\n\\vdots \\\\\nu_n\n\\end{pmatrix};\n\\vec{v} = \\begin{pmatrix}\nv_1 \\\\\nv_2 \\\\\n\\vdots \\\\\nv_n\n\\end{pmatrix}\n\\]\n\\[\\vec{u} \\cdot \\vec{v} = u_1 v_1 + u_2 v_2 + \\ldots + u_n v_n\\]",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#o-produto-escalar-1",
+    "href": "comprimento_angulo.html#o-produto-escalar-1",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "O Produto Escalar",
+    "text": "O Produto Escalar\n\nPropriedades\n\nSejam \\(\\vec{u}\\), \\(\\vec{v}\\) e \\(\\vec{w}\\) vetores em \\(\\mathbb{R}^n\\), e \\(k\\) um escalar. Então:\n\n\n\n\n\n\n\n\n\nPropriedade\nDescrição\n\n\n\n\n1\n\\(\\vec{u} \\cdot \\vec{v} = \\vec{v} \\cdot \\vec{u}\\)\nComutatividade\n\n\n2\n\\(\\vec{u} \\cdot (\\vec{v} + \\vec{w}) = \\vec{u} \\cdot \\vec{v} + \\vec{u} \\cdot \\vec{w}\\)\nDistributividade\n\n\n3\n\\(k(\\vec{u}) \\cdot \\vec{v} = k(\\vec{u} \\cdot \\vec{v})\\)\nDistributividade\n\n\n4\n\\(\\vec{u} \\cdot \\vec{u} \\ge 0\\) e \\(\\vec{u} \\cdot \\vec{u} = 0\\) se e somente se \\(\\vec{u} = 0\\)",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#o-produto-escalar-2",
+    "href": "comprimento_angulo.html#o-produto-escalar-2",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "O Produto Escalar",
+    "text": "O Produto Escalar\n\nExemplo\n\n\\[\n\\vec{u} = \\begin{pmatrix}\n1 \\\\\n2 \\\\\n-3\n\\end{pmatrix};\n\\vec{v} = \\begin{pmatrix}\n-3 \\\\\n5 \\\\\n2\n\\end{pmatrix}\n\\]\n\\[\\vec{u} \\cdot \\vec{v} = 1 \\times (-3) + 2 \\times 5 + (-3) \\times 2 = -3 + 10 - 6 = 1\\]",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#comprimento-de-um-vetor",
+    "href": "comprimento_angulo.html#comprimento-de-um-vetor",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "Comprimento de um vetor",
+    "text": "Comprimento de um vetor\n\nO comprimento de um vetor (magnitude ou norma), é uma medida da extensão do vetor no espaço. Para um vetor \\(\\vec{v} = (v_1, v_2, \\ldots, v_n)\\) em um espaço euclidiano n-dimensional, o comprimento é:\n\\[\n\\|\\vec{v}\\| = \\sqrt{\\vec{v} \\cdot \\vec{v}} = \\sqrt{v_1^2 + v_2^2 + \\cdots + v_n^2}\n\\]",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#comprimento-de-um-vetor-1",
+    "href": "comprimento_angulo.html#comprimento-de-um-vetor-1",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "Comprimento de um vetor",
+    "text": "Comprimento de um vetor\n\nPropriedades\n\nSeja \\(\\vec{u}\\) um vetor em \\(\\mathbb{R}^n\\), e \\(k\\) um escalar. Então:\n\n\n\n\nPropriedade\n\n\n\n\n1\n\\(\\|\\vec{u}\\|  = 0\\) se e somente se \\(\\vec{u} = 0\\)\n\n\n2\n\\(\\|k(\\vec{u})\\| = |k| \\|\\vec{u}\\|\\)",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#comprimento-de-um-vetor-2",
+    "href": "comprimento_angulo.html#comprimento-de-um-vetor-2",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "Comprimento de um vetor",
+    "text": "Comprimento de um vetor\n\nExemplo\n\n\\[\n\\vec{u} = \\begin{pmatrix}\n1 \\\\\n2 \\\\\n-3\n\\end{pmatrix};\n\\vec{v} = \\begin{pmatrix}\n-3 \\\\\n5 \\\\\n2\n\\end{pmatrix}\n\\]\n\\(\\|\\vec{u}\\| = \\sqrt{\\vec{u} \\cdot \\vec{u}} = \\sqrt{u_1^2 + u_2^2 + u_3^2}\\) \\(\\|\\vec{u}\\| = \\sqrt{1^2 + 2^2 + (-3)^2} = \\sqrt{1 + 4 + 9} = \\sqrt{14} \\approx 3.742\\)\n\\(\\|\\vec{v}\\| = \\sqrt{\\vec{v} \\cdot \\vec{v}} = \\sqrt{v_1^2 + v_2^2 + v_3^2}\\) \\(\\|\\vec{v}\\| = \\sqrt{(-3)^2 + 5^2 + 2^2} = \\sqrt{9 + 25 + 4} = \\sqrt{38} \\approx 6.164\\)",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#vetor-unitário-normalização",
+    "href": "comprimento_angulo.html#vetor-unitário-normalização",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "Vetor unitário: normalização",
+    "text": "Vetor unitário: normalização\n\nUm vetor é um vetor de comprimento 1 é chamado vetor unitário. \\(\\vec{v}\\) é unitário se \\(\\|\\vec{v}|\\ = 1\\)\n\nNormalização de um vetor\nDado qualquer vetor não nulo \\(\\vec{v}\\), podemos sempre encontrar um vetor unitário de mesmo sentido que \\(\\vec{v}\\) dividindo \\(\\vec{v}\\) por seu próprio comprimento (ou, equivalentemente, multiplicando por \\(\\frac{1}{\\|\\vec{v}\\|}\\)).\nPortanto o vetor \\(\\vec{u}\\) será unitário se:\n\\(\\vec{u} = \\left(\\frac{1}{\\|\\vec{v}\\|}\\right)\\vec{v}\\)\npois:\n\\[\n\\|\\vec{u}\\| = \\left\\|\\left(\\frac{1}{\\|\\vec{v}\\|}\\right)\\vec{v}\\right\\| = \\left| \\frac{1}{\\|\\vec{v}\\|} \\right| \\|\\vec{v}\\| = \\left(\\frac{1}{\\|\\vec{v}\\|}\\right)\\|\\vec{v}\\| = 1\n\\]\n\\(\\vec{u}\\) possui o mesmo sentido que \\(\\vec{v}\\), pois \\(\\frac{1}{\\|\\vec{v}\\|}\\) é um número positivo.",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#distância",
+    "href": "comprimento_angulo.html#distância",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "Distância",
+    "text": "Distância\n\nA distância (ou distância euclideana) entre dois vetores \\(\\vec{u} = (u_1, u_2, \\ldots, u_n)\\) e \\(\\vec{v} = (v_1, v_2, \\ldots, v_n)\\) é uma medida da separação entre os dois pontos finais desses vetores no espaço n-dimensional, calculada:\n\\[\nd(\\vec{u}, \\vec{v}) = \\|\\vec{u} - \\vec{v}\\| = \\sqrt{(u_1 - v_1)^2 + (u_2 - v_2)^2 + \\cdots + (u_n - v_n)^2}\n\\]",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#distância-1",
+    "href": "comprimento_angulo.html#distância-1",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "Distância",
+    "text": "Distância\n\nExemplo\n\n\\[\n\\vec{u} = \\begin{pmatrix}\n\\sqrt{2} \\\\\n1 \\\\\n-1\n\\end{pmatrix};\n\\vec{v} = \\begin{pmatrix}\n0 \\\\\n2 \\\\\n-2\n\\end{pmatrix}\n\\]\n\\[\nd(\\vec{u}, \\vec{v}) = \\|\\vec{u} - \\vec{v}\\| = \\sqrt{(\\sqrt{2})^2 + (-1)^2 + 1^2} = \\sqrt{4} = 2\n\\]",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#ângulo-entre-dois-vetores",
+    "href": "comprimento_angulo.html#ângulo-entre-dois-vetores",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "Ângulo entre dois vetores",
+    "text": "Ângulo entre dois vetores\n\nO Produto escalar pod ser utilizado para determinar o ângulo \\(\\theta\\) entre dois vetores não mulos \\(\\vec{u}\\) e \\(\\vec{v}\\) por meio da expressão.\n\\[\n\\cos(\\theta) = \\frac{\\vec{u} \\cdot \\vec{v}}{\\|\\vec{u}\\|\\|\\vec{v}\\|}\n\\]",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#ângulo-entre-dois-vetores-1",
+    "href": "comprimento_angulo.html#ângulo-entre-dois-vetores-1",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "Ângulo entre dois vetores",
+    "text": "Ângulo entre dois vetores\n\n\n\n\n\n\nÂngulo e Lei dos Cossenos\n\n\n\nConsidere a expressão retirada da Lei dos Cossenos: \\[\n\\|\\vec{u} - \\vec{v}\\|^2 = \\|\\vec{u}\\|^2 + \\|\\vec{v}\\|^2 - 2\\|\\vec{u}\\|\\|\\vec{v}\\|\\cos(\\theta)\n\\]\nExpandindo \\(\\|\\vec{u} - \\vec{v}\\|^2\\) e utilizando a definição do produto escalar, podemos escrever:\n\\[\n\\|\\vec{u} - \\vec{v}\\|^2 = (\\vec{u} - \\vec{v}) \\cdot (\\vec{u} - \\vec{v})  = \\vec{u} \\cdot \\vec{u} - 2\\vec{u} \\cdot \\vec{v} + \\vec{v} \\cdot \\vec{v}\n\\]\nComo \\(\\vec{u} \\cdot \\vec{u} = \\|\\vec{u}\\|^2\\) e \\(\\vec{v} \\cdot \\vec{v} = \\|\\vec{v}\\|^2\\), então:\n\\[\n\\|\\vec{u} - \\vec{v}\\|^2 = \\|\\vec{u}\\|^2 + \\|\\vec{v}\\|^2 - 2\\vec{u} \\cdot \\vec{v}\n\\]\nComparando esta expressão com a expressão original da Lei dos Cossenos, temos:\n\\[\n\\|\\vec{u}\\|^2 + \\|\\vec{v}\\|^2 - 2\\|\\vec{u}\\|\\|\\vec{v}\\|\\cos(\\theta) = \\|\\vec{u}\\|^2 + \\|\\vec{v}\\|^2 - 2\\vec{u} \\cdot \\vec{v}\n\\]\nSimplificando, obtemos:\n\\[\n- 2\\|\\vec{u}\\|\\|\\vec{v}\\|\\cos(\\theta) = - 2\\vec{u} \\cdot \\vec{v}\n\\]\nDividindo ambos os lados por \\(-2\\|\\vec{u}\\|\\|\\vec{v}\\|\\):\n\\[\n\\cos(\\theta) = \\frac{\\vec{u} \\cdot \\vec{v}}{\\|\\vec{u}\\|\\|\\vec{v}\\|}\n\\]",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#vetores-ortogonais",
+    "href": "comprimento_angulo.html#vetores-ortogonais",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "Vetores ortogonais",
+    "text": "Vetores ortogonais\nDois vetores \\(\\vec{u}\\) e \\(\\vec{v}\\) são ortogonais entre si se \\(\\vec{u} \\cdot \\vec{v} = 0\\). Dois vetores não nulos ortogonais têm ângulo \\(\\theta\\) entre si \\(\\theta = 90^o\\) (\\(\\theta = \\frac{\\pi}{2}\\) radianos)",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "comprimento_angulo.html#vetores-ortogonais-1",
+    "href": "comprimento_angulo.html#vetores-ortogonais-1",
+    "title": "Comprimento e ângulo: o produto escalar",
+    "section": "Vetores ortogonais",
+    "text": "Vetores ortogonais\n\nExemplo: Considere os vetores \\(\\vec{u} = (2, 3)\\) e \\(\\vec{v} = (-3, 2)\\) em \\(\\mathbb{R}^2\\). Para verificar se são ortogonais:\n\nCalcular o produto escalar \\(\\vec{u} \\cdot \\vec{v}\\):\n\n\\[\n\\vec{u} \\cdot \\vec{v} = 2 \\cdot (-3) + 3 \\cdot 2 = -6 + 6 = 0\n\\]\n\nCalcular as normas \\(\\|\\vec{u}\\|\\) e \\(\\|\\vec{v}\\|\\):\n\n\\[\n\\|\\vec{u}\\| = \\sqrt{2^2 + 3^2} = \\sqrt{4 + 9} = \\sqrt{13}\n\\]\n\\[\n\\|\\vec{v}\\| = \\sqrt{(-3)^2 + 2^2} = \\sqrt{9 + 4} = \\sqrt{13}\n\\]\n\nCalcular \\(\\cos(\\theta)\\):\n\n\\[\n\\cos(\\theta) = \\frac{\\vec{u} \\cdot \\vec{v}}{\\|\\vec{u}\\|\\|\\vec{v}\\|} = \\frac{0}{\\sqrt{13} \\cdot \\sqrt{13}} = 0\n\\]\n\nCalcular \\(\\theta\\):\n\n\\[\n\\theta = \\cos^{-1}(0) = \\frac{\\pi}{2}\n\\]",
+    "crumbs": [
+      "Comprimento e ângulo: o produto escalar"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html",
+    "href": "geometria_vetores.html",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "",
+    "text": "Definição de Vetores\nVetores no Plano Cartesiano\nIgualdade de Vetores\nSoma de vetores\nMultiplicação de um vetor por um escalar\nVetores em \\(\\mathbb{R}^3\\)\nVetores em \\(\\mathbb{R}^n\\)\nPropriedades Algébricas dos Vetores",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html#conteúdo-da-aula",
+    "href": "geometria_vetores.html#conteúdo-da-aula",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "",
+    "text": "Definição de Vetores\nVetores no Plano Cartesiano\nIgualdade de Vetores\nSoma de vetores\nMultiplicação de um vetor por um escalar\nVetores em \\(\\mathbb{R}^3\\)\nVetores em \\(\\mathbb{R}^n\\)\nPropriedades Algébricas dos Vetores",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html#vetores",
+    "href": "geometria_vetores.html#vetores",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "Vetores",
+    "text": "Vetores\n\n\n\n\n\n\nDefinição\n\n\n\nSegmento de reta orientado que representa o deslocamento do ponto de origem até um ponto de destino. O vetor de A até B é denotado por \\(\\mathbf{AB}\\), ou \\(\\vec{AB}\\). O ponto A é chamado de ponto inicial (ou origem) do vetor, enquanto o ponto B é chamado de ponto final (ou extremidade). Frequentemente, um vetor é representado por letra minúscula em negrito, como \\(\\mathbf{v}\\) ou ainda por \\(\\vec{v}\\).\n\nComprimento: distância entre o ponto inicial e o ponto final do vetor.\nDireção: orientação do vetor no espaço, definida pelo ângulo que faz com os eixos coordenados.",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html#vetores-no-plano-cartesiano",
+    "href": "geometria_vetores.html#vetores-no-plano-cartesiano",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "Vetores no Plano Cartesiano",
+    "text": "Vetores no Plano Cartesiano\n\n\n\n\nO ponto \\(A\\) pode ser representado pelo vetor posição que tem início na origem \\(O\\) e termina no ponto \\(A\\).\nAs coordenadas dos vetores são chamadas de componentes do vetor\n\n\\(\\vec{a} = [-9, 4]\\),\n\\(\\vec{b} = [-4, 10]\\),\n\\(\\cdots\\)\n\\(\\vec{e} = [8, -8]\\)",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html#vetores-no-plano-cartesiano-1",
+    "href": "geometria_vetores.html#vetores-no-plano-cartesiano-1",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "Vetores no Plano Cartesiano",
+    "text": "Vetores no Plano Cartesiano\n\n\n\n\nUm vetor pode ter origem no ponto A e destino no ponto B.\n\n\\(\\vec{AB} = B - A = [-4, 10] - [-9,4] = [5, 6]\\)\n\\(\\vec{CB} = B - C = [-4, 10] - [-1,-3] = [3, 13]\\)\n\\(\\vec{DE} = E - D = [8, -8] - [4,8] = [4, -16]\\)",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html#igualdade-de-vetores",
+    "href": "geometria_vetores.html#igualdade-de-vetores",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "Igualdade de Vetores",
+    "text": "Igualdade de Vetores\n\n\n\nConsidere:\n\\(A = [-4, -2]\\)\n\\(B = [4, 6]\\)\n\\(C = [-3, -6]\\)\n\\(D = [5, 2]\\)\n\\(E = [-9, 2]\\)\n\\(F = [3, 8]\\)",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html#igualdade-de-vetores-1",
+    "href": "geometria_vetores.html#igualdade-de-vetores-1",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "Igualdade de Vetores",
+    "text": "Igualdade de Vetores\n\n\n\nSejam:\n\\(\\vec{AB} = B - A = [4, 6] - [-4, -2] = [8, 8]\\)\n\\(\\vec{CD} = D - C = [5, 2] - [-3, -6] = [8, 8]\\)\n\\(\\vec{EF} = F - E = [3, 8] - [-9, 2] = [11, 6]\\)\nEntão:\n\\(\\vec{AB} = \\vec{CD} \\ne \\vec{EF}\\)\n\n\n\n\n\n\nNote\n\n\n\n\\(\\vec{AB} \\ne \\vec{BA}\\)\n\\(\\vec{BA} = A - B = [-4, -2] - [4, 6] = [-8, -8]\\)",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html#soma-de-vetores",
+    "href": "geometria_vetores.html#soma-de-vetores",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "Soma de vetores",
+    "text": "Soma de vetores\n\n\n\n\\(\\vec{u} = [u_1, u_2]\\), \\(\\vec{v} = [v_1, v_2]\\)\n\\(\\vec{u} + \\vec{v} = [u_1, u_2] + [v_1, v_2] = [u_1 + v_1, u_2 + v_2]\\)\n\n\\(\\vec{u} = [1, 2]\\), \\(\\vec{v} = [5, 3]\\)\n\\(\\vec{u} + \\vec{v} = [1, 2] + [5, 3] = [1 + 5, 2 + 3]\\)\n\\(\\vec{u} + \\vec{v} = [6, 5]\\)",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html#multiplicação-de-um-vetor-por-um-escalar",
+    "href": "geometria_vetores.html#multiplicação-de-um-vetor-por-um-escalar",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "Multiplicação de um vetor por um escalar",
+    "text": "Multiplicação de um vetor por um escalar\n\n\n\nSeja um escalar \\(k\\) e um vetor \\(\\vec{v}\\):\n\\(k \\vec{v} = k [v_1, v_2] = [kv_1, kv_2]\\)\nPara \\(\\vec{v} = [-2, 4]\\):\n\\(2 \\vec{v} = [2(-2), 2(4)] = [-4, 8]\\)\n\\(\\frac{1}{2} \\vec{v} = [\\frac{1}{2} (-2), \\frac{1}{2} (4)] = [-1, 2]\\)\n\\(-2 \\vec{v} = [-2(-2), -2(4)] = [4,- 8]\\)",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html#vetores-em-mathbbr3",
+    "href": "geometria_vetores.html#vetores-em-mathbbr3",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "Vetores em \\(\\mathbb{R}^3\\)",
+    "text": "Vetores em \\(\\mathbb{R}^3\\)\nO conjunto de todas as triplas ordenadas de números reais é denotado por \\(\\mathbb{R}^3\\).\n\n\\(\\vec{v} = [v_1, v_2, v_3]\\)\n\nTodas as definições de \\(\\mathbb{R}^2\\) valem para \\(\\mathbb{R}^3\\).",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html#vetores-em-mathbbrn",
+    "href": "geometria_vetores.html#vetores-em-mathbbrn",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "Vetores em \\(\\mathbb{R}^n\\)",
+    "text": "Vetores em \\(\\mathbb{R}^n\\)\n\nEm \\(\\mathbb{R}^n\\), o conjunto de todas as n-uplas ordenadas de números reais, os vetores podem ser representados como linhas ou colunas, com suas entradas denominadas componentes.\n\n\n\\(\\vec{v} = [v_1, v_2, \\ldots, v_n]\\)\n\n\nAs operações de adição de vetores e multiplicação por escalar são definidas de maneira natural. Por exemplo, para os vetores \\(\\vec{u} = [u_1, u_2, \\ldots, u_n]\\) e \\(\\vec{v} = [v_1, v_2, \\ldots, v_n]\\), a i-ésima componente de \\(\\vec{u} + \\vec{v}\\) é \\(u_i + v_i\\), e a i-ésima componente de \\(k\\vec{v}\\) é \\(kv_i\\).",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html#propriedades-algébricas-de-vetores-em-mathbbrn",
+    "href": "geometria_vetores.html#propriedades-algébricas-de-vetores-em-mathbbrn",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "Propriedades Algébricas de Vetores em \\(\\mathbb{R}^n\\)",
+    "text": "Propriedades Algébricas de Vetores em \\(\\mathbb{R}^n\\)\n\nSejam \\(\\vec{u}\\), \\(\\vec{v}\\) e \\(\\vec{w}\\) vetores em \\(\\mathbb{R}^n\\), e \\(k\\) e \\(l\\) escalares. Então:\n\n\n\n\n\n\n\n\n\nPropriedade\nDescrição\n\n\n\n\n1\n\\(\\vec{u} + \\vec{v} = \\vec{v} + \\vec{u}\\)\nComutatividade\n\n\n2\n\\((\\vec{u} + \\vec{v}) + \\vec{w} = \\vec{u} + (\\vec{v} + \\vec{w})\\)\nAssociatividade\n\n\n3\n\\(\\vec{u} + \\vec{0} = \\vec{u}\\)\n\n\n\n4\n\\(\\vec{u} + (-\\vec{u}) = \\vec{0}\\)\n\n\n\n5\n\\(k(\\vec{u} + \\vec{v}) = k\\vec{u} + k\\vec{v}\\)\nDistributividade\n\n\n6\n\\((k + l)\\vec{u} = k\\vec{u} + l\\vec{u}\\)\nDistributividade\n\n\n7\n\\(k(l\\vec{u}) = (kl)\\vec{u}\\)\n\n\n\n8\n\\(1\\vec{u} = \\vec{u}\\)",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html#combinações-lineares",
+    "href": "geometria_vetores.html#combinações-lineares",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "Combinações Lineares",
+    "text": "Combinações Lineares\n\nUma combinação linear de vetores é um vetor obtido como a soma ponderada de outros vetores, onde cada vetor é multiplicado por um escalar.\n\n\n\n\n\n\nDefinição\n\n\n\nFormalmente, um vetor \\(\\vec{v}\\) é dito ser uma combinação linear dos vetores \\(\\vec{v}_1, \\vec{v}_2, \\ldots, \\vec{v}_k\\) se existirem escalares \\(c_1, c_2, \\ldots, c_k\\) tais que:\n\\[\\vec{v} = c_1 \\vec{v}_1 + c_2 \\vec{v}_2 + \\cdots + c_k \\vec{v}_k\\]\n\n\nOs escalares \\(c_1, c_2, \\ldots, c_k\\) são chamados de coeficientes da combinação linear. Em outras palavras, \\(\\vec{v}\\) é construído a partir dos vetores \\(\\vec{v}_1, \\vec{v}_2, \\ldots, \\vec{v}_k\\) pela combinação dos seus múltiplos escalares. Essa definição é fundamental na álgebra linear, pois permite a construção de vetores em um espaço vetorial a partir de uma base de vetores dados.",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "geometria_vetores.html#combinações-lineares-1",
+    "href": "geometria_vetores.html#combinações-lineares-1",
+    "title": "A Geometria e a Álgebra de Vetores",
+    "section": "Combinações Lineares",
+    "text": "Combinações Lineares\n\nConsidere os vetores \\(\\vec{v}_1 = \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}\\) e \\(\\vec{v}_2 = \\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}\\) no espaço \\(\\mathbb{R}^2\\) e os escalares \\(c_1 = 2\\) e \\(c_2 = -1\\).\n\\[\\vec{v} = c_1 \\vec{v}_1 + c_2 \\vec{v}_2\\]\n\\(\\vec{v} = 2 \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} + (-1) \\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix} = \\begin{pmatrix} 2 \\cdot 1 \\\\ 2 \\cdot 2 \\end{pmatrix} + \\begin{pmatrix} -1 \\cdot 3 \\\\ -1 \\cdot 4 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix} + \\begin{pmatrix} -3 \\\\ -4 \\end{pmatrix} = \\begin{pmatrix} 2 - 3 \\\\ 4 - 4 \\end{pmatrix} = \\begin{pmatrix} -1 \\\\ 0 \\end{pmatrix}\\)\nPortanto, o vetor \\(\\vec{v} = \\begin{pmatrix} -1 \\\\ 0 \\end{pmatrix}\\) é uma combinação linear dos vetores \\(\\vec{v}_1\\) e \\(\\vec{v}_2\\) com os coeficientes dados \\(c_1 = 2\\) e \\(c_2 = -1\\).\n\n\n\n\n\n\n\nNote\n\n\n\nPara visualizar a ideia de combinações lineares, acesse o GeoGebra.",
+    "crumbs": [
+      "A Geometria e a Álgebra de Vetores"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html",
+    "href": "sistema_equacoes_lineares.html",
+    "title": "Sistemas de Equações Lineares",
+    "section": "",
+    "text": "Conceitos Iniciais\nTipos de Soluções\nRepresentação Geométrica\nMétodos Diretos\nOperações Elementares com Linhas\nMétodo de Eliminação de Gauss\nMétodo de Eliminação de Gauss-Jordan\nSistemas Homogêneos\nAplicações",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#conteúdo-da-aula",
+    "href": "sistema_equacoes_lineares.html#conteúdo-da-aula",
+    "title": "Sistemas de Equações Lineares",
+    "section": "",
+    "text": "Conceitos Iniciais\nTipos de Soluções\nRepresentação Geométrica\nMétodos Diretos\nOperações Elementares com Linhas\nMétodo de Eliminação de Gauss\nMétodo de Eliminação de Gauss-Jordan\nSistemas Homogêneos\nAplicações",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#conceitos-iniciais",
+    "href": "sistema_equacoes_lineares.html#conceitos-iniciais",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Conceitos Iniciais",
+    "text": "Conceitos Iniciais\n\n\n\n\n\n\nEquação linear\n\n\n\nUma equação linear em \\(n\\) variáveis \\(x_1, x_2, \\ldots, x_n\\) é uma equação que pode ser escrita na forma:\n\\[a_1 x_1 + a_2 x_2 + \\cdots + a_n x_n = b\\]\nem que os coeficientes \\(a_1, a_2, \\ldots, a_n\\) e o termo independente \\(b\\) são constantes.\n\n\n\n\n\\[\n\\begin{cases}\n2x + y = 8 \\\\\nx - 3y = -3\n\\end{cases}\n\\]\n\n\\[\n\\begin{cases}\nx + 2y - z = 3 \\\\\n3x - y + 4z = 7 \\\\\n2x + y + z = 4\n\\end{cases}\n\\]",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#representações-geométricas",
+    "href": "sistema_equacoes_lineares.html#representações-geométricas",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Representações Geométricas",
+    "text": "Representações Geométricas\n\\[\n\\begin{cases}\n2x + y = 8 \\\\\nx - 3y = -3\n\\end{cases}\n\\]",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#tipos-de-soluções",
+    "href": "sistema_equacoes_lineares.html#tipos-de-soluções",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Tipos de Soluções",
+    "text": "Tipos de Soluções",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#métodos-diretos-de-solução-de-sistemas",
+    "href": "sistema_equacoes_lineares.html#métodos-diretos-de-solução-de-sistemas",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Métodos Diretos de Solução de Sistemas",
+    "text": "Métodos Diretos de Solução de Sistemas\n\n\n\\[\n\\begin{cases}\nx - y - z = 2 \\\\\ny + 3z = 5 \\\\\n5z = 10\n\\end{cases}\n\\]\n\n\\[\nS = \\left[ \\begin{array}{c}\n3 \\\\\n-1 \\\\\n2\n\\end{array} \\right]\n\\]\n\n\nSubstituição de trás para frente\n\nComeçando pela linha 3:\n\n\\(5z = 10\\), \\(z = 2\\)\n\nSubstituindo \\(z\\) na linha 2:\n\n\\(y + 3z = 5\\), \\(y + 3 \\times (2) = 5\\), \\(y = 5 - 6\\), \\(y = -1\\)\n\nSubstituindo \\(z\\) e \\(y\\) na linha 1:\n\n\\(x - y - z = 2\\), \\(x - (-1) - 2 = 2\\), \\(x = 2 - 1 + 2\\), x = 3",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#métodos-diretos-de-solução-de-sistemas-1",
+    "href": "sistema_equacoes_lineares.html#métodos-diretos-de-solução-de-sistemas-1",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Métodos Diretos de Solução de Sistemas",
+    "text": "Métodos Diretos de Solução de Sistemas\n\n\n\nSistema\n\n\\[\n\\begin{cases}\nx - y - z = 2 \\\\\ny + 3z = 5 \\\\\n5z = 10\n\\end{cases}\n\\]\n\n\nMatriz aumentada (ou matriz completa)\n\n\\[\n\\left[ \\begin{array}{ccc|c}\n1 & -1 & -1 & 2 \\\\\n0 & 1 & 3 & 5 \\\\\n0 & 0 & 5 & 10\n\\end{array} \\right]\n\\]\n\n\n\n\n\\[\n\\begin{cases}\nx - y - z = 2 \\\\\n3x - 3y + 2z = 16 \\\\\n2x - y + z = 9\n\\end{cases}\n\\]\n\n\\[\n\\left[ \\begin{array}{ccc|c}\n1 & -1 & -1 & 2 \\\\\n3 & -3 & 2 & 16 \\\\\n2 & -1 & 1 & 9\n\\end{array} \\right]\n\\]",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#métodos-diretos-de-solução-de-sistemas-2",
+    "href": "sistema_equacoes_lineares.html#métodos-diretos-de-solução-de-sistemas-2",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Métodos Diretos de Solução de Sistemas",
+    "text": "Métodos Diretos de Solução de Sistemas\n\nSimplificando o sistema\n\n\n\\[\n\\begin{cases}\nx - y - z = 2 \\\\\n3x - 3y + 2z = 16 \\\\\n2x - y + z = 9\n\\end{cases}\n\\]\n\n\\[\n\\left[ \\begin{array}{ccc|c}\n1 & -1 & -1 & 2 \\\\\n3 & -3 & 2 & 16 \\\\\n2 & -1 & 1 & 9\n\\end{array} \\right]\n\\]\n\n\nSubtraindo \\(3\\) vezes a \\(1^a\\) linha da \\(2^a\\)\n\n\n\\[\n\\begin{cases}\nx - y - z = 2 \\\\\n5z = 10 \\\\\n2x - y + z = 9\n\\end{cases}\n\\]\n\n\\[\n\\left[ \\begin{array}{ccc|c}\n1 & -1 & -1 & 2 \\\\\n0 & 0 & 5 & 10 \\\\\n2 & -1 & 1 & 9\n\\end{array} \\right]\n\\]\n\n\nSubtraindo \\(2\\) vezes a \\(1^a\\) linha da \\(3^a\\)\n\n\n\\[\n\\begin{cases}\nx - y - z = 2 \\\\\n5z = 10 \\\\\ny + 3z = 5\n\\end{cases}\n\\]\n\n\\[\n\\left[ \\begin{array}{ccc|c}\n1 & -1 & -1 & 2 \\\\\n0 & 0 & 5 & 10 \\\\\n0 & 1 & 3 & 5\n\\end{array} \\right]\n\\]\n\n\nTrocando as linhas \\(2\\) e \\(3\\)\n\n\n\\[\n\\begin{cases}\nx - y - z = 2 \\\\\ny + 3z = 5 \\\\\n5z = 10\n\\end{cases}\n\\]\n\n\\[\n\\left[ \\begin{array}{ccc|c}\n1 & -1 & -1 & 2 \\\\\n0 & 1 & 3 & 5 \\\\\n0 & 0 & 5 & 10\n\\end{array} \\right]\n\\]",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#matriz-escalonada-por-linhas",
+    "href": "sistema_equacoes_lineares.html#matriz-escalonada-por-linhas",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Matriz Escalonada por linhas",
+    "text": "Matriz Escalonada por linhas\n\n\n\n\n\n\nDefinição\n\n\n\n\nTodas as linhas nulas (ou seja, linhas onde todos os elementos são zero) estão localizadas na parte inferior da matriz.\nEm cada linha não-nula, o primeiro elemento não-nulo (também conhecido como elemento lider ou pivô) deve estar à esquerda de qualquer outro líder abaixo dele.\n\nEssas propriedades asseguram que os elementos líderes estejam dispostos de forma a criar uma estrutura semelhante a uma escada. Em particular, em qualquer coluna que contenha um elemento líder, todos os elementos abaixo desse líder são nulos, como ilustrado pelos exemplos a seguir.",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#operações-elementares-com-linhas",
+    "href": "sistema_equacoes_lineares.html#operações-elementares-com-linhas",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Operações Elementares com Linhas",
+    "text": "Operações Elementares com Linhas\n\n\n\n\n\n\nDefinição\n\n\n\n\nTrocar duas linhas: \\(L_i \\leftrightarrow L_j\\)\nMultiplicar uma linha por uma constante não nula: \\(L_i = kL_i\\)\nSomar um múltiplo de uma linha com outra e substituir nessa linha: \\(L_i = L_i + kL_j\\)\n\nO processo de aplicar operações elementares sobre as linhas para transformar uma matriz em uma matriz escalonada é denominado escalonamento (ou redução por linha). Esse processo é utilizado para reduzir uma matriz à forma escalonada.",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#redução-à-matriz-escalonada",
+    "href": "sistema_equacoes_lineares.html#redução-à-matriz-escalonada",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Redução à matriz escalonada",
+    "text": "Redução à matriz escalonada\n\n\\(\\left[ \\begin{array}{ccccc}\n1 & 2 & -4 & -4 & 5\\\\\n2 & 4 & 0 & 0 & 2\\\\\n2 & 3 & 2 & 1 & 5\\\\\n-1 & 1 & 3 & 6 & 5\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_2 - 2L_1\\\\\nL_3 - 2L_1 \\\\\nL_4 + L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccccc}\n1 & 2 & -4 & -4 & 5\\\\\n0 & 0 & 8 & 8 & -8\\\\\n0 & -1 & 10 & 9 & -5\\\\\n0 & 3 & -1 & 2 & 10\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_2 \\leftrightarrow L_3\\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccccc}\n1 & 2 & -4 & -4 & 5\\\\\n0 & -1 & 10 & 9 & -5\\\\\n0 & 0 & 8 & 8 & -8\\\\\n0 & 3 & -1 & 2 & 10\n\\end{array} \\right]\\)\n\n\\(\\begin{array}{c}\nL_4 + 3L_2\\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccccc}\n1 & 2 & -4 & -4 & 5\\\\\n0 & -1 & 10 & 9 & -5\\\\\n0 & 0 & 8 & 8 & -8\\\\\n0 & 0 & 29 & 29 & -5\n\\end{array} \\right]\\) \\(\\begin{array}{c}\n\\frac{1}{8}L_3\\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccccc}\n1 & 2 & -4 & -4 & 5\\\\\n0 & -1 & 10 & 9 & -5\\\\\n0 & 0 & 1 & 1 & -1\\\\\n0 & 3 & -1 & 2 & 10\n\\end{array} \\right]\\)\n\n\\(\\begin{array}{c}\nL_4 - 29L_3\\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccccc}\n1 & 2 & -4 & -4 & 5\\\\\n0 & -1 & 10 & 9 & -5\\\\\n0 & 0 & 8 & 8 & -8\\\\\n0 & 0 & 0 & 0 & 24\n\\end{array} \\right]\\)",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#métodos-diretos-de-solução-de-sistemas-3",
+    "href": "sistema_equacoes_lineares.html#métodos-diretos-de-solução-de-sistemas-3",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Métodos Diretos de Solução de Sistemas",
+    "text": "Métodos Diretos de Solução de Sistemas\n\n\n\n\n\n\nMatrizes equivalentes por linhas\n\n\n\nAs matrizes \\(A\\) e \\(B\\) são equivalentes por linha se, e somente se, elas puderem ser reduzidas à mesma forma escalonada por linhas.\n\n\n\n\n\\[\\left[ \\begin{array}{ccccc}\n1 & 2 & -4 & -4 & 5\\\\\n2 & 4 & 0 & 0 & 2\\\\\n2 & 3 & 2 & 1 & 5\\\\\n-1 & 1 & 3 & 6 & 5\n\\end{array} \\right]\\]\n\n\\[\\left[ \\begin{array}{ccccc}\n1 & 2 & -4 & -4 & 5\\\\\n0 & -1 & 10 & 9 & -5\\\\\n0 & 0 & 8 & 8 & -8\\\\\n0 & 0 & 0 & 0 & 24\n\\end{array} \\right]\\]",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss",
+    "href": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Método de Eliminação de Gauss",
+    "text": "Método de Eliminação de Gauss\n\n\n\n\n\n\n\nDefinição\n\n\n\n\nEscreva a matriz completa do sistema de equações lineares.\nUse operações elementares com as linhas para reduzir a matriz completa à forma escalonada por linhas.\nUsando substituição de trás para a frente, resolva o sistema equivalente que corresponde à matriz escalonada reduzida por linhas.\n\n\n\nOrientações úteis:\n\nLocalize a coluna mais à esquerda que não é toda formada por zeros.\nCrie um líder no topo desta coluna. Muitas vezes, será mais fácil se você transformar este líder em 1\nUse o líder para criar zeros abaixo dele.\nFaça a linha contendo este líder ir para a parte de cima e volte ao passo (a) para repetir o procedimento com o restante da submatriz. Pare quando toda a matriz estiver na forma escalonada por linhas.",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-1",
+    "href": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-1",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Método de Eliminação de Gauss",
+    "text": "Método de Eliminação de Gauss\nExemplo\n\n\n\\[\n\\begin{cases}\n2x_2 + 3x_3 = 8 \\\\\n2x_1 + 3x_2 + x_3 = 5 \\\\\nx_1 - x_2 - 2x_3 = -5\n\\end{cases}\n\\]\n\n\\[\n\\left[ \\begin{array}{ccc|c}\n0 & 2 & 3 & 8 \\\\\n2 & 3 & 1 & 5 \\\\\n1 & -1 & -2 & -5\n\\end{array} \\right]\n\\]\n\n\n\n\\(\\left[ \\begin{array}{ccc|c}\n0 & 2 & 3 & 8 \\\\\n2 & 3 & 1 & 5 \\\\\n1 & -1 & -2 & -5\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_1 \\leftrightarrow L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & -1 & -2 & -5 \\\\\n2 & 3 & 1 & 5 \\\\\n0 & 2 & 3 & 8\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_2 - 2L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & -1 & -2 & -5 \\\\\n0 & 5 & 5 & 15 \\\\\n0 & 2 & 3 & 8\n\\end{array} \\right]\\)\n\n\\(\\left[ \\begin{array}{ccc|c}\n1 & -1 & -2 & -5 \\\\\n0 & 5 & 5 & 15 \\\\\n0 & 2 & 3 & 8\n\\end{array} \\right]\\) \\(\\begin{array}{c}\n\\frac{1}{5}L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & -1 & -2 & -5 \\\\\n0 & 1 & 1 & 3 \\\\\n0 & 2 & 3 & 8\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_3 - 2L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & -1 & -2 & -5 \\\\\n0 & 1 & 1 & 3 \\\\\n0 & 0 & 1 & 2\n\\end{array} \\right]\\)",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-2",
+    "href": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-2",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Método de Eliminação de Gauss",
+    "text": "Método de Eliminação de Gauss\nExemplo\n\n\n\\[\n\\begin{cases}\n2x_2 + 3x_3 = 8 \\\\\n2x_1 + 3x_2 + x_3 = 5 \\\\\nx_1 - x_2 - 2x_3 = -5\n\\end{cases}\n\\]\n\n\\[\n\\begin{cases}\nx_1 - x_2 - 2x_3 = -5 \\\\\nx_2 + x_3 = 3 \\\\\nx_3 = 2\n\\end{cases}\n\\]\n\n\n\n\\(S = \\left[ \\begin{array}{c}\n0 \\\\\n1 \\\\\n2\n\\end{array} \\right]\\)\n\n\n\n\\[\n\\begin{cases}\n2(1) + 3(2) = 8 \\\\\n2(0) + 3(1) + (2) = 5 \\\\\n(0) - (1) - 2(2) = -5\n\\end{cases}\n\\]\n\n\\[\n\\begin{cases}\n(0) - (1) - 2(2) = -5 \\\\\n(1) + (2) = 3 \\\\\n(2) = 2\n\\end{cases}\n\\]",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-3",
+    "href": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-3",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Método de Eliminação de Gauss",
+    "text": "Método de Eliminação de Gauss\nInfinitas soluções: variáveis livres\n\n\n\\[\n\\begin{cases}\nw + x - y + 2z = 1 \\\\\n2w - 2x - y + 3z = 3 \\\\\n-w + x - y = -3\n\\end{cases}\n\\]\n\n\\[\n\\left[ \\begin{array}{cccc|c}\n1 & -1 & -1 & 2 & 1 \\\\\n2 & -2 & -1 & 3 & 3 \\\\\n-1 & 1 & -1 & 0 & -3\n\\end{array} \\right]\n\\]\n\n\n\n\\(\\left[ \\begin{array}{cccc|c}\n1 & -1 & -1 & 2 & 1 \\\\\n2 & -2 & -1 & 3 & 3 \\\\\n-1 & 1 & -1 & 0 & -3\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_2 - 2L_1 \\\\\nL_3 + L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cccc|c}\n1 & -1 & -1 & 2 & 1 \\\\\n0 & 0 & 1 & -1 & 1 \\\\\n0 & 0 & -2 & 2 & -2\n\\end{array} \\right]\\)\n\n\\(\\begin{array}{c}\nL_3 + 2L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cccc|c}\n1 & -1 & -1 & 2 & 1 \\\\\n0 & 0 & 1 & -1 & 1 \\\\\n0 & 0 & 0 & 0 & 0\n\\end{array} \\right]\\)",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-4",
+    "href": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-4",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Método de Eliminação de Gauss",
+    "text": "Método de Eliminação de Gauss\nInfinitas soluções: variáveis livres\n\n\n\n\\[\n\\begin{cases}\nw + x - y + 2z = 1 \\\\\n2w - 2x - y + 3z = 3 \\\\\n-w + x - y = -3\n\\end{cases}\n\\]\n\n\\[\nw - x - y + 2z = 1 \\\\\ny - z = 1\n\\]\n\n\n\\(y - z = 1\\)\n\\(w = 1 + x + y - 2z = 1 + x (1 + z) - 2z = 2 + x - z\\)\nEscrevendo as variáveis correspondentes aos elementos líderes (variáveis dependentes) em termos das outras variáveis (variáveis livres).\n\n\n\nAtribuindo \\(x = s\\) e \\(z = t\\):\n\n\\(\\left[ \\begin{array}{c}\nw \\\\\nx \\\\\ny \\\\\nz\n\\end{array} \\right] =\n\\left[ \\begin{array}{c}\n2 + s - t \\\\\ns \\\\\n1 + t \\\\\nt\n\\end{array} \\right]\\)",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#posto-de-uma-matriz",
+    "href": "sistema_equacoes_lineares.html#posto-de-uma-matriz",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Posto de uma matriz",
+    "text": "Posto de uma matriz\n\nEm um sistema possível, as variáveis livres são aquelas que não são variáveis dependentes.\nO posto de uma matriz é o número de linhas não nulas de qualquer uma de suas formas escalonadas por linhas.\nDenotamos o posto de uma matriz \\(A\\) por \\(posto(A)\\).\n\n\n\n\n\n\n\nTeorema do Posto\n\n\n\nSeja \\(A\\) a matriz dos coeficientes de um sistema de equações lineares com \\(n\\) variáveis. Se o sistema for possível, então o número de variáveis livres é \\(n - posto(A)\\).",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-5",
+    "href": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-5",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Método de Eliminação de Gauss",
+    "text": "Método de Eliminação de Gauss\nSistemas impossíveis\n\n\n\\[\n\\begin{cases}\nx_1 - x_2 + 2x_3 = 3 \\\\\nx_1 + x_2 - x_3 = -3 \\\\\n2x_2 - 2x_3 = 1\n\\end{cases}\n\\]\n\n\\[\n\\left[ \\begin{array}{ccc|c}\n1 & -1 & 2 & 3 \\\\\n1 & 2 & -1 & -3 \\\\\n0 & 2 & -2 & 1\n\\end{array} \\right]\n\\]\n\n\n\n\\(\\left[ \\begin{array}{ccc|c}\n1 & -1 & 2 & 3 \\\\\n1 & 2 & -1 & -3 \\\\\n0 & 2 & -2 & 1\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_2 - L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & -1 & 2 & 3 \\\\\n1 & 3 & -3 & -6 \\\\\n0 & 2 & -2 & 1\n\\end{array} \\right]\\) \\(\\begin{array}{c}\n\\frac{1}{3}L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & -1 & 2 & 3 \\\\\n1 & 1 & -1 & -2 \\\\\n0 & 2 & -2 & 1\n\\end{array} \\right]\\)\n\n\\(\\begin{array}{c}\nL_3 - 2L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & -1 & 2 & 3 \\\\\n0 & 1 & -1 & -2 \\\\\n0 & 0 & 0 & 5\n\\end{array} \\right]\\)",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-6",
+    "href": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-6",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Método de Eliminação de Gauss",
+    "text": "Método de Eliminação de Gauss\nSistemas impossíveis\n\n\n\\[\n\\begin{cases}\nx_1 - x_2 + 2x_3 = 3 \\\\\nx_1 + x_2 - x_3 = -3 \\\\\n2x_2 - 2x_3 = 1\n\\end{cases}\n\\]\n\n\\[\n\\begin{cases}\nx_1 - x_2 + 2x_3 = 3 \\\\\nx_2 - x_3 = -2 \\\\\n0 = 5\n\\end{cases}\n\\]",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-jordan",
+    "href": "sistema_equacoes_lineares.html#método-de-eliminação-de-gauss-jordan",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Método de Eliminação de Gauss-Jordan",
+    "text": "Método de Eliminação de Gauss-Jordan\nVariante do Método de Eliminação de Gauss para levar a matriz completa á forma escalonada reduzida\n\n\n\n\n\n\nMatriz escalonada reduzida\n\n\n\n\nA matriz está na forma escalonada por linhas.\nO elemento líder em cada linha não nula é igual a \\(1\\) (chamado de 1-líder).\nCada coluna que contém um 1-líder possui zeros em todas as outras posições.\n\n\n\n\n\n\n\\[\n\\left[ \\begin{array}{cc|c}\n1 & 0 & 4 \\\\\n0 & 1 & 2\n\\end{array} \\right]\n\\]\n\n\\[\n\\left[ \\begin{array}{ccc|c}\n1 & 0 & 3 & 9 \\\\\n0 & 1 & -2 & 4 \\\\\n0 & 0 & 0 & 0\n\\end{array} \\right]\n\\]\n\n\\[\n\\left[ \\begin{array}{ccccccc|c}\n1 & 2 & 0 & 0 & -3 & 1 & 0 \\\\\n0 & 0 & 1 & 0 & 4  & -1 & 0 \\\\\n0 & 0 & 0 & 1 & 3  & -2 & 0 \\\\\n0 & 0 & 0 & 0 & 0  & 0  & 0 \\\\\n0 & 0 & 0 & 0 & 0  & 0  & 0\n\\end{array} \\right]\n\\]\n\n\n\nOrientação útil: Trabalhar da esquerda para a direita e criar o 1 líder e os zeros em suas colunas à medida que for trabalhando.",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#sistemas-homogêneos",
+    "href": "sistema_equacoes_lineares.html#sistemas-homogêneos",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Sistemas Homogêneos",
+    "text": "Sistemas Homogêneos\nTodo sistema de equações lineares pode ter nenhuma solução, uma única solução ou infinitas soluções. No entanto, há um tipo de sistema que sempre possui pelo menos uma solução.\n\n\n\n\n\n\nDefinição\n\n\n\nUm sistema de equações lineares é chamado de homogêneo se o termo independente de cada equação é igual a zero. Em outras palavras, um sistema homogêneo tem uma matriz aumentada da forma \\([A \\mid 0]\\).",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#sistemas-homogêneos-1",
+    "href": "sistema_equacoes_lineares.html#sistemas-homogêneos-1",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Sistemas Homogêneos",
+    "text": "Sistemas Homogêneos\nConsidere o seguinte sistema homogêneo: \\[\n\\begin{cases}\n2x + 3y - 2z = 0 \\\\\n2x + 5y + 2z = 0\n\\end{cases}\n\\]\nUm sistema homogêneo sempre possui pelo menos uma solução. Ele pode ter uma solução única (chamada de solução nula ou trivial) ou infinitas soluções.\n\n\n\n\n\n\nTeorema\n\n\n\nSe \\([A \\mid 0]\\) for a matriz completa de um sistema homogêneo de \\(m\\) equações lineares com \\(n\\) variáveis, em que \\(m &lt; n\\), então o sistema terá infinitas soluções.",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#discussão-e-aplicações",
+    "href": "sistema_equacoes_lineares.html#discussão-e-aplicações",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Discussão e Aplicações",
+    "text": "Discussão e Aplicações\nAlocação de recursos\n\nUm biólogo colocou três espécies de bactéria (denotadas por I, II e III) em um tubo de ensaio, onde elas serão alimentadas por três fontes diferentes de alimentos (A, B e C). A cada dia serão colocadas no tubo de ensaio 2300 unidades de A, 800 unidades de B e 1500 unidades de C. Cada bactéria consome um certo número de unidades de cada alimento por dia, como mostra a tabela abaixo. Quantas bactérias de cada espécie podem coexistir no tubo de ensaio de modo a consumir todo o alimento?\n\n\n\nBactéria\nAlimento A\nAlimento B\nAlimento C\n\n\n\n\nEspécie I\n2\n1\n1\n\n\nEspécie II\n2\n2\n3\n\n\nEspécie III\n4\n0\n1\n\n\n\nDados dos Alimentos\n\nTotal de alimento A disponível: 2300 unidades\nTotal de alimento B disponível: 800 unidades\nTotal de alimento C disponível: 1500 unidades",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#discussão-e-aplicações-1",
+    "href": "sistema_equacoes_lineares.html#discussão-e-aplicações-1",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Discussão e Aplicações",
+    "text": "Discussão e Aplicações\nAlocação de recursos: resolução\n\nSeja \\(x_1\\) o número de bactérias da Espécie I, \\(x_2\\) o número de bactérias da Espécie II e \\(x_3\\) o número de bactérias da Espécie III. As equações que representam o consumo total de cada alimento são:\n\nPara o Alimento A: \\(2x_1 + 2x_2 + 4x_3 = 2300\\)\nPara o Alimento B: \\(x_1 + 2x_2 + 0x_3 = 800\\)\nPara o Alimento C: \\(x_1 + 3x_2 + x_3 = 1500\\)\n\nSistema de Equações\nO sistema de equações lineares é: \\(\\begin{cases}\n2x_1 + 2x_2 + 4x_3 = 2300 \\\\\nx_1 + 2x_2 + 0x_3 = 800 \\\\\nx_1 + 3x_2 + x_3 = 1500\n\\end{cases}\\)",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#discussão-e-aplicações-2",
+    "href": "sistema_equacoes_lineares.html#discussão-e-aplicações-2",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Discussão e Aplicações",
+    "text": "Discussão e Aplicações\nAlocação de recursos: resolução\n\nRepresentamos o sistema na forma matricial e aplicamos o método de Eliminação de Gaus:\n\\(\\left[ \\begin{array}{ccc|c}\n2 & 2 & 4 & 2300 \\\\\n1 & 2 & 0 & 800 \\\\\n1 & 3 & 1 & 1500\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_1 - L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & 0 & 4 & 1500 \\\\\n1 & 2 & 0 & 800 \\\\\n1 & 3 & 1 & 1500\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_2 - L_1 \\\\\nL_3 - L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & 0 & 4 & 1500 \\\\\n0 & 2 & -4 & -700 \\\\\n0 & 3 & -3 & 0\n\\end{array} \\right]\\)\n\n\\(\\begin{array}{c}\n\\frac{1}{2}L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & 0 & 4 & 1500 \\\\\n0 & 1 & -2 & -350 \\\\\n0 & 3 & -3 & 0\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_3 - 3L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & 0 & 4 & 1500 \\\\\n0 & 1 & -2 & -350 \\\\\n0 & 0 & 3 & 1050\n\\end{array} \\right]\\) \\(\\begin{array}{c}\n\\frac{1}{3}L_3 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & 0 & 4 & 1500 \\\\\n0 & 1 & -2 & -350 \\\\\n0 & 0 & 1 & 350\n\\end{array} \\right]\\)\n\n\\(\\begin{array}{c}\nL_1 - 4L_3 \\\\\nL_2 + 2L_3 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & 0 & 0 & 100 \\\\\n0 & 1 & 0 & 350 \\\\\n0 & 0 & 1 & 350\n\\end{array} \\right]\\)",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#discussão-e-aplicações-3",
+    "href": "sistema_equacoes_lineares.html#discussão-e-aplicações-3",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Discussão e Aplicações",
+    "text": "Discussão e Aplicações\nAlocação de recursos: resolução\n\n\\[\\left[ \\begin{array}{ccc|c}\n2 & 2 & 4 & 2300 \\\\\n1 & 2 & 0 & 800 \\\\\n1 & 3 & 1 & 1500\n\\end{array} \\right]\n\\rightarrow\n\\left[ \\begin{array}{ccc|c}\n1 & 0 & 0 & 100 \\\\\n0 & 1 & 0 & 350 \\\\\n0 & 0 & 1 & 350\n\\end{array} \\right]\\]\nSolução:\n\nNúmero de bactérias da Espécie I (\\(x_1\\)): 100\nNúmero de bactérias da Espécie II (\\(x_2\\)): 350\nNúmero de bactérias da Espécie III (\\(x_3\\)): 350\n\nAssim, para consumir todo o alimento disponível, podem coexistir 100 bactérias da Espécie I, 350 bactérias da Espécie II e 350 bactérias da Espécie III no tubo de ensaio.",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#discussão-e-aplicações-4",
+    "href": "sistema_equacoes_lineares.html#discussão-e-aplicações-4",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Discussão e Aplicações",
+    "text": "Discussão e Aplicações\nBalanceamento de Equações Químicas\n\nQuando uma reação química ocorre, certas moléculas (os reagentes) se combinam para formar novas moléculas (os produtos). Uma equação química balanceada é uma equação algébrica que dá o número relativo de reagentes e produtos na reação e tem o mesmo número de átomos de cada tipo dos lados esquerdo e direito. A equação é usualmente escrita com os reagentes à esquerda, os produtos à direita e uma seta entre os dois lados para mostrar a direção da reação.\nPor exemplo, para a reação na qual os gases hidrogênio (\\(H_2\\)) e oxigênio (\\(O_2\\)) se combinam para formar água (\\(H_2O\\)), uma equação química balanceada é:\n\\[2H_2 + O_2 \\rightarrow 2H_2O\\]\nindicando que duas moléculas de hidrogênio se combinam com uma molécula de oxigênio para formar duas moléculas de água. Observe que a equação está balanceada, pois há quatro átomos de hidrogênio e dois átomos de oxigênio em cada lado. Note que nunca haverá uma única equação balanceada para uma reação, já que todo múltiplo inteiro positivo de uma equação balanceada será também uma equação balanceada. Por exemplo,\n\\[6H_2 + 3O_2 \\rightarrow 6H_2O\\]\ntambém está balanceada. Assim, usualmente procuramos a equação balanceada mais simples para uma reação dada.\nEmbora o método de tentativa e erro frequentemente funcione em exemplos simples, o processo de balanceamento de equações químicas na verdade envolve a resolução de um sistema de equações lineares homogêneo, e por essa razão podemos usar as técnicas que desenvolvemos para evitar os “chutes”.",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#discussão-e-aplicações-5",
+    "href": "sistema_equacoes_lineares.html#discussão-e-aplicações-5",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Discussão e Aplicações",
+    "text": "Discussão e Aplicações\nBalanceamento de Equações Químicas\n\nExemplo: Combustão de Amônia\nA combustão de amônia (\\(NH_3\\)) em oxigênio (\\(O_2\\)) produz nitrogênio (\\(N_2\\)) e água (\\(H_2O\\)). Encontre uma equação química balanceada para essa reação.\nSolução\nSe denotarmos os números de moléculas de amônia, oxigênio, nitrogênio e água por \\(w\\), \\(x\\), \\(y\\) e \\(z\\), respectivamente, então estaremos procurando uma equação da forma:\n\\[wNH_3 + xO_2 \\rightarrow yN_2 + zH_2O\\]\nComparando os números de átomos de nitrogênio, hidrogênio e oxigênio nos reagentes e nos produtos, obtemos três equações lineares:\n\nNitrogênio: \\(w = 2y\\)\nHidrogênio: \\(3w = 2z\\)\nOxigênio: \\(2x = z\\)",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#discussão-e-aplicações-6",
+    "href": "sistema_equacoes_lineares.html#discussão-e-aplicações-6",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Discussão e Aplicações",
+    "text": "Discussão e Aplicações\nBalanceamento de Equações Químicas\n\nReescrever essas equações na forma padrão nos fornece um sistema homogêneo de três equações lineares em quatro variáveis:\n\\[\n\\begin{cases}\nw - 2y = 0 \\\\\n3w - 2z = 0 \\\\\n2x - z = 0\n\\end{cases}\n\\]\nReescrevendo na forma matricial, temos: \\[\n\\left[ \\begin{array}{cccc|c}\n1 & 0 & -2 & 0 & 0 \\\\\n3 & 0 & 0 & -2 & 0 \\\\\n0 & 2 & 0 & -1 & 0\n\\end{array} \\right]\n\\]",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#discussão-e-aplicações-7",
+    "href": "sistema_equacoes_lineares.html#discussão-e-aplicações-7",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Discussão e Aplicações",
+    "text": "Discussão e Aplicações\nBalanceamento de Equações Químicas\n\nAplicando o método de eliminação de Gauss-Jordan, obtemos: \\[\n\\left[ \\begin{array}{cccc|c}\n1 & 0 & -2 & 0 & 0 \\\\\n0 & 2 & 0 & -1 & 0 \\\\\n0 & 0 & 0 & 0 & 0\n\\end{array} \\right]\n\\]\nLogo, \\(w = \\frac{2}{3}z\\), \\(x = \\frac{1}{2}z\\), \\(y = \\frac{1}{3}z\\) e \\(z\\). O menor valor positivo de \\(z\\) que fornecerá valores inteiros para todas as quatro variáveis é 6, o menor múltiplo comum das frações \\(\\frac{2}{3}\\), \\(\\frac{1}{2}\\) e \\(\\frac{1}{3}\\), que fornece \\(w = 4\\), \\(x = 3\\), \\(y = 2\\) e \\(z = 6\\).\nAssim, a equação química balanceada é:\n\\[\n4NH_3 + 3O_2 \\rightarrow 2N_2 + 6H_2O\n\\]",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  }
+]
