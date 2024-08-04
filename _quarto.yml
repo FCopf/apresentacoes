@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "BMECM"
+  sidebar:
+    background: "#285c34"
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - href: index.qmd
+      - href: geometria_vetores.qmd
+      - href: comprimento_angulo.qmd
+      - href: sistema_equacoes_lineares.qmd
+      
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+

@@ -1,0 +1,27 @@
+/*-- scss:defaults --*/
+
+//$body-bg: #191919;
+//$body-color: #fff;
+//$link-color: #42affa;
+$presentation-h2-font-size: 1em;
+$presentation-li-font-size: 0.8em; // Define the font size for paragraphs
+
+/*-- scss:rules --*/
+
+// .reveal .slide blockquote {
+//   border-left: 3px solid $text-muted;
+//   padding-left: 0.5em;
+// }
+
+.reveal h2 {
+    font-size: $presentation-h2-font-size;
+    padding: 0.25em 0;  // Adjust the padding as needed
+  }
+
+  .reveal li {
+    font-size: $presentation-li-font-size;
+  }
+
+  .reveal p {
+    font-size: $presentation-li-font-size;
+  }
