@@ -22,7 +22,7 @@ website:
 format:
   html:
     theme: [cosmo, custom.scss]
-    css: styles.css
+    #css: styles.css
     toc: true
   revealjs: 
     menu: false

@@ -10,7 +10,7 @@ format:
       buttons: false
     preview-links: auto
     logo: imagens/BMEC-Mar-icon.png
-    css: styles.css
+    #css: styles.css
     footer: BICT Mar - Unifesp
 #resources:
 #  - demo.pdf
