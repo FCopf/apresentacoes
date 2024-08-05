@@ -28,4 +28,6 @@ format:
     menu: false
     progress: false
 
+freeze: false
+
 

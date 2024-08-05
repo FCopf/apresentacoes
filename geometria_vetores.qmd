@@ -4,7 +4,7 @@ institute: "9833 - BASES DA MATEMÁTICA E ESTATÍSTICA PARA CIÊNCIAS DO MAR"
 author: 	"Fabio Cop Ferreira e William Remo Pedroso Conti"
 format:
   revealjs: 
-    theme: serif
+    theme: [serif, custom.scss]
     slide-number: true
     chalkboard: 
       buttons: false
