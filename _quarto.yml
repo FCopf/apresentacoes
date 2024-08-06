@@ -23,8 +23,10 @@ format:
   html:
     theme: [cosmo, custom.scss]
     #css: styles.css
+    #css: custom.scss
     toc: true
-  revealjs: 
+  revealjs:
+    theme: [serif, custom.scss]
     menu: false
     progress: false
 

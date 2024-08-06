@@ -4,7 +4,7 @@ institute: "9833 - BASES DA MATEMÁTICA E ESTATÍSTICA PARA CIÊNCIAS DO MAR"
 author: 	"Fabio Cop Ferreira e William Remo Pedroso Conti"
 format:
   revealjs: 
-    theme: [serif, custom.scss]
+    #theme: serif #[serif, custom.scss]
     slide-number: true
     chalkboard: 
       buttons: false
@@ -54,7 +54,7 @@ $$\vec{u} \cdot \vec{v} = u_1 v_1 + u_2 v_2 + \ldots + u_n v_n$$
 
 #### Propriedades
 
-::: {style="font-size: .6em"}
+::: {style="font-size: .65em"}
 Sejam $\vec{u}$, $\vec{v}$ e $\vec{w}$ vetores em $\mathbb{R}^n$, e $k$ um escalar. Então:
 
 |     | Propriedade                                                                               | Descrição        |
