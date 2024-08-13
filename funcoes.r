@@ -209,7 +209,7 @@ data_vector <- data.frame(x = c(2,1,8), y = c(1, -3, -3))
 lx <- c(-3, 8)
 ly <- c(-7, 4)
 
-sel2_vectors <- ggplot(data_vector) +
+sel2_vectors <- ggplot(data_vector, aes(x, y)) +
   geom_segment(aes(x = 0, y = 0, xend = x, yend = y),
                   arrow = arrow(length = unit(0.6, "cm")),
                 color = c('blue', 'blue', 'red'),
@@ -218,12 +218,12 @@ sel2_vectors <- ggplot(data_vector) +
     labs(title = 'Sistema com solução única')
 sel2_vectors
 
-ggsave('imagens/sel2_vectors.png', plot = sel2_vectors, width = 15, height = 15, units = 'cm')
+#ggsave('imagens/sel2_vectors.png', plot = sel2_vectors, width = 15, height = 15, units = 'cm')
 
 data_vector <- data.frame(x = c(2,4,8), y = c(1, 2, 4))
 lx <- c(-3, 8)
 ly <- c(-7, 4)
-sel3_vectors <- ggplot(data_vector) +
+sel3_vectors <- ggplot(data_vector, aes(x, y)) +
   geom_segment(aes(x = 0, y = 0, xend = x, yend = y),
                   arrow = arrow(length = unit(0.6, "cm")),
                   color = c('blue', 'blue', 'red'),
@@ -232,12 +232,12 @@ sel3_vectors <- ggplot(data_vector) +
     labs(title = 'Sistema com infinitas soluções')
 sel3_vectors
 
-ggsave('imagens/sel3_vectors.png', plot = sel3_vectors, width = 15, height = 15, units = 'cm')
+#ggsave('imagens/sel3_vectors.png', plot = sel3_vectors, width = 15, height = 15, units = 'cm')
 
 data_vector <- data.frame(x = c(2,4,3), y = c(1, 2, 4))
 lx <- c(-3, 8)
 ly <- c(-7, 4)
-sel4_vectors <- ggplot(data_vector) +
+sel4_vectors <- ggplot(data_vector, aes(x, y)) +
   geom_segment(aes(x = 0, y = 0, xend = x, yend = y),
                   arrow = arrow(length = unit(0.6, "cm")),
                 color = c('blue', 'blue', 'red'),
@@ -248,8 +248,12 @@ sel4_vectors <- ggplot(data_vector) +
     labs(title = 'Sistema sem solução')
 sel4_vectors
 
-ggsave('imagens/sel4_vectors.png', plot = sel4_vectors, width = 15, height = 15, units = 'cm')
+#ggsave('imagens/sel4_vectors.png', plot = sel4_vectors, width = 15, height = 15, units = 'cm')
 
 res_sel <- (sel1_retas | sel2_retas | sel3_retas) / (sel2_vectors | sel3_vectors | sel4_vectors)
 
 ggsave('imagens/res_sel.png', plot = res_sel, width = 45, height = 30, units = 'cm')
+
+res_vec <- (sel2_vectors | sel3_vectors | sel4_vectors)
+
+ggsave('imagens/res_vec.png', plot = res_vec, width = 45, height = 15, units = 'cm')

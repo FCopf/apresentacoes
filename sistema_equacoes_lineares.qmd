@@ -27,6 +27,8 @@ format:
 7.  Método de Eliminação de Gauss-Jordan
 8.  Sistemas Homogêneos
 9.  Aplicações
+10. Conjuntos geradores
+11. Dependência linear
 
 ## Conceitos Iniciais
 
@@ -528,7 +530,7 @@ $$
 ::: column
 $$
 \begin{cases}
-w + x - y + 2z = 1 \\
+w - x - y + 2z = 1 \\
 2w - 2x - y + 3z = 3 \\
 -w + x - y = -3
 \end{cases}
@@ -645,7 +647,7 @@ Seja $A$ a matriz dos coeficientes de um sistema de equações lineares com $n$ 
 $$
 \begin{cases}
 x_1 - x_2 + 2x_3 = 3 \\
-x_1 + x_2 - x_3 = -3 \\
+x_1 + 2x_2 - x_3 = -3 \\
 2x_2 - 2x_3 = 1
 \end{cases}
 $$
@@ -1008,3 +1010,155 @@ $$
 4NH_3 + 3O_2 \rightarrow 2N_2 + 6H_2O 
 $$
 
+
+## Conjuntos Geradores
+
+O problema de verificar se um conjunto é gerador está relacionado ao problema da existência de solução em sistemas lineares. Considerando um sistema de matriz completa $[A|b]$, o sistema terá solução quanto $b$ for uma combinação linear de $A$.
+
+![](imagens/res_vec.png){fig-align="center" style="background-color:#ffffff; width:600px"}
+
+::: {.callout-tip title="Definição"}
+Se $S = \{\vec{v_1}, \vec{v_k}, \cdots, \vec{v_k}\}$ é um conjunto de vetores de $\mathbb{R}^n$, então o conjunto de todas as combinações lineares de $\vec{v_1}, \vec{v_k}, \cdots, \vec{v_k}$ é chamado **conjunto gerado por $\vec{v_1}, \vec{v_k}, \cdots, \vec{v_k}$**, denominado por $ger(\vec{v_1}, \vec{v_k}, \cdots, \vec{v_k})$ ou $ger(S)$. Se $ger(S) = \mathbb{R}^n$, $S$ é chamado de **conjunto gerador** de $\mathbb{R}^n$.
+:::
+
+## Conjuntos Geradores
+
+Mostre que:
+$\mathbb{R}^n = ger
+\left( 
+\left[ \begin{array}{c}
+2\\
+-1  
+\end{array} \right],
+\left[ \begin{array}{c}
+1 \\
+3  
+\end{array} \right]
+\right)$
+
+**Solução**
+
+Devemos mostrar que um vetor arbritário 
+$\left[ \begin{array}{c}
+a\\
+b  
+\end{array} \right]$ pode ser escrito como combinação linear de 
+$\left[ \begin{array}{c}
+2\\
+-1  
+\end{array} \right]$ e 
+$\left[ \begin{array}{c}
+1 \\
+3  
+\end{array} \right]$
+
+isto é, que $x\left[ \begin{array}{c}
+2\\
+-1  
+\end{array} \right] +
+y\left[ \begin{array}{c}
+1\\
+3  
+\end{array} \right] = 
+\left[ \begin{array}{c}
+a\\
+b  
+\end{array} \right]$ pode ser resolvido para $x$ e $y$ em termos de $a$ e $b$.
+
+## Conjuntos Geradores
+
+<br></br>
+
+$\left[ \begin{array}{cc|c}
+2 & 1 & a \\
+-1 & 3 & b
+\end{array} \right]$ $\begin{array}{c}
+L_1 \leftrightarrow L_2 \\
+\end{array}$ $\left[ \begin{array}{cc|c}
+-1 & 3 & b \\
+2 & 1 & a
+\end{array} \right]$ $\begin{array}{c}
+L_2 - 2L_1 \\
+\end{array}$ $\left[ \begin{array}{cc|c}
+-1 & 3 & b \\
+0 & 7 & a + 2b
+\end{array} \right]$
+
+<br></br>
+
+$\begin{array}{c}
+\frac{1}{7}L_2 \\
+\end{array}$ $\left[ \begin{array}{cc|c}
+-1 & 3 & b \\
+0 & 1 & \frac{(a + 2b)}{7}
+\end{array} \right]$ $\begin{array}{c}
+L_1 - 3L_2 \\
+\end{array}$ $\left[ \begin{array}{cc|c}
+-1 & 0 & \frac{(b - 3a)}{7} \\
+0 & 1 & \frac{(a + 2b)}{7}
+\end{array} \right]$ $\begin{array}{c}
+-L_1 \\
+\end{array}$ $\left[ \begin{array}{cc|c}
+1 & 0 & \frac{(3a - b)}{7} \\
+0 & 1 & \frac{(a + 2b)}{7}
+\end{array} \right]$
+
+<br></br>
+
+$x = \frac{(3a - b)}{7}$, $y = \frac{(a + 2b)}{7}$ portanto $\frac{(3a - b)}{7} \left[ \begin{array}{c}
+2\\
+-1  
+\end{array} \right] +
+\frac{(a + 2b)}{7} \left[ \begin{array}{c}
+1\\
+3  
+\end{array} \right] = 
+\left[ \begin{array}{c}
+a\\
+b  
+\end{array} \right]$
+
+## Dependência linear
+
+Podemos verificar que:
+
+$$3 \left[ \begin{array}{c}
+1\\
+0\\
+3  
+\end{array} \right] +
+2 \left[ \begin{array}{c}
+-1\\
+1\\
+-3  
+\end{array} \right] = 
+\left[ \begin{array}{c}
+1\\
+2\\
+3  
+\end{array} \right]$$
+
+O que pode ser escrito como:
+
+$$3\vec{u} + 2\vec{v} = \vec{w}$$
+
+ou
+
+$$\frac{1}{3}\vec{w} - \frac{2}{3}\vec{v} = \vec{u}$$
+
+ou
+
+$$\frac{1}{2}\vec{w} - \frac{3}{2}\vec{v} = \vec{v}$$
+
+## Dependência linear
+
+::: {.callout-tip title="Definição"}
+Um conjunto de vetores $\vec{v_1}, \vec{v_k}, \cdots, \vec{v_k}$ será **linearmente dependente** se existirem escalares $c_1, c_2, \cdots, c_k$, poelo menos um dos quais não nulo, tais que
+
+$$c_1\vec{v_1} + c_2\vec{v_2} + \cdots + c_k\vec{v_k} = \vec{0}$$
+Um conjunto de vetores não linearmente dependente é chamado **linearmente independente**.
+:::
+
+::: {.callout-tip title="Teorema"}
+Vetores $\vec{v_1}, \vec{v_k}, \cdots, \vec{v_k}$ de $\mathbb{R}^n$ são linearmente *dependentes* se e somente se **pelo menos** um dos vetores puder ser escrito como uma combinação linear dos demais.
+:::
