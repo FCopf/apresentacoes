@@ -183,8 +183,8 @@
     "objectID": "geometria_vetores.html#conteúdo-da-aula",
     "href": "geometria_vetores.html#conteúdo-da-aula",
     "title": "A Geometria e a Álgebra de Vetores",
-    "section": "Conteúdo da aula",
-    "text": "Conteúdo da aula\n\nDefinição de Vetores\nVetores no Plano Cartesiano\nIgualdade de Vetores\nSoma de vetores\nMultiplicação de um vetor por um escalar\nVetores em \\(\\mathbb{R}^3\\)\nVetores em \\(\\mathbb{R}^n\\)\nPropriedades Algébricas dos Vetores",
+    "section": "",
+    "text": "Definição de Vetores\nVetores no Plano Cartesiano\nIgualdade de Vetores\nSoma de vetores\nMultiplicação de um vetor por um escalar\nVetores em \\(\\mathbb{R}^3\\)\nVetores em \\(\\mathbb{R}^n\\)\nPropriedades Algébricas dos Vetores",
     "crumbs": [
       "A Geometria e a Álgebra de Vetores"
     ]
@@ -194,7 +194,7 @@
     "href": "geometria_vetores.html#vetores",
     "title": "A Geometria e a Álgebra de Vetores",
     "section": "Vetores",
-    "text": "Vetores\n\n\n\n\n\n\nDefinição\n\n\nSegmento de reta orientado que representa o deslocamento do ponto de origem até um ponto de destino. O vetor de A até B é denotado por \\(\\mathbf{AB}\\), ou \\(\\vec{AB}\\). O ponto A é chamado de ponto inicial (ou origem) do vetor, enquanto o ponto B é chamado de ponto final (ou extremidade). Frequentemente, um vetor é representado por letra minúscula em negrito, como \\(\\mathbf{v}\\) ou ainda por \\(\\vec{v}\\).\n\nComprimento: distância entre o ponto inicial e o ponto final do vetor.\nDireção: orientação do vetor no espaço, definida pelo ângulo que faz com os eixos coordenados.",
+    "text": "Vetores\n\n\n\n\n\n\nDefinição\n\n\n\nSegmento de reta orientado que representa o deslocamento do ponto de origem até um ponto de destino. O vetor de A até B é denotado por \\(\\mathbf{AB}\\), ou \\(\\vec{AB}\\). O ponto A é chamado de ponto inicial (ou origem) do vetor, enquanto o ponto B é chamado de ponto final (ou extremidade). Frequentemente, um vetor é representado por letra minúscula em negrito, como \\(\\mathbf{v}\\) ou ainda por \\(\\vec{v}\\).\n\nComprimento: distância entre o ponto inicial e o ponto final do vetor.\nDireção: orientação do vetor no espaço, definida pelo ângulo que faz com os eixos coordenados.",
     "crumbs": [
       "A Geometria e a Álgebra de Vetores"
     ]
@@ -234,7 +234,7 @@
     "href": "geometria_vetores.html#igualdade-de-vetores-1",
     "title": "A Geometria e a Álgebra de Vetores",
     "section": "Igualdade de Vetores",
-    "text": "Igualdade de Vetores\n\n\n\nSejam:\n\\(\\vec{AB} = B - A = [4, 6] - [-4, -2] = [8, 8]\\)\n\\(\\vec{CD} = D - C = [5, 2] - [-3, -6] = [8, 8]\\)\n\\(\\vec{EF} = F - E = [3, 8] - [-9, 2] = [11, 6]\\)\nEntão:\n\\(\\vec{AB} = \\vec{CD} \\ne \\vec{EF}\\)\n\n\n\n\n\n\nNote\n\n\n\\(\\vec{AB} \\ne \\vec{BA}\\)\n\\(\\vec{BA} = A - B = [-4, -2] - [4, 6] = [-8, -8]\\)",
+    "text": "Igualdade de Vetores\n\n\n\nSejam:\n\\(\\vec{AB} = B - A = [4, 6] - [-4, -2] = [8, 8]\\)\n\\(\\vec{CD} = D - C = [5, 2] - [-3, -6] = [8, 8]\\)\n\\(\\vec{EF} = F - E = [3, 8] - [-9, 2] = [11, 6]\\)\nEntão:\n\\(\\vec{AB} = \\vec{CD} \\ne \\vec{EF}\\)\n\n\n\n\n\n\nNote\n\n\n\n\\(\\vec{AB} \\ne \\vec{BA}\\)\n\\(\\vec{BA} = A - B = [-4, -2] - [4, 6] = [-8, -8]\\)",
     "crumbs": [
       "A Geometria e a Álgebra de Vetores"
     ]
@@ -294,7 +294,7 @@
     "href": "geometria_vetores.html#combinações-lineares",
     "title": "A Geometria e a Álgebra de Vetores",
     "section": "Combinações Lineares",
-    "text": "Combinações Lineares\n\nUma combinação linear de vetores é um vetor obtido como a soma ponderada de outros vetores, onde cada vetor é multiplicado por um escalar.\n\n\n\n\n\n\nDefinição\n\n\nFormalmente, um vetor \\(\\vec{v}\\) é dito ser uma combinação linear dos vetores \\(\\vec{v}_1, \\vec{v}_2, \\ldots, \\vec{v}_k\\) se existirem escalares \\(c_1, c_2, \\ldots, c_k\\) tais que:\n\\[\\vec{v} = c_1 \\vec{v}_1 + c_2 \\vec{v}_2 + \\cdots + c_k \\vec{v}_k\\]\n\n\n\nOs escalares \\(c_1, c_2, \\ldots, c_k\\) são chamados de coeficientes da combinação linear. Em outras palavras, \\(\\vec{v}\\) é construído a partir dos vetores \\(\\vec{v}_1, \\vec{v}_2, \\ldots, \\vec{v}_k\\) pela combinação dos seus múltiplos escalares. Essa definição é fundamental na álgebra linear, pois permite a construção de vetores em um espaço vetorial a partir de uma base de vetores dados.",
+    "text": "Combinações Lineares\n\nUma combinação linear de vetores é um vetor obtido como a soma ponderada de outros vetores, onde cada vetor é multiplicado por um escalar.\n\n\n\n\n\n\nDefinição\n\n\n\nFormalmente, um vetor \\(\\vec{v}\\) é dito ser uma combinação linear dos vetores \\(\\vec{v}_1, \\vec{v}_2, \\ldots, \\vec{v}_k\\) se existirem escalares \\(c_1, c_2, \\ldots, c_k\\) tais que:\n\\[\\vec{v} = c_1 \\vec{v}_1 + c_2 \\vec{v}_2 + \\cdots + c_k \\vec{v}_k\\]\n\n\nOs escalares \\(c_1, c_2, \\ldots, c_k\\) são chamados de coeficientes da combinação linear. Em outras palavras, \\(\\vec{v}\\) é construído a partir dos vetores \\(\\vec{v}_1, \\vec{v}_2, \\ldots, \\vec{v}_k\\) pela combinação dos seus múltiplos escalares. Essa definição é fundamental na álgebra linear, pois permite a construção de vetores em um espaço vetorial a partir de uma base de vetores dados.",
     "crumbs": [
       "A Geometria e a Álgebra de Vetores"
     ]
@@ -304,7 +304,7 @@
     "href": "geometria_vetores.html#combinações-lineares-1",
     "title": "A Geometria e a Álgebra de Vetores",
     "section": "Combinações Lineares",
-    "text": "Combinações Lineares\n\nConsidere os vetores \\(\\vec{v}_1 = \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}\\) e \\(\\vec{v}_2 = \\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}\\) no espaço \\(\\mathbb{R}^2\\) e os escalares \\(c_1 = 2\\) e \\(c_2 = -1\\).\n\\[\\vec{v} = c_1 \\vec{v}_1 + c_2 \\vec{v}_2\\]\n\\(\\vec{v} = 2 \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} + (-1) \\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix} = \\begin{pmatrix} 2 \\cdot 1 \\\\ 2 \\cdot 2 \\end{pmatrix} + \\begin{pmatrix} -1 \\cdot 3 \\\\ -1 \\cdot 4 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix} + \\begin{pmatrix} -3 \\\\ -4 \\end{pmatrix} = \\begin{pmatrix} 2 - 3 \\\\ 4 - 4 \\end{pmatrix} = \\begin{pmatrix} -1 \\\\ 0 \\end{pmatrix}\\)\nPortanto, o vetor \\(\\vec{v} = \\begin{pmatrix} -1 \\\\ 0 \\end{pmatrix}\\) é uma combinação linear dos vetores \\(\\vec{v}_1\\) e \\(\\vec{v}_2\\) com os coeficientes dados \\(c_1 = 2\\) e \\(c_2 = -1\\).\n\n\n\n\n\n\n\nNote\n\n\nPara visualizar a ideia de combinações lineares, acesse o GeoGebra.\n\n\n\n\n\n\n\nBICT Mar - Unifesp",
+    "text": "Combinações Lineares\n\nConsidere os vetores \\(\\vec{v}_1 = \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}\\) e \\(\\vec{v}_2 = \\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}\\) no espaço \\(\\mathbb{R}^2\\) e os escalares \\(c_1 = 2\\) e \\(c_2 = -1\\).\n\\[\\vec{v} = c_1 \\vec{v}_1 + c_2 \\vec{v}_2\\]\n\\(\\vec{v} = 2 \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} + (-1) \\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix} = \\begin{pmatrix} 2 \\cdot 1 \\\\ 2 \\cdot 2 \\end{pmatrix} + \\begin{pmatrix} -1 \\cdot 3 \\\\ -1 \\cdot 4 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix} + \\begin{pmatrix} -3 \\\\ -4 \\end{pmatrix} = \\begin{pmatrix} 2 - 3 \\\\ 4 - 4 \\end{pmatrix} = \\begin{pmatrix} -1 \\\\ 0 \\end{pmatrix}\\)\nPortanto, o vetor \\(\\vec{v} = \\begin{pmatrix} -1 \\\\ 0 \\end{pmatrix}\\) é uma combinação linear dos vetores \\(\\vec{v}_1\\) e \\(\\vec{v}_2\\) com os coeficientes dados \\(c_1 = 2\\) e \\(c_2 = -1\\).\n\n\n\n\n\n\n\nNote\n\n\n\nPara visualizar a ideia de combinações lineares, acesse o GeoGebra.",
     "crumbs": [
       "A Geometria e a Álgebra de Vetores"
     ]
