@@ -8,7 +8,7 @@
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.55">
+  <meta name="generator" content="quarto-1.5.56">
 
   <meta name="author" content="Fabio Cop Ferreira e William Remo Pedroso Conti">
   <title>BMECM – Sistemas de Equações Lineares</title>
@@ -1371,7 +1371,6 @@ b
 </section>
 <section id="conjuntos-geradores-2" class="slide level2">
 <h2>Conjuntos Geradores</h2>
-<p><br><br></p>
 <p><span class="math inline">\(\left[ \begin{array}{cc|c}
 2 &amp; 1 &amp; a \\
 -1 &amp; 3 &amp; b
@@ -1419,30 +1418,122 @@ b
 </section>
 <section id="dependência-linear" class="slide level2">
 <h2>Dependência linear</h2>
-<p>Podemos verificar que:</p>
-<p><span class="math display">\[3 \left[ \begin{array}{c}
+<p>Os vetor <span class="math inline">\(\vec{w} = \left[ \begin{array}{c} 1\\ 2\\ 3 \end{array} \right]\)</span> é linearmente dependente de <span class="math inline">\(\vec{u} = \left[ \begin{array}{c} 1\\ 0\\ 3 \end{array} \right]\)</span> e <span class="math inline">\(\vec{v} = \left[ \begin{array}{c} -1\\ 1\\ -3 \end{array} \right]\)</span>?</p>
+<p><br><br></p>
+<p>Encontrando a forma escalonada reduzida da matriz completa:</p>
+<p><span class="math inline">\(\left[ \begin{array}{cc|c}
+1 &amp; -1 &amp; 1 \\
+0 &amp; 1 &amp; 2 \\
+3 &amp; -3 &amp; 3
+\end{array} \right]\)</span> <span class="math inline">\(\begin{array}{c}
+L_3 -3L_1 \\
+\end{array}\)</span> <span class="math inline">\(\left[ \begin{array}{cc|c}
+1 &amp; -1 &amp; 1 \\
+0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0
+\end{array} \right]\)</span> <span class="math inline">\(\begin{array}{c}
+L_1 + L_2 \\
+\end{array}\)</span> <span class="math inline">\(\left[ \begin{array}{cc|c}
+1 &amp; 0 &amp; 3 \\
+0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0
+\end{array} \right]\)</span></p>
+<p><br><br></p>
+<p><span class="math inline">\(S = \left[ \begin{array}{c} 3\\ 2 \end{array} \right]\)</span></p>
+</section>
+<section id="dependência-linear-1" class="slide level2">
+<h2>Dependência linear</h2>
+<p>O vetor <span class="math inline">\(\vec{w}\)</span> e linearmente depentente de <span class="math inline">\(\vec{u}\)</span> e <span class="math inline">\(\vec{v}\)</span>, sendo <span class="math inline">\(x = 3\)</span> e <span class="math inline">\(y = 2\)</span>:</p>
+<p><span class="math inline">\(3 \left[ \begin{array}{c}
 1\\
 0\\
-3  
+3
 \end{array} \right] +
 2 \left[ \begin{array}{c}
 -1\\
 1\\
--3  
+-3
 \end{array} \right] =
 \left[ \begin{array}{c}
 1\\
 2\\
-3  
-\end{array} \right]\]</span></p>
-<p>O que pode ser escrito como:</p>
-<p><span class="math display">\[3\vec{u} + 2\vec{v} = \vec{w}\]</span></p>
+3
+\end{array} \right]\)</span></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Podemos escrever esta relação de dependência como:</p>
+<p><span class="math inline">\(3\vec{u} + 2\vec{v} = \vec{w}\)</span></p>
 <p>ou</p>
-<p><span class="math display">\[\frac{1}{3}\vec{w} - \frac{2}{3}\vec{v} = \vec{u}\]</span></p>
+<p><span class="math inline">\(\frac{1}{3}\vec{w} - \frac{2}{3}\vec{v} = \vec{u}\)</span></p>
 <p>ou</p>
-<p><span class="math display">\[\frac{1}{2}\vec{w} - \frac{3}{2}\vec{v} = \vec{v}\]</span></p>
+<p><span class="math inline">\(\frac{1}{2}\vec{w} - \frac{3}{2}\vec{v} = \vec{v}\)</span></p>
+</div>
+</div>
+</div>
 </section>
-<section id="dependência-linear-1" class="slide level2">
+<section id="dependência-linear-2" class="slide level2">
+<h2>Dependência linear</h2>
+<p>Os vetor <span class="math inline">\(\vec{w} = \left[ \begin{array}{c} 2\\ 3\\ 4 \end{array} \right]\)</span> é linearmente dependente de <span class="math inline">\(\vec{u} = \left[ \begin{array}{c} 1\\ 0\\ 3 \end{array} \right]\)</span> e <span class="math inline">\(\vec{v} = \left[ \begin{array}{c} -1\\ 1\\ -3 \end{array} \right]\)</span>?</p>
+<p>Resolvendo a matriz completa:</p>
+<p><span class="math inline">\(\left[ \begin{array}{cc|c}
+1 &amp; -1 &amp; 2 \\
+0 &amp; 1 &amp; 3 \\
+3 &amp; -3 &amp; 4
+\end{array} \right]\)</span> <span class="math inline">\(\begin{array}{c}
+L_3 -3L_1 \\
+\end{array}\)</span> <span class="math inline">\(\left[ \begin{array}{cc|c}
+1 &amp; -1 &amp; 2 \\
+0 &amp; 1 &amp; 3 \\
+0 &amp; 0 &amp; -2
+\end{array} \right]\)</span> <span class="math inline">\(\begin{array}{c}
+L_1 + L_2 \\
+\end{array}\)</span> <span class="math inline">\(\left[ \begin{array}{cc|c}
+1 &amp; 0 &amp; 5 \\
+0 &amp; 1 &amp; 3 \\
+0 &amp; 0 &amp; -2
+\end{array} \right]\)</span></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Verificamos de <span class="math inline">\(\vec{w}\)</span> <strong>não é</strong> combinação linear de <span class="math inline">\(\vec{u}\)</span> e <span class="math inline">\(\vec{v}\)</span> e portanto <strong>não podemos</strong> encontrar constantes <span class="math inline">\(c_1\)</span> e <span class="math inline">\(c_2\)</span> que nos permita escrever a expressão:</p>
+<p><span class="math inline">\(c_1\vec{u} + c_2\vec{v} = \vec{w}\)</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="dependência-linear-3" class="slide level2">
+<h2>Dependência linear</h2>
+
+<img data-src="imagens/res_vec.png" class="quarto-figure quarto-figure-center r-stretch" style="background-color:#ffffff; width:600px"><div title="Teorema">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Teorema</strong></p>
+</div>
+<div class="callout-content">
+<p>Um sistema de equações lineares com matriz aumentada <span class="math inline">\([A \mid b]\)</span> é possível se, e somente se, <span class="math inline">\(b\)</span> é uma combinação linear das colunas de <span class="math inline">\(A\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="dependência-linear-4" class="slide level2">
 <h2>Dependência linear</h2>
 <div title="Definição">
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -1475,6 +1566,99 @@ b
 </div>
 </div>
 </div>
+</section>
+<section id="dependência-linear-5" class="slide level2">
+<h2>Dependência linear</h2>
+<div style="font-size: .65em">
+<p>Verifique se os vetores <span class="math inline">\(\vec{v} = \left[ \begin{array}{c} 1\\ 1\\ 0 \end{array} \right]\)</span>, <span class="math inline">\(\vec{u} = \left[ \begin{array}{c} 0\\ 1\\ 1 \end{array} \right]\)</span> e <span class="math inline">\(\vec{w} = \left[ \begin{array}{c} 1\\ 0\\ 1 \end{array} \right]\)</span> são linearmente dependentes.</p>
+<p>Para resolver esta questão fazemos:</p>
+<p><span class="math inline">\(c_1 \left[ \begin{array}{c} 1\\ 1\\ 0 \end{array} \right] + c_2 \left[ \begin{array}{c} 0\\ 1\\ 1 \end{array} \right] + c_3 \left[ \begin{array}{c} 1\\ 0\\ 1 \end{array} \right] = \left[ \begin{array}{c} 0\\ 0\\ 0 \end{array} \right]\)</span></p>
+<p>Que tem matriz completa:</p>
+<p><span class="math inline">\(\left[ \begin{array}{ccc|c}
+1 &amp; 0 &amp; 1 &amp; 0\\
+1 &amp; 1 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 1 &amp; 0
+\end{array} \right]\)</span> <span class="math inline">\(\begin{array}{c}
+L_2 - L_1 \\
+\end{array}\)</span> <span class="math inline">\(\left[ \begin{array}{ccc|c}
+1 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 1 &amp; -1 &amp; 0\\
+0 &amp; 1 &amp; 1 &amp; 0
+\end{array} \right]\)</span> <span class="math inline">\(\begin{array}{c}
+L_3 - L_2 \\
+\end{array}\)</span> <span class="math inline">\(\left[ \begin{array}{ccc|c}
+1 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 1 &amp; -1 &amp; 0\\
+0 &amp; 0 &amp; 2 &amp; 0
+\end{array} \right]\)</span> <span class="math inline">\(\begin{array}{c}
+\frac{1}{2} L_2 \\
+\end{array}\)</span> <span class="math inline">\(\left[ \begin{array}{ccc|c}
+1 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 1 &amp; -1 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{array} \right]\)</span> <span class="math inline">\(\begin{array}{c}
+L_1 - L_3 \\
+L_2 + L_3
+\end{array}\)</span> <span class="math inline">\(\left[ \begin{array}{ccc|c}
+1 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 1 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{array} \right]\)</span></p>
+</div>
+<hr>
+<p>O sistema tem solução única com <span class="math inline">\(c_1 = 0\)</span>, <span class="math inline">\(c_2 = 0\)</span> e <span class="math inline">\(c_3 = 0\)</span>, caracterizando os vetores como <strong>linearmente independentes</strong>.</p>
+</section>
+<section id="dependência-linear-6" class="slide level2">
+<h2>Dependência linear</h2>
+<div style="font-size: .6em">
+<p>Verifique se os vetores <span class="math inline">\(\vec{v} = \left[ \begin{array}{c} 1\\ 2\\ 0 \end{array} \right]\)</span>, <span class="math inline">\(\vec{u} = \left[ \begin{array}{c} 1\\ 1\\ -1 \end{array} \right]\)</span> e <span class="math inline">\(\vec{w} = \left[ \begin{array}{c} 1\\ 4\\ 2 \end{array} \right]\)</span> são linearmente dependentes.</p>
+<p>Para resolver esta questão fazemos:</p>
+<p><span class="math inline">\(c_1 \left[ \begin{array}{c} 1\\ 2\\ 0 \end{array} \right] + c_2 \left[ \begin{array}{c} 1\\ 1\\ -1 \end{array} \right] + c_3 \left[ \begin{array}{c} 1\\ 4\\ 2 \end{array} \right] = \left[ \begin{array}{c} 0\\ 0\\ 0 \end{array} \right]\)</span></p>
+<p>Que tem matriz completa:</p>
+<p><span class="math inline">\(\left[ \begin{array}{ccc|c}
+1 &amp; 1 &amp; 1 &amp; 0\\
+2 &amp; 1 &amp; 4 &amp; 0\\
+0 &amp; -1 &amp; 2 &amp; 0
+\end{array} \right]\)</span> <span class="math inline">\(\begin{array}{c}
+L_2 - 2L_1 \\
+\end{array}\)</span> <span class="math inline">\(\left[ \begin{array}{ccc|c}
+1 &amp; 1 &amp; 1 &amp; 0\\
+0 &amp; -1 &amp; 2 &amp; 0\\
+0 &amp; -1 &amp; 2 &amp; 0
+\end{array} \right]\)</span> <span class="math inline">\(\begin{array}{c}
+L_1 + L_2 \\
+L_3 - L_2 \\
+\end{array}\)</span> <span class="math inline">\(\left[ \begin{array}{ccc|c}
+1 &amp; 0 &amp; 3 &amp; 0\\
+0 &amp; -1 &amp; 2 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array} \right]\)</span> <span class="math inline">\(\begin{array}{c}
+- L_2 \\
+\end{array}\)</span> <span class="math inline">\(\left[ \begin{array}{ccc|c}
+1 &amp; 0 &amp; 3 &amp; 0\\
+0 &amp; 1 &amp; -2 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array} \right]\)</span></p>
+</div>
+<hr>
+<div class="columns">
+<div class="column">
+<p>O sistema é dado por:</p>
+<p><span class="math inline">\(\begin{cases}
+c_1 + 3c_3 = 0 \Rightarrow  c_1 = -3c_3\\
+c_2 - 2c_3 = 0 \Rightarrow  c_2 = 2c_3
+\end{cases}\)</span></p>
+</div><div class="column">
+<p>Com duas variáveis livres e portanto infinitas soluções:</p>
+<p><span class="math inline">\(S = \left[ \begin{array}{c} -3c_3\\ 2c_3\\ c_3 \end{array} \right]\)</span></p>
+</div></div>
+</section>
+<section id="dependência-linear-7" class="slide level2">
+<h2>Dependência linear</h2>
+<p>Podemos escrever:</p>
+<p><span class="math display">\[-3c_3 \left[ \begin{array}{c} 1\\ 2\\ 0 \end{array} \right] + 2c_3 \left[ \begin{array}{c} 1\\ 1\\ -1 \end{array} \right] + c_3 \left[ \begin{array}{c} 1\\ 4\\ 2 \end{array} \right] = \left[ \begin{array}{c} 0\\ 0\\ 0 \end{array} \right]\]</span></p>
+<hr>
+<p>A relação tem ao menos uma solução não nula, caracterizando os vetores como <strong>linearmente dependentes</strong>.</p>
 
 <div class="quarto-auto-generated-content">
 <p><img src="imagens/BMEC-Mar-icon.png" class="slide-logo"></p>

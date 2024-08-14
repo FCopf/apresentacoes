@@ -644,7 +644,7 @@
     "href": "sistema_equacoes_lineares.html#conjuntos-geradores-2",
     "title": "Sistemas de Equações Lineares",
     "section": "Conjuntos Geradores",
-    "text": "Conjuntos Geradores\n\n\\(\\left[ \\begin{array}{cc|c}\n2 & 1 & a \\\\\n-1 & 3 & b\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_1 \\leftrightarrow L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n-1 & 3 & b \\\\\n2 & 1 & a\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_2 - 2L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n-1 & 3 & b \\\\\n0 & 7 & a + 2b\n\\end{array} \\right]\\)\n\n\\(\\begin{array}{c}\n\\frac{1}{7}L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n-1 & 3 & b \\\\\n0 & 1 & \\frac{(a + 2b)}{7}\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_1 - 3L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n-1 & 0 & \\frac{(b - 3a)}{7} \\\\\n0 & 1 & \\frac{(a + 2b)}{7}\n\\end{array} \\right]\\) \\(\\begin{array}{c}\n-L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n1 & 0 & \\frac{(3a - b)}{7} \\\\\n0 & 1 & \\frac{(a + 2b)}{7}\n\\end{array} \\right]\\)\n\n\\(x = \\frac{(3a - b)}{7}\\), \\(y = \\frac{(a + 2b)}{7}\\) portanto \\(\\frac{(3a - b)}{7} \\left[ \\begin{array}{c}\n2\\\\\n-1\n\\end{array} \\right] +\n\\frac{(a + 2b)}{7} \\left[ \\begin{array}{c}\n1\\\\\n3\n\\end{array} \\right] =\n\\left[ \\begin{array}{c}\na\\\\\nb\n\\end{array} \\right]\\)",
+    "text": "Conjuntos Geradores\n\\(\\left[ \\begin{array}{cc|c}\n2 & 1 & a \\\\\n-1 & 3 & b\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_1 \\leftrightarrow L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n-1 & 3 & b \\\\\n2 & 1 & a\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_2 - 2L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n-1 & 3 & b \\\\\n0 & 7 & a + 2b\n\\end{array} \\right]\\)\n\n\\(\\begin{array}{c}\n\\frac{1}{7}L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n-1 & 3 & b \\\\\n0 & 1 & \\frac{(a + 2b)}{7}\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_1 - 3L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n-1 & 0 & \\frac{(b - 3a)}{7} \\\\\n0 & 1 & \\frac{(a + 2b)}{7}\n\\end{array} \\right]\\) \\(\\begin{array}{c}\n-L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n1 & 0 & \\frac{(3a - b)}{7} \\\\\n0 & 1 & \\frac{(a + 2b)}{7}\n\\end{array} \\right]\\)\n\n\\(x = \\frac{(3a - b)}{7}\\), \\(y = \\frac{(a + 2b)}{7}\\) portanto \\(\\frac{(3a - b)}{7} \\left[ \\begin{array}{c}\n2\\\\\n-1\n\\end{array} \\right] +\n\\frac{(a + 2b)}{7} \\left[ \\begin{array}{c}\n1\\\\\n3\n\\end{array} \\right] =\n\\left[ \\begin{array}{c}\na\\\\\nb\n\\end{array} \\right]\\)",
     "crumbs": [
       "Sistemas de Equações Lineares"
     ]
@@ -654,7 +654,7 @@
     "href": "sistema_equacoes_lineares.html#dependência-linear",
     "title": "Sistemas de Equações Lineares",
     "section": "Dependência linear",
-    "text": "Dependência linear\nPodemos verificar que:\n\\[3 \\left[ \\begin{array}{c}\n1\\\\\n0\\\\\n3  \n\\end{array} \\right] +\n2 \\left[ \\begin{array}{c}\n-1\\\\\n1\\\\\n-3  \n\\end{array} \\right] =\n\\left[ \\begin{array}{c}\n1\\\\\n2\\\\\n3  \n\\end{array} \\right]\\]\nO que pode ser escrito como:\n\\[3\\vec{u} + 2\\vec{v} = \\vec{w}\\]\nou\n\\[\\frac{1}{3}\\vec{w} - \\frac{2}{3}\\vec{v} = \\vec{u}\\]\nou\n\\[\\frac{1}{2}\\vec{w} - \\frac{3}{2}\\vec{v} = \\vec{v}\\]",
+    "text": "Dependência linear\nOs vetor \\(\\vec{w} = \\left[ \\begin{array}{c} 1\\\\ 2\\\\ 3 \\end{array} \\right]\\) é linearmente dependente de \\(\\vec{u} = \\left[ \\begin{array}{c} 1\\\\ 0\\\\ 3 \\end{array} \\right]\\) e \\(\\vec{v} = \\left[ \\begin{array}{c} -1\\\\ 1\\\\ -3 \\end{array} \\right]\\)?\n\nEncontrando a forma escalonada reduzida da matriz completa:\n\\(\\left[ \\begin{array}{cc|c}\n1 & -1 & 1 \\\\\n0 & 1 & 2 \\\\\n3 & -3 & 3\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_3 -3L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n1 & -1 & 1 \\\\\n0 & 1 & 2 \\\\\n0 & 0 & 0\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_1 + L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n1 & 0 & 3 \\\\\n0 & 1 & 2 \\\\\n0 & 0 & 0\n\\end{array} \\right]\\)\n\n\\(S = \\left[ \\begin{array}{c} 3\\\\ 2 \\end{array} \\right]\\)",
     "crumbs": [
       "Sistemas de Equações Lineares"
     ]
@@ -664,7 +664,67 @@
     "href": "sistema_equacoes_lineares.html#dependência-linear-1",
     "title": "Sistemas de Equações Lineares",
     "section": "Dependência linear",
-    "text": "Dependência linear\n\n\n\n\n\n\n\nDefinição\n\n\nUm conjunto de vetores \\(\\vec{v_1}, \\vec{v_k}, \\cdots, \\vec{v_k}\\) será linearmente dependente se existirem escalares \\(c_1, c_2, \\cdots, c_k\\), poelo menos um dos quais não nulo, tais que\n\\[c_1\\vec{v_1} + c_2\\vec{v_2} + \\cdots + c_k\\vec{v_k} = \\vec{0}\\] Um conjunto de vetores não linearmente dependente é chamado linearmente independente.\n\n\n\n\n\n\n\n\n\n\n\nTeorema\n\n\nVetores \\(\\vec{v_1}, \\vec{v_k}, \\cdots, \\vec{v_k}\\) de \\(\\mathbb{R}^n\\) são linearmente dependentes se e somente se pelo menos um dos vetores puder ser escrito como uma combinação linear dos demais.\n\n\n\n\n\n\n\n\nBICT Mar - Unifesp",
+    "text": "Dependência linear\nO vetor \\(\\vec{w}\\) e linearmente depentente de \\(\\vec{u}\\) e \\(\\vec{v}\\), sendo \\(x = 3\\) e \\(y = 2\\):\n\\(3 \\left[ \\begin{array}{c}\n1\\\\\n0\\\\\n3\n\\end{array} \\right] +\n2 \\left[ \\begin{array}{c}\n-1\\\\\n1\\\\\n-3\n\\end{array} \\right] =\n\\left[ \\begin{array}{c}\n1\\\\\n2\\\\\n3\n\\end{array} \\right]\\)\n\n\n\n\n\n\nTip\n\n\nPodemos escrever esta relação de dependência como:\n\\(3\\vec{u} + 2\\vec{v} = \\vec{w}\\)\nou\n\\(\\frac{1}{3}\\vec{w} - \\frac{2}{3}\\vec{v} = \\vec{u}\\)\nou\n\\(\\frac{1}{2}\\vec{w} - \\frac{3}{2}\\vec{v} = \\vec{v}\\)",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#dependência-linear-2",
+    "href": "sistema_equacoes_lineares.html#dependência-linear-2",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Dependência linear",
+    "text": "Dependência linear\nOs vetor \\(\\vec{w} = \\left[ \\begin{array}{c} 2\\\\ 3\\\\ 4 \\end{array} \\right]\\) é linearmente dependente de \\(\\vec{u} = \\left[ \\begin{array}{c} 1\\\\ 0\\\\ 3 \\end{array} \\right]\\) e \\(\\vec{v} = \\left[ \\begin{array}{c} -1\\\\ 1\\\\ -3 \\end{array} \\right]\\)?\nResolvendo a matriz completa:\n\\(\\left[ \\begin{array}{cc|c}\n1 & -1 & 2 \\\\\n0 & 1 & 3 \\\\\n3 & -3 & 4\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_3 -3L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n1 & -1 & 2 \\\\\n0 & 1 & 3 \\\\\n0 & 0 & -2\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_1 + L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{cc|c}\n1 & 0 & 5 \\\\\n0 & 1 & 3 \\\\\n0 & 0 & -2\n\\end{array} \\right]\\)\n\n\n\n\n\n\nTip\n\n\nVerificamos de \\(\\vec{w}\\) não é combinação linear de \\(\\vec{u}\\) e \\(\\vec{v}\\) e portanto não podemos encontrar constantes \\(c_1\\) e \\(c_2\\) que nos permita escrever a expressão:\n\\(c_1\\vec{u} + c_2\\vec{v} = \\vec{w}\\)",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#dependência-linear-3",
+    "href": "sistema_equacoes_lineares.html#dependência-linear-3",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Dependência linear",
+    "text": "Dependência linear\n\n\n\n\n\n\n\n\nTeorema\n\n\nUm sistema de equações lineares com matriz aumentada \\([A \\mid b]\\) é possível se, e somente se, \\(b\\) é uma combinação linear das colunas de \\(A\\).",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#dependência-linear-4",
+    "href": "sistema_equacoes_lineares.html#dependência-linear-4",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Dependência linear",
+    "text": "Dependência linear\n\n\n\n\n\n\n\nDefinição\n\n\nUm conjunto de vetores \\(\\vec{v_1}, \\vec{v_k}, \\cdots, \\vec{v_k}\\) será linearmente dependente se existirem escalares \\(c_1, c_2, \\cdots, c_k\\), poelo menos um dos quais não nulo, tais que\n\\[c_1\\vec{v_1} + c_2\\vec{v_2} + \\cdots + c_k\\vec{v_k} = \\vec{0}\\] Um conjunto de vetores não linearmente dependente é chamado linearmente independente.\n\n\n\n\n\n\n\n\n\n\n\nTeorema\n\n\nVetores \\(\\vec{v_1}, \\vec{v_k}, \\cdots, \\vec{v_k}\\) de \\(\\mathbb{R}^n\\) são linearmente dependentes se e somente se pelo menos um dos vetores puder ser escrito como uma combinação linear dos demais.",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#dependência-linear-5",
+    "href": "sistema_equacoes_lineares.html#dependência-linear-5",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Dependência linear",
+    "text": "Dependência linear\n\nVerifique se os vetores \\(\\vec{v} = \\left[ \\begin{array}{c} 1\\\\ 1\\\\ 0 \\end{array} \\right]\\), \\(\\vec{u} = \\left[ \\begin{array}{c} 0\\\\ 1\\\\ 1 \\end{array} \\right]\\) e \\(\\vec{w} = \\left[ \\begin{array}{c} 1\\\\ 0\\\\ 1 \\end{array} \\right]\\) são linearmente dependentes.\nPara resolver esta questão fazemos:\n\\(c_1 \\left[ \\begin{array}{c} 1\\\\ 1\\\\ 0 \\end{array} \\right] + c_2 \\left[ \\begin{array}{c} 0\\\\ 1\\\\ 1 \\end{array} \\right] + c_3 \\left[ \\begin{array}{c} 1\\\\ 0\\\\ 1 \\end{array} \\right] = \\left[ \\begin{array}{c} 0\\\\ 0\\\\ 0 \\end{array} \\right]\\)\nQue tem matriz completa:\n\\(\\left[ \\begin{array}{ccc|c}\n1 & 0 & 1 & 0\\\\\n1 & 1 & 0 & 0\\\\\n0 & 1 & 1 & 0\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_2 - L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & 0 & 1 & 0\\\\\n0 & 1 & -1 & 0\\\\\n0 & 1 & 1 & 0\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_3 - L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & 0 & 1 & 0\\\\\n0 & 1 & -1 & 0\\\\\n0 & 0 & 2 & 0\n\\end{array} \\right]\\) \\(\\begin{array}{c}\n\\frac{1}{2} L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & 0 & 1 & 0\\\\\n0 & 1 & -1 & 0\\\\\n0 & 0 & 1 & 0\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_1 - L_3 \\\\\nL_2 + L_3\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & 0 & 1 & 0\\\\\n0 & 1 & 0 & 0\\\\\n0 & 0 & 1 & 0\n\\end{array} \\right]\\)\n\n\nO sistema tem solução única com \\(c_1 = 0\\), \\(c_2 = 0\\) e \\(c_3 = 0\\), caracterizando os vetores como linearmente independentes.",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#dependência-linear-6",
+    "href": "sistema_equacoes_lineares.html#dependência-linear-6",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Dependência linear",
+    "text": "Dependência linear\n\nVerifique se os vetores \\(\\vec{v} = \\left[ \\begin{array}{c} 1\\\\ 2\\\\ 0 \\end{array} \\right]\\), \\(\\vec{u} = \\left[ \\begin{array}{c} 1\\\\ 1\\\\ -1 \\end{array} \\right]\\) e \\(\\vec{w} = \\left[ \\begin{array}{c} 1\\\\ 4\\\\ 2 \\end{array} \\right]\\) são linearmente dependentes.\nPara resolver esta questão fazemos:\n\\(c_1 \\left[ \\begin{array}{c} 1\\\\ 2\\\\ 0 \\end{array} \\right] + c_2 \\left[ \\begin{array}{c} 1\\\\ 1\\\\ -1 \\end{array} \\right] + c_3 \\left[ \\begin{array}{c} 1\\\\ 4\\\\ 2 \\end{array} \\right] = \\left[ \\begin{array}{c} 0\\\\ 0\\\\ 0 \\end{array} \\right]\\)\nQue tem matriz completa:\n\\(\\left[ \\begin{array}{ccc|c}\n1 & 1 & 1 & 0\\\\\n2 & 1 & 4 & 0\\\\\n0 & -1 & 2 & 0\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_2 - 2L_1 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & 1 & 1 & 0\\\\\n0 & -1 & 2 & 0\\\\\n0 & -1 & 2 & 0\n\\end{array} \\right]\\) \\(\\begin{array}{c}\nL_1 + L_2 \\\\\nL_3 - L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & 0 & 3 & 0\\\\\n0 & -1 & 2 & 0\\\\\n0 & 0 & 0 & 0\n\\end{array} \\right]\\) \\(\\begin{array}{c}\n- L_2 \\\\\n\\end{array}\\) \\(\\left[ \\begin{array}{ccc|c}\n1 & 0 & 3 & 0\\\\\n0 & 1 & -2 & 0\\\\\n0 & 0 & 0 & 0\n\\end{array} \\right]\\)\n\n\n\n\nO sistema é dado por:\n\\(\\begin{cases}\nc_1 + 3c_3 = 0 \\Rightarrow  c_1 = -3c_3\\\\\nc_2 - 2c_3 = 0 \\Rightarrow  c_2 = 2c_3\n\\end{cases}\\)\n\nCom duas variáveis livres e portanto infinitas soluções:\n\\(S = \\left[ \\begin{array}{c} -3c_3\\\\ 2c_3\\\\ c_3 \\end{array} \\right]\\)",
+    "crumbs": [
+      "Sistemas de Equações Lineares"
+    ]
+  },
+  {
+    "objectID": "sistema_equacoes_lineares.html#dependência-linear-7",
+    "href": "sistema_equacoes_lineares.html#dependência-linear-7",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Dependência linear",
+    "text": "Dependência linear\nPodemos escrever:\n\\[-3c_3 \\left[ \\begin{array}{c} 1\\\\ 2\\\\ 0 \\end{array} \\right] + 2c_3 \\left[ \\begin{array}{c} 1\\\\ 1\\\\ -1 \\end{array} \\right] + c_3 \\left[ \\begin{array}{c} 1\\\\ 4\\\\ 2 \\end{array} \\right] = \\left[ \\begin{array}{c} 0\\\\ 0\\\\ 0 \\end{array} \\right]\\]\n\nA relação tem ao menos uma solução não nula, caracterizando os vetores como linearmente dependentes.\n\n\n\n\nBICT Mar - Unifesp",
     "crumbs": [
       "Sistemas de Equações Lineares"
     ]
