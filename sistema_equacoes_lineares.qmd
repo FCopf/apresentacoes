@@ -1281,8 +1281,11 @@ $\begin{array}{c}
 L_1 - L_3 \\
 L_2 + L_3
 \end{array}$
+
+<br></br>
+
 $\left[ \begin{array}{ccc|c}
-1 & 0 & 1 & 0\\
+1 & 0 & 0 & 0\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 0
 \end{array} \right]$
