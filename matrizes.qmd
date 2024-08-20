@@ -1166,7 +1166,7 @@ $\begin{cases}
 
 ## Exemplo de aplicação: Cadeias de Markov para Recifes de Coral
 
-::: {style="font-size: .8em"}
+::: {style="font-size: .7em"}
 
 
 Há ainda uma condição adicional de que a soma das probabilidades seja 1, portanto $\pi_1 + \pi_2 + \pi_3 = 1$
@@ -1181,7 +1181,7 @@ $$\begin{cases}
 \end{cases}$$
 
 
-Utilizando métodos algébricos de substituição e eliminação, no estado estacionário, a distribuição das probabilidades entre os estados será:
+Utilizando métodos algébricos, no estado estacionário, a distribuição das probabilidades entre os estados será ([Link para resolução completa](https://github.com/FCopf/apresentacoes/blob/master/docs/Cadeias-de-Markov-para-Recifes-de-Coral.pdf)):
 
 $\pi_1 = \frac{7}{17} ~ \sim 0.4117$
 
