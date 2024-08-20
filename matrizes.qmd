@@ -1149,9 +1149,9 @@ O pode ser reorganizado como:
 
 $$
 \begin{cases}
--0.3\pi_1 + 0.3\pi_2 + 0.1\pi_3 = 0 \\
-0.2\pi_1 - 0.5\pi_2 + 0.3\pi_3 = 0 \\
-0.1\pi_1 + 0.2\pi_2 - 0.4\pi_3 = 0 \\
+-3\pi_1 + 3\pi_2 + \pi_3 = 0 \\
+2\pi_1 - 5\pi_2 + 3\pi_3 = 0 \\
+\pi_1 + 2\pi_2 - 4\pi_3 = 0 \\
 \pi_1 + \pi_2 + \pi_3 = 1
 \end{cases}
 $$
@@ -1160,7 +1160,7 @@ $$
 
 ::: {.column}
 
-Que tem solução
+E tem solução:
 
 $$
 \vec{v_{ss}} = \begin{bmatrix} \frac{7}{17} \\ \frac{11}{34} \\ \frac{9}{34} \end{bmatrix} ~ \sim \begin{bmatrix}
@@ -1173,6 +1173,12 @@ $$
 :::
 
 ::::
+
+:::
+
+::: {.callout-tip title="Resoluçao completa"}
+
+Faça o download da [RESOLUÇÃO COMPLETA](https://github.com/FCopf/apresentacoes/blob/master/docs/Cadeias-de-Markov-para-Recifes-de-Coral.pdf)
 
 :::
 
