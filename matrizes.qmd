@@ -21,8 +21,8 @@ format:
 5. Transposta de uma matriz
 6. Álgebra de matrizes
 7. Inversa de uma matriz
-8. Matrizes elementares
-9. Inversa de uma matriz pelo método de Gauss-Jordan
+8. Inversa de uma matriz pelo método de Gauss-Jordan
+9. Matrizes elementares
 10. Discussão e aplicações: Cadeias de Markov
 11. Discussão e aplicações: Crescimento populacional
 12. Discussão e aplicações: Grafos e dígrafos
@@ -47,9 +47,7 @@ B_{33} = \begin{bmatrix}
 
 <hr>
 
-#### Estrutura geral
-
-$A = [a_{ij}]$
+**Estrutura geral**: Para uma matriz $m \times n$, $A = [a_{ij}]$
 
 $$A_{mn} = \begin{bmatrix}
 a_{11} & a_{12} & \cdots & a_{1n} \\
@@ -69,8 +67,7 @@ $A = \begin{bmatrix}
 1 & 4 & 7 \\
 2 & 5 & 8 \\
 3 & 6 & 9
-\end{bmatrix}
-; B = \begin{bmatrix}
+\end{bmatrix}; B = \begin{bmatrix}
 9 & 8 & 7 \\
 6 & 5 & 4 \\
 3 & 2 & 1
@@ -107,8 +104,6 @@ a_{21} + b_{21} & a_{22} + b_{22} & \cdots & a_{2n} + b_{2n} \\
 a_{m1} + b_{m1} & a_{m2} + b_{m2} & \cdots & a_{mn} + b_{mn}
 \end{bmatrix}$$
 
----
-
 ## Multiplicação por um escalar
 
 ::: {style="font-size: .8em"}
@@ -130,15 +125,15 @@ $A = \begin{bmatrix}
 
 A multiplicação de $A$ por um escalar $c = 3$:
 
-$cA = 3 \cdot \begin{bmatrix}
+$cA = 3 \times \begin{bmatrix}
 1 & 4 & 7 \\
 2 & 5 & 8 \\
 3 & 6 & 9
 \end{bmatrix}
 = \begin{bmatrix}
-3 \cdot 1 & 3 \cdot 4 & 3 \cdot 7 \\
-3 \cdot 2 & 3 \cdot 5 & 3 \cdot 8 \\
-3 \cdot 3 & 3 \cdot 6 & 3 \cdot 9
+3 \times 1 & 3 \times 4 & 3 \times 7 \\
+3 \times 2 & 3 \times 5 & 3 \times 8 \\
+3 \times 3 & 3 \times 6 & 3 \times 9
 \end{bmatrix}
 = \begin{bmatrix}
 3 & 12 & 21 \\
@@ -155,11 +150,11 @@ $cA = 3 \cdot \begin{bmatrix}
 
 **Estrutura Geral**: Para uma matriz $m \times n$, $A = [a_{ij}]$ e um escalar $c$:
 
-$$cA = [ca_{ij}] = \begin{bmatrix}
-c \cdot a_{11} & c \cdot a_{12} & \cdots & c \cdot a_{1n} \\
-c \cdot a_{21} & c \cdot a_{22} & \cdots & c \cdot a_{2n} \\
+$$cA = [c \times a_{ij}] = \begin{bmatrix}
+c \times a_{11} & c \times a_{12} & \cdots & c \times a_{1n} \\
+c\times a_{21} & c \times a_{22} & \cdots & c \times a_{2n} \\
 \vdots & \vdots & \ddots & \vdots \\
-c \cdot a_{m1} & c \cdot a_{m2} & \cdots & c \cdot a_{mn}
+c \times a_{m1} & c \times a_{m2} & \cdots & c \times a_{mn}
 \end{bmatrix}$$
 
 ---
@@ -178,7 +173,7 @@ $A = \begin{bmatrix}
 4 & 5 & 6
 \end{bmatrix}$
 
-E $B$ uma matriz $3 \times 2$:
+e $B$ uma matriz $3 \times 2$:
 
 $B = \begin{bmatrix}
 7 & 8 \\
@@ -239,10 +234,6 @@ Sejam $A$, $B$ e $C$ matrizes (cujas ordens possibilitem que as operações indi
 
 ## Transposta de uma matriz
 
-- **Definição:** A transposta de uma matriz é obtida trocando-se suas linhas por colunas.
-- **Notação:** $A^T$
-- **Exemplo:** $[a_{ij}]^T = [a_{ji}]$
-
 ::: {style="font-size: .7em"}
 
 :::: columns
@@ -259,7 +250,7 @@ $A = \begin{bmatrix}
 
 ::: {.column width="70%"}
 
-A transposta de $A$:
+A transposta de $A$ é dada por $A^T = [a_{ij}]^T = [a_{ji}]$:
 
 $A^T = \begin{bmatrix}
 1 & 4 \\
@@ -324,6 +315,7 @@ Sejam $A$ e $B$ matrizes (cujas ordens são tais que as operações indicadas po
 **Propriedades Algébricas da Adição de Matrizes e da Multiplicação por Escalar**
 
 ::: {style="font-size: .6em"}
+
 Sejam $A$, $B$ e $C$ matrizes de mesma ordem, e $c$ e $d$ escalares. Então:
 
 |     | Propriedade                        | Descrição        |
@@ -341,44 +333,17 @@ Sejam $A$, $B$ e $C$ matrizes de mesma ordem, e $c$ e $d$ escalares. Então:
 
 ---
 
-## Combinações lineares
+## Combinações lineares em matrizes
 
-:::: columns
-::: {.column width="30%"}
+::: {style="font-size: .75em"}
 
-Escrevendo a matriz B
+Escrevendo a matriz $B = \begin{bmatrix} 1 & 4 \\ 2 & 1 \end{bmatrix}$ como combinação linear de $A_1 = \begin{bmatrix} 0 & 1 \\ -1 & 0 \end{bmatrix}$, $A_2 = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$ e $A_3 = \begin{bmatrix} 1 & 1 \\ 1 & 1  \end{bmatrix}$
 
-$$
-B = \begin{bmatrix} 1 & 4 \\ 2 & 1 \end{bmatrix}
-$$
-
-:::
-
-::: {.column width="70%"}
-
-Como combinação linear de $A_1$, $A_2$ e $A_3$
-
-$A_1 = \begin{bmatrix} 
-0 & 1 \\
--1 & 0 
-\end{bmatrix}$,
-$A_2 = \begin{bmatrix} 
-1 & 0 \\
-0 & 1 
-\end{bmatrix}$ e 
-$A_3 = \begin{bmatrix} 
-1 & 1 \\
-1 & 1 
-\end{bmatrix}$
-
-:::
-:::
-
-<hr>
+temos
 
 $$c_1A_1 + c_2A_2 + c_3A_3 = B$$
 
-$c_1\begin{bmatrix} 
+$$c_1\begin{bmatrix} 
 0 & 1 \\
 -1 & 0 
 \end{bmatrix} +
@@ -393,12 +358,19 @@ c_3\begin{bmatrix}
 \begin{bmatrix} 
 1 & 4 \\
 2 & 1 
-\end{bmatrix}$
+\end{bmatrix}$$
+
+:::
+
+<hr> 
+
+::: {style="font-size: .75em"}
 
 :::: columns
 ::: {.column}
 
-O sistema
+A combinção linear pode ser resolvida pelo sistema:
+
 $$
 \begin{cases}
 c_2 + c_3 = 1 \\
@@ -411,44 +383,878 @@ $$
 :::
 
 ::: {.column}
-Tem solução 
+
+Que tem solução:
 
 $$c_1 = 1$$
 $$c_2 = -2$$
 $$c_3 = 3$$
 
 :::
+
+::::
+
 :::
+
 ## Inversa de uma matriz
 
-- **Definição:** Matriz que, quando multiplicada pela original, resulta na matriz identidade.
-- **Notação:** $A^{-1}$
-- **Condição:** $AA^{-1} = I$
+::: {style="font-size: .6em"}
+
+:::: columns
+::: {.column}
+
+Seja $A = \begin{bmatrix}
+2 & 3 \\
+1 & 4
+\end{bmatrix}$ e $A^{-1} = \begin{bmatrix}
+\frac{4}{5} & -\frac{3}{5} \\
+-\frac{1}{5} & \frac{2}{5}
+\end{bmatrix}$
+
+:::
+
+::: {.column}
+
+Verificamos que $A^{-1}$ é inversa de $A$ pois:
+
+$AA^{-1} = \begin{bmatrix}
+2 & 3 \\
+1 & 4
+\end{bmatrix}
+\begin{bmatrix}
+\frac{4}{5} & -\frac{3}{5} \\
+-\frac{1}{5} & \frac{2}{5}
+\end{bmatrix} = \begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix} = I$
+
+e
+
+$A^{-1}A = \begin{bmatrix}
+\frac{4}{5} & -\frac{3}{5} \\
+-\frac{1}{5} & \frac{2}{5}
+\end{bmatrix}
+\begin{bmatrix}
+2 & 3 \\
+1 & 4
+\end{bmatrix} = \begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix} = I$
+
+:::
+
+::::
+
+:::
+
+::: {.callout-tip title="Definição"}
+
+Se $A$ é uma matriz $n \times n$, uma inversa de $A$ é uma matriz $n \times n$ $A^{-1}$ que satisfaz:
+
+$$AA^{-1} = I$$ e $$A^{-1}A = I$$ 
+
+sendo $I = I_n$ a matriz identidade $n \times n$. Se existir uma matriz $A^{-1}$ assim, diremos
+que $A$ é invertível.
+
+:::
 
 ---
 
-## Matrizes elementares
+## Inversa de uma matriz
 
-- **Definição:** Matrizes obtidas a partir de operações elementares na matriz identidade.
-- **Exemplos:** Troca de linhas, multiplicação de uma linha por um escalar, adição de múltiplos de linhas.
+**Em cada exemplo, verifique se a matriz $B$ é inversa de $A$**
+
+::: {style="font-size: .8em"}
+
+<br></br>
+
+:::: columns
+::: {.column}
+
+a) 
+$A = \begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}$ e 
+$B = \begin{bmatrix}
+-2 & 1 \\
+1.5 & -0.5
+\end{bmatrix}$
+
+:::
+
+::: {.column}
+
+c)
+$A = \begin{bmatrix}
+2 & 5 \\
+1 & 3
+\end{bmatrix}$ e
+$B = \begin{bmatrix}
+3 & -5 \\
+-1 & 1
+\end{bmatrix}$
+
+:::
+
+::::
+
+<br></br>
+
+:::: columns
+::: {.column}
+
+b)
+$A = \begin{bmatrix}
+2 & 1 & 1 \\
+1 & 3 & 2 \\
+1 & 0 & 0
+\end{bmatrix}$ e
+$B = \begin{bmatrix}
+0 & 0 & 1 \\
+-2 & 1 & 3 \\
+3 & -1 & -5
+\end{bmatrix}$
+:::
+
+::: {.column}
+
+d)
+$A = \begin{bmatrix}
+1 & 2 & 3 \\
+0 & 1 & 4 \\
+5 & 6 & 0
+\end{bmatrix}$ e
+$B = \begin{bmatrix}
+4 & 2 & -2 \\
+-1 & 3 & 5 \\
+0 & 5 & 1
+\end{bmatrix}$
+
+:::
+::::
+
+:::
 
 ---
+
+## Inversa de uma matriz
+
+::: {style="font-size: .75em"}
+
+:::: columns
+
+::: {.column width="70%"}
+
+Verifique que $A = \begin{bmatrix}
+2 & 5 \\
+1 & 3
+\end{bmatrix}$ invertível e pode ser escrita por:
+
+$\begin{bmatrix}
+2 & 5 \\
+1 & 3
+\end{bmatrix}
+\begin{bmatrix}
+w & x \\
+y & z
+\end{bmatrix} = 
+\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}$
+
+:::
+::: {.column width="30%"}
+
+Que resulta no sistema de equações:
+
+$\begin{cases}
+2w + 5y = 1 \\
+2x + 5z = 0 \\
+w + 3y = 0 \\
+x + 3z = 1
+\end{cases}$
+:::
+::::
+:::
+
+<hr>
+
+::: {style="font-size: .8em"}
+
+Que pode ser resolvido por:
+
+$\left[ \begin{array}{cccc|c}
+2 & 0 & 5 & 0 & 1\\
+0 & 2 & 0 & 5 & 0\\
+1 & 0 & 3 & 0 & 0\\
+0 & 1 & 0 & 3 & 1
+\end{array} \right]$ $\begin{array}{c}
+L_1 \leftrightarrow L_3\\
+L_2 \leftrightarrow L_4\\
+ \\
+ \\
+\end{array}$ $\left[ \begin{array}{cccc|c}
+1 & 0 & 3 & 0 & 0\\
+0 & 1 & 0 & 3 & 1\\
+2 & 0 & 5 & 0 & 1\\
+0 & 2 & 0 & 5 & 0
+\end{array} \right]$ $\begin{array}{c}
+ \\
+ \\
+L_3 - 2L_1 \\
+L_4 - 2L_2 \\
+\end{array}$ $\left[ \begin{array}{cccc|c}
+1 & 0 & 3 & 0 & 0\\
+0 & 1 & 0 & 3 & 1\\
+0 & 0 & -1 & 0 & 1\\
+0 & 0 & 0 & -1 & -2
+\end{array} \right]$ $\begin{array}{c}
+L_1 + 3L_3 \\
+L_2 + 3L_4 \\
+-L_3 \\
+-L_4 \\
+\end{array}$ 
+
+$\left[ \begin{array}{cccc|c}
+1 & 0 & 0 & 0 & 3\\
+0 & 1 & 0 & 0 & -5\\
+0 & 0 & 1 & 0 & -1\\
+0 & 0 & 0 & 1 & 2
+\end{array} \right]$ $S = \left[\begin{array}{c}
+3 \\
+-5 \\
+-1 \\
+2 \\
+\end{array} \right]$  Portanto:
+$A^{-1} = \begin{bmatrix}
+3 & -5 \\
+-1 & 2
+\end{bmatrix}$
+
+:::
+
+---
+
+## Inversa de uma matriz
+
+::: {style="font-size: .75em"}
+
+:::: columns
+
+::: {.column width="70%"}
+
+Verifique que $B = \begin{bmatrix}
+1 & 2 \\
+2 & 4
+\end{bmatrix}$ **não é** invertível e portanto não pode ser escrita por:
+
+$\begin{bmatrix}
+1 & 2 \\
+2 & 4
+\end{bmatrix}
+\begin{bmatrix}
+w & x \\
+y & z
+\end{bmatrix} = 
+\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}$
+
+:::
+::: {.column width="30%"}
+
+O sistema de equações lineares fica:
+
+$\begin{cases}
+w + 2y = 1 \\
+x + 2z = 0 \\
+2w + 4y = 0 \\
+2x + 4z = 1
+\end{cases}$
+:::
+::::
+:::
+
+<hr>
+
+::: {style="font-size: .8em"}
+
+Que pode ser representado por:
+
+$\left[ \begin{array}{cccc|c}
+1 & 0 & 2 & 0 & 1\\
+0 & 1 & 0 & 2 & 0\\
+2 & 0 & 4 & 0 & 0\\
+0 & 2 & 0 & 4 & 1
+\end{array} \right]$ $\begin{array}{c}
+ \\
+ \\
+L_3 - 2L_1 \\
+L_4 - 2L_2 \\
+\end{array}$ $\left[ \begin{array}{cccc|c}
+1 & 0 & 2 & 0 & 1\\
+0 & 1 & 0 & 2 & 0\\
+0 & 0 & 0 & 0 & -2\\
+0 & 0 & 0 & 0 & -1
+\end{array} \right]$
+
+<br></br>
+
+**A matriz na forma escalonada mostra que o sistema não tem solução e portanto a matriz $B$ não é invertível**.
+
+:::
+
+## Inversa de uma matriz
+
+::: {.callout-tip title="Teorema"}
+
+Se $A$ é uma matriz $n \times n$ invertível, o sistema de equações lineares dado por $A\vec{x} = \vec{b}$ tem uma única solução $\vec{x} = A^{-1}\vec{b}$ para cada $\vec{b}$ em $\mathbb{R}^n$.
+
+:::
+
+::: {.callout-tip title="Propriedades"}
+
+a. Se $A$ é uma matriz invertível, então $A^{-1}$ é invertível e $(A^{-1})^{-1} = A$.
+
+b. Se $A$ é uma matriz invertível e $c$ é um escalar não nulo, então $cA$ é uma matriz invertível e $(cA)^{-1} = \frac{1}{c}A^{-1}$.
+
+c. Se $A$ e $B$ são matrizes invertíveis de mesma ordem, então $AB$ é invertível e $(AB)^{-1} = B^{-1}A^{-1}$.
+
+d. Se $A$ é uma matriz invertível, então $A^T$ é invertível e $(A^T)^{-1} = (A^{-1})^T$.
+
+e. Se $A$ é uma matriz invertível, então, para todo inteiro não negativo $n$, a matriz $A^n$ é invertível e $(A^n)^{-1} = (A^{-1})^n$.
+
+
+:::
 
 ## Inversa de uma matriz pelo método de Gauss-Jordan
 
-- **Método:** Transformar a matriz aumentada $[A | I]$ na forma $[I | A^{-1}]$
-- **Passos:**
-  1. Aplicar operações elementares para obter a identidade no lado esquerdo.
-  2. O lado direito resultará na inversa.
+::: {style="font-size: .9em"}
+
+Para encontrar a inversa de uma matriz $A$ usando o método de Gauss-Jordan, seguimos os seguintes passos:
+
+1. **Formação da Matriz Aumentada**: 
+  - Dada uma matriz $A$ de ordem $n \times n$, formamos a matriz aumentada $[A \mid I]$, onde $I$ é a matriz identidade de ordem $n \times n$.
+
+2. **Aplicação de Operações Elementares**: 
+  - Aplicamos operações elementares sobre as linhas da matriz aumentada $[A \mid I]$ para transformar a parte esquerda (a matriz $A$) na matriz identidade $I$.
+   
+3. **Obtenção da Inversa**: 
+  - Quando a parte esquerda da matriz aumentada se transforma em $I$, a parte direita será a matriz inversa $A^{-1}$. Ou seja, $[I \mid A^{-1}]$.
+
+:::
+
+## Inversa de uma matriz pelo método de Gauss-Jordan
+
+::: {style="font-size: .6em"}
+
+**Exemplo Prático**
+
+:::: columns
+
+::: {.column}
+
+Considere a matriz $A = \begin{bmatrix} 2 & 1 & 1 \\ 1 & 3 & 2 \\ 1 & 0 & 0 \end{bmatrix}$.
+
+:::
+
+::: {.column}
+
+Que tem a matriz aumentada $[A \mid I]$:
+   
+   $$\left[\begin{array}{ccc|ccc}
+   2 & 1 & 1 & 1 & 0 & 0 \\
+   1 & 3 & 2 & 0 & 1 & 0 \\
+   1 & 0 & 0 & 0 & 0 & 1
+   \end{array}\right]$$
+
+:::
+
+::::
+
+:::
+
+<hr>
+
+::: {style="font-size: .55em"}
+
+Aplique operações elementares para transformar a parte esquerda em $I$:
+
+   $\left[\begin{array}{ccc|ccc}
+   2 & 1 & 1 & 1 & 0 & 0 \\
+   1 & 3 & 2 & 0 & 1 & 0 \\
+   1 & 0 & 0 & 0 & 0 & 1
+   \end{array}\right]$ $\begin{array}{c}
+   L_1 \leftrightarrow L_3\\
+   \\
+   \\
+   \end{array}$ $\left[\begin{array}{ccc|ccc}
+   1 & 0 & 0 & 0 & 0 & 1 \\
+   1 & 3 & 2 & 0 & 1 & 0 \\
+   2 & 1 & 1 & 1 & 0 & 0
+   \end{array}\right]$ $\begin{array}{c}
+   \\
+   L_2 - L_1\\
+   L_3 - 2L_1\\
+   \end{array}$ $\left[\begin{array}{ccc|ccc}
+   1 & 0 & 0 & 0 & 0 & 1 \\
+   0 & 3 & 2 & 0 & 1 & -1 \\
+   0 & 1 & 1 & 1 & 0 & -2
+   \end{array}\right]$ $\begin{array}{c}
+   \\
+   L_2 \leftrightarrow L_3\\
+   \\
+   \end{array}$ $\left[\begin{array}{ccc|ccc}
+   1 & 0 & 0 & 0 & 0 & 1 \\
+   0 & 1 & 1 & 1 & 0 & -2 \\
+   0 & 3 & 2 & 0 & 1 & -1
+   \end{array}\right]$ $\begin{array}{c}
+   \\
+   \\
+   L_3 - 3L_2\\
+   \end{array}$
+
+   $\left[\begin{array}{ccc|ccc}
+   1 & 0 & 0 & 0 & 0 & 1 \\
+   0 & 1 & 1 & 1 & 0 & -2 \\
+   0 & 0 & -1 & -3 & 1 & 5
+   \end{array}\right]$ $\begin{array}{c}
+   \\
+   \\
+   -L_3\\
+   \end{array}$ $\left[\begin{array}{ccc|ccc}
+   1 & 0 & 0 & 0 & 0 & 1 \\
+   0 & 1 & 1 & 1 & 0 & -2 \\
+   0 & 0 & 1 & 3 & -1 & -5
+   \end{array}\right]$ $\begin{array}{c}
+   \\
+   L_2 - L_3\\
+   \\
+   \end{array}$ $\left[\begin{array}{ccc|ccc}
+   1 & 0 & 0 & 0 & 0 & 1 \\
+   0 & 1 & 0 & -2 & 1 & 3 \\
+   0 & 0 & 1 & 3 & -1 & -5
+   \end{array}\right]$
+
+<br></br>
+
+   $$A^{-1} = \begin{bmatrix}
+   0  &  0 &  1 \\
+   -2 &  1 &  3 \\
+   3  & -1 & -5
+   \end{bmatrix}$$
+
+:::
+
+
+## Matrizes Elementares
+
+::: {style="font-size: .9em"}
+
+**Definição:**
+
+Matrizes elementares são aquelas obtidas através de operações elementares realizadas sobre a matriz identidade. Elas desempenham um papel fundamental na solução de sistemas lineares e na obtenção da inversa de uma matriz.
+
+**Exemplos de Operações Elementares:**
+
+1. **Troca de Linhas:** Exemplo: Trocar a linha 1 pela linha 2.
+   
+   $$E = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$$
+
+2. **Multiplicação de uma Linha por um Escalar:** Exemplo: Multiplicar a linha 1 por um escalar $k$.
+   
+   $$E = \begin{bmatrix} k & 0 \\ 0 & 1 \end{bmatrix}$$
+
+3. **Adição de Múltiplos de Linhas:** Exemplo: Adicionar a linha 2 multiplicada por um escalar $k$ à linha 1.
+   
+   $$E = \begin{bmatrix} 1 & k \\ 0 & 1 \end{bmatrix}$$
 
 ---
 
-## Discussão e aplicações: Cadeias de Markov
+:::
 
-- **Definição:** Processos estocásticos com a propriedade de memória curta.
-- **Exemplo:** Modelagem de transições de estados.
+## Exemplo de Matrizes Elementares para Calcular a Inversa
 
----
+::: {style="font-size: .6em"}
+
+:::: columns
+
+::: {.column}
+
+Considere a matriz $A = \begin{bmatrix} 2 & 1 & 1 \\ 1 & 3 & 2 \\ 1 & 0 & 0 \end{bmatrix}$.
+
+:::
+
+::: {.column}
+
+Que foi resolvida no exemplo anterior pela sequência de operações elementares:
+
+1. $L_1 \leftrightarrow L_3$
+2. $L_2 \rightarrow L_2 - L_1$; $L_3 \rightarrow L_3 - 2L_1$
+3. $L_2 \leftrightarrow L_3$
+4. $L_3 \rightarrow L_3 - 3L_2$
+5. $L_3 \rightarrow -L_3$
+6. $L_2 \rightarrow L_2 - L_3$
+
+:::
+
+::::
+
+:::
+
+<hr>
+
+::: {style="font-size: .6em"}
+
+:::: columns
+
+::: {.column}
+
+1. **Troca de $L_1$ e $L_3$:**
+
+   $$E_1 = \begin{bmatrix}
+   0 & 0 & 1 \\
+   0 & 1 & 0 \\
+   1 & 0 & 0
+   \end{bmatrix}$$
+
+2. **$L_2 \rightarrow L_2 - L_1$; $L_3 \rightarrow L_3 - 2L_1$:**
+
+   $$E_2 = \begin{bmatrix}
+   1 & 0 & 0 \\
+   -1 & 1 & 0 \\
+   -2 & 0 & 1
+   \end{bmatrix}$$
+
+3. **Troca de $L_2$ e $L_3$:**
+
+   $$E_3 = \begin{bmatrix}
+   1 & 0 & 0 \\
+   0 & 0 & 1 \\
+   0 & 1 & 0
+   \end{bmatrix}$$
+
+:::
+
+::: {.column}
+
+4. **$L_3 \rightarrow L_3 - 3L_2$:**
+
+   $$E_4 = \begin{bmatrix}
+   1 & 0 & 0 \\
+   0 & 1 & 0 \\
+   0 & -3 & 1
+   \end{bmatrix}$$
+
+5. **Multiplicação de $L_3$ por $-1$:**
+
+   $$E_5 = \begin{bmatrix}
+   1 & 0 & 0 \\
+   0 & 1 & 0 \\
+   0 & 0 & -1
+   \end{bmatrix}$$
+
+6. **$L_2 \rightarrow L_2 - L_3$:**
+
+   $$E_6 = \begin{bmatrix}
+   1 & 0 & 0 \\
+   0 & 1 & -1 \\
+   0 & 0 & 1
+   \end{bmatrix}$$
+
+:::
+
+::::
+
+:::
+
+## Exemplo de Matrizes Elementares para Calcular a Inversa
+
+::: {style="font-size: .7em"}
+
+Estabelecidas as matrizes elementares $E_1$ a $E_6$, tem-se a seguinte relação:
+
+$$E_6 \times E_5 \times E_4 \times E_3 \times E_2 \times E_1 \times A = I$$
+
+E consequentemente:
+
+$$E_1^{-1} \times E_2^{-1} \times E_3^{-1} \times E_4^{-1} \times E_5^{-1} \times E_6^{-1} = A$$
+
+:::
+
+<hr>
+
+::: {.callout-tip title="O Teorema Fundamental das Matrizes Invertíveis - versão 1"}
+
+Seja $A$ uma matriz $n \times n$. As seguintes afirmações são equivalentes:
+
+a. $A$ é invertível.
+
+b. $A\vec{x} = \vec{b}$ tem uma única solução para cada $\vec{b}$ em $\mathbb{R}^n$.
+
+c. $A\vec{x} = 0$ tem apenas a solução trivial.
+
+d. A forma escalonada reduzida de $A$ é $I_n$.
+
+e. $A$ é um produto de matrizes elementares.
+
+:::
+
+## Exemplo de aplicação: Cadeias de Markov para Recifes de Coral
+
+::: {style="font-size: .7em"}
+
+**Problema**
+
+Os recifes de coral enfrentam várias ameaças ambientais, como branqueamento, acidificação dos oceanos e destruição física. Essas ameaças podem ser modeladas usando uma Cadeia de Markov para entender a probabilidade de um recife estar em um certo estado de saúde ao longo do tempo.
+
+**Estados**
+
+Definimos três estados possíveis para a saúde de um recife de coral:
+
+- **S1:** Saudável
+- **S2:** Moderadamente Degradado
+- **S3:** Severamente Degradado
+
+**Matriz de Transição**
+
+A matriz de transição de estados, $P$, representa as probabilidades de transição entre os estados de saúde de um recife de coral de um período para o outro.
+
+$$P = \begin{bmatrix}
+0.7 & 0.2 & 0.1 \\
+0.3 & 0.5 & 0.2 \\
+0.1 & 0.3 & 0.6
+\end{bmatrix}$$
+
+Cada elemento $P_{ij}$ na matriz representa a probabilidade de transição do estado $i$ para o estado $j$. Por exemplo, $P_{12} = 0.2$ indica que há uma probabilidade de 20% de um recife saudável ($S1$) passar para o estado moderadamente degradado ($S2$) no próximo período.
+
+:::
+
+## Exemplo de aplicação: Cadeias de Markov para Recifes de Coral
+
+::: {style="font-size: .7em"}
+
+Vamos considerar que inicialmente 80% dos recifes estão saudáveis, 15% estão moderadamente degradados e 5% estão severamente degradados. Isso pode ser representado pelo vetor de estado inicial:
+
+$$\vec{v_0} = \begin{bmatrix}
+0.8 \\
+0.15 \\
+0.05
+\end{bmatrix}$$
+
+Para determinar o estado dos recifes após um período, multiplicamos o vetor de estado inicial pela matriz de transição:
+
+$$\vec{v_1} = \vec{v_0} \times P = \begin{bmatrix}
+0.8 & 0.15 & 0.05
+\end{bmatrix} \times \begin{bmatrix}
+0.7 & 0.2 & 0.1 \\
+0.3 & 0.5 & 0.2 \\
+0.1 & 0.3 & 0.6
+\end{bmatrix}$$
+
+Calculando:
+
+$$\vec{v_1} = \begin{bmatrix}
+0.8(0.7) + 0.15(0.3) + 0.05(0.1) \\
+0.8(0.2) + 0.15(0.5) + 0.05(0.3) \\
+0.8(0.1) + 0.15(0.2) + 0.05(0.6)
+\end{bmatrix} = \begin{bmatrix}
+0.635 \\
+0.2425 \\
+0.1225
+\end{bmatrix}$$
+
+Isso indica que, após um período, aproximadamente 63,5% dos recifes estarão saudáveis, 24,25% estarão moderadamente degradados, e 12,25% estarão severamente degradados.
+
+:::
+
+## Exemplo de aplicação: Cadeias de Markov para Recifes de Coral
+
+::: {style="font-size: .7em"}
+
+**Estado Estacionário**
+
+O estado estacionário é um vetor de probabilidades que representa a distribuição dos estados de um sistema em equilíbrio, onde as probabilidades de estar em cada estado não mudam com o tempo. Para uma cadeia de Markov, isso ocorre quando o vetor de estado não muda após uma multiplicação pela matriz de transição.
+
+**Propriedade:** Se $\vec{v}$ é um vetor de estado estacionário e $P$ é a matriz de transição, então:
+  
+  $$ \vec{v} \times P = \vec{v} $$
+
+Isso significa que a multiplicação do vetor de estado estacionário pela matriz de transição retorna o mesmo vetor.
+
+Vamos continuar com a matriz de transição $P$ que definimos anteriormente:
+
+$$P = \begin{bmatrix}
+0.7 & 0.2 & 0.1 \\
+0.3 & 0.5 & 0.2 \\
+0.1 & 0.3 & 0.6
+\end{bmatrix}$$
+
+Para encontrar o vetor de estado estacionário $\vec{v}_{ss}$, resolvemos a equação:
+
+$$ \vec{v}_{ss} \times P = \vec{v}_{ss} $$
+
+em que
+
+$\vec{v}_{ss} = \begin{bmatrix}
+\pi_1 \\
+\pi_2 \\
+\pi_3
+\end{bmatrix}$
+
+:::
+
+## Exemplo de aplicação: Cadeias de Markov para Recifes de Coral
+
+::: {style="font-size: .7em"}
+
+Para encontrar o vetor de estado estacionário $\vec{v}_{ss}$, precisamos resolver:
+
+$$
+\vec{v}_{ss} \times P = \vec{v}_{ss}
+$$
+
+Ou seja,
+
+$$
+\begin{bmatrix}
+\pi_1 & \pi_2 & \pi_3
+\end{bmatrix} \times \begin{bmatrix}
+0.7 & 0.2 & 0.1 \\
+0.3 & 0.5 & 0.2 \\
+0.1 & 0.3 & 0.6
+\end{bmatrix} = \begin{bmatrix}
+\pi_1 & \pi_2 & \pi_3
+\end{bmatrix}
+$$
+
+:::: columns
+
+::: {.column}
+
+Isso gera o sistema de equações:
+
+$\begin{cases}
+\pi_1 \cdot 0.7 + \pi_2 \cdot 0.3 + \pi_3 \cdot 0.1 &= \pi_1 \\
+\pi_1 \cdot 0.2 + \pi_2 \cdot 0.5 + \pi_3 \cdot 0.3 &= \pi_2 \\
+\pi_1 \cdot 0.1 + \pi_2 \cdot 0.2 + \pi_3 \cdot 0.6 &= \pi_3
+\end{cases}$
+
+:::
+
+::: {.column}
+
+Que simplificado fica:
+
+$\begin{cases}
+-0.3\pi_1 + 0.3\pi_2 + 0.1\pi_3 = 0 \\
+0.2\pi_1 - 0.5\pi_2 + 0.3\pi_3 = 0 \\
+0.1\pi_1 + 0.2\pi_2 - 0.4\pi_3 = 0
+\end{cases}$
+
+
+:::
+
+::::
+
+:::
+
+## Exemplo de aplicação: Cadeias de Markov para Recifes de Coral
+
+::: {style="font-size: .8em"}
+
+
+Há ainda uma condição adicional de que a soma das probabilidades seja 1, portanto $\pi_1 + \pi_2 + \pi_3 = 1$
+
+De modo que:
+
+$$\begin{cases}
+-0.3\pi_1 + 0.3\pi_2 + 0.1\pi_3 = 0 \\
+0.2\pi_1 - 0.5\pi_2 + 0.3\pi_3 = 0 \\
+0.1\pi_1 + 0.2\pi_2 - 0.4\pi_3 = 0 \\
+\pi_1 + \pi_2 + \pi_3 = 1
+\end{cases}$$
+
+
+Utilizando métodos algébricos de substituição e eliminação, no estado estacionário, a distribuição das probabilidades entre os estados será:
+
+$\pi_1 = \frac{7}{17} ~ \sim 0.4117$
+
+$\pi_2 = \frac{11}{34} ~ \sim 0.3235$
+
+$\pi_3 = \frac{9}{34} ~ \sim 0.2647$
+
+:::
+
+::: {.callout-tip title="Conclusão"}
+
+A existência de um vetor estacionário indica que, independentemente do estado inicial, a cadeia de Markov converge para essa distribuição de probabilidade quando o sistema está em equilíbrio.
+
+Portanto, mantendo as condições atuais que resultam na matriz de transição vigente, espera-se que, a longo prazo, aproximadamente 41,18% do recife de coral permanecerá em condições *Saudáveis*, 32,35% estará *Moderadamente Degradado* e 26,47% será *Severamente Degradado*.
+
+
+:::
+
+
+## Exemplo de aplicação: Cadeias de Markov para Recifes de Coral
+
+::: {style="font-size: .7em"}
+
+**Resolução**
+
+Para encontrar $\vec{v}_{ss}$, resolvemos o sistema de equações:
+
+$$ \begin{bmatrix}
+\pi_1 & \pi_2 & \pi_3
+\end{bmatrix} \times \begin{bmatrix}
+0.7 & 0.2 & 0.1 \\
+0.3 & 0.5 & 0.2 \\
+0.1 & 0.3 & 0.6
+\end{bmatrix} = \begin{bmatrix}
+\pi_1 & \pi_2 & \pi_3
+\end{bmatrix} $$
+
+e
+
+$$ \pi_1 + \pi_2 + \pi_3 = 1 $$
+
+Resolvendo essas equações, obtemos:
+
+1. $\pi_1 = 0.5$
+2. $\pi_2 = 0.3$
+3. $\pi_3 = 0.2$
+
+Então, o vetor de estado estacionário é:
+
+$$ \vec{v}_{ss} = \begin{bmatrix}
+0.5 \\
+0.3 \\
+0.2
+\end{bmatrix} $$
+
+**Interpretação**
+
+No longo prazo, a distribuição dos recifes de coral entre os estados de saúde será aproximadamente:
+
+- 50% Saudáveis
+- 30% Moderadamente Degradados
+- 20% Severamente Degradados
+
+Isso significa que, independentemente do estado inicial, a cadeia de Markov converge para essa distribuição de probabilidade quando o sistema está em equilíbrio.
+
+**Resumo**
+
+O conceito de estado estacionário em Cadeias de Markov é fundamental para entender o comportamento a longo prazo de sistemas estocásticos. Através da matriz de transição, podemos determinar a distribuição de probabilidade dos estados do sistema quando ele atinge um equilíbrio.
+
+
+:::
+
+
 
 ## Discussão e aplicações: Crescimento populacional
 
