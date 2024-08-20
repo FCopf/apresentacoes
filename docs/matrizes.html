@@ -354,6 +354,7 @@ Fabio Cop Ferreira e William Remo Pedroso Conti
 <li>Inversa de uma matriz</li>
 <li>Inversa de uma matriz pelo método de Gauss-Jordan</li>
 <li>Matrizes elementares</li>
+<li>Cadeias de Markov para Recifes de Coral</li>
 </ol>
 </section>
 <section id="definição-de-matriz" class="slide level2">
@@ -1216,6 +1217,160 @@ L_4 - 2L_2 \\
 <li><p>A forma escalonada reduzida de <span class="math inline">\(A\)</span> é <span class="math inline">\(I_n\)</span>.</p></li>
 <li><p><span class="math inline">\(A\)</span> é um produto de matrizes elementares.</p></li>
 </ol>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral" class="slide level2">
+<h2>Exemplo de aplicação: Cadeias de Markov para Recifes de Coral</h2>
+<div style="font-size: .7em">
+<p><strong>Problema</strong></p>
+<p>Os recifes de coral enfrentam várias ameaças ambientais, como branqueamento, acidificação dos oceanos e destruição física. Essas ameaças podem ser modeladas usando uma Cadeia de Markov para entender a probabilidade de um recife estar em um certo estado de saúde ao longo do tempo.</p>
+<p><strong>Estados</strong></p>
+<p>Definimos três estados possíveis para a saúde de um recife de coral:</p>
+<ul>
+<li><strong>S1:</strong> Saudável</li>
+<li><strong>S2:</strong> Moderadamente Degradado</li>
+<li><strong>S3:</strong> Severamente Degradado</li>
+</ul>
+<p><strong>Matriz de Transição</strong></p>
+<p>A matriz de transição de estados, <span class="math inline">\(P\)</span>, representa as probabilidades de transição entre os estados de saúde de um recife de coral de um período para o outro.</p>
+<p><span class="math display">\[P = \begin{bmatrix}
+0.7 &amp; 0.3 &amp; 0.1 \\
+0.2 &amp; 0.5 &amp; 0.3 \\
+0.1 &amp; 0.2 &amp; 0.6
+\end{bmatrix}\]</span></p>
+<p>Cada elemento <span class="math inline">\(P_{ij}\)</span> na matriz representa a probabilidade de transição do estado <span class="math inline">\(j\)</span> na coluna para o estado <span class="math inline">\(i\)</span> na linha. Por exemplo, <span class="math inline">\(P_{12} = 0.2\)</span> indica que há uma probabilidade de 20% de um recife saudável (<span class="math inline">\(S1\)</span>) passar para o estado moderadamente degradado (<span class="math inline">\(S2\)</span>) no próximo período.</p>
+</div>
+</section>
+<section id="exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral-1" class="slide level2">
+<h2>Exemplo de aplicação: Cadeias de Markov para Recifes de Coral</h2>
+<div style="font-size: .7em">
+<p><strong>Estado inicial</strong></p>
+<p>Vamos considerar que inicialmente no tempo <span class="math inline">\(t_0\)</span> 80% dos recifes estão saudáveis, 15% estão moderadamente degradados e 5% estão severamente degradados. Isso pode ser representado pelo vetor de estado inicial:</p>
+<p><span class="math display">\[\vec{v_0} = \begin{bmatrix}
+0.8 \\
+0.15 \\
+0.05
+\end{bmatrix}\]</span></p>
+<p><strong>Estado em <span class="math inline">\(t + 1\)</span></strong></p>
+<p>Para determinar o estado dos recifes após um período de tempo <span class="math inline">\(t_1\)</span>, multiplicamos o vetor de estado inicial pela matriz de transição:</p>
+<p><span class="math display">\[
+\vec{v_1} = P \times \vec{v_0} = \begin{bmatrix}
+0.7 &amp; 0.3 &amp; 0.1 \\
+0.2 &amp; 0.5 &amp; 0.3 \\
+0.1 &amp; 0.2 &amp; 0.6
+\end{bmatrix} \times \begin{bmatrix}
+0.8 \\
+0.15 \\
+0.05
+\end{bmatrix} = \begin{bmatrix}
+0.61 \\
+0.25 \\
+0.14
+\end{bmatrix}
+\]</span></p>
+<p>Isso significa que, após um período, 61% dos recifes estarão saudáveis, 25% estarão moderadamente degradados e 14% estarão severamente degradados.</p>
+</div>
+</section>
+<section id="exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral-2" class="slide level2">
+<h2>Exemplo de aplicação: Cadeias de Markov para Recifes de Coral</h2>
+<div style="font-size: .7em">
+<p><strong>Estado Estacionário</strong></p>
+<p>O estado estacionário é um vetor de probabilidades que representa a distribuição dos estados de um sistema em equilíbrio, onde as probabilidades de estar em cada estado não mudam com o tempo. Para uma cadeia de Markov, isso ocorre quando o vetor de estado não muda após uma multiplicação pela matriz de transição.</p>
+<p>Se <span class="math inline">\(\vec{v_{ss}}\)</span> é um vetor de estado estacionário e <span class="math inline">\(P\)</span> é a matriz de transição, então:</p>
+<p><span class="math display">\[
+\vec{v_{ss}} = P \times \vec{v_{ss}}
+\]</span></p>
+<p>Portanto, precisamos resolver o sistema de equações:</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+0.7 &amp; 0.3 &amp; 0.1 \\
+0.2 &amp; 0.5 &amp; 0.3 \\
+0.1 &amp; 0.2 &amp; 0.6
+\end{bmatrix} \times \begin{bmatrix}
+\pi_1 \\
+\pi_2 \\
+\pi_3
+\end{bmatrix} = \begin{bmatrix}
+\pi_1 \\
+\pi_2 \\
+\pi_3
+\end{bmatrix}
+\]</span></p>
+</div>
+</section>
+<section id="exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral-3" class="slide level2">
+<h2>Exemplo de aplicação: Cadeias de Markov para Recifes de Coral</h2>
+<div style="font-size: .7em">
+<p><strong>Resolução do Sistema</strong></p>
+<div class="columns">
+<div class="column">
+<p>Há ainda uma condição adicional de que a soma das probabilidades em <span class="math inline">\(\vec{v_t}\)</span> seja 1:</p>
+<p><span class="math display">\[
+\pi_1 + \pi_2 + \pi_3 = 1
+\]</span></p>
+</div><div class="column">
+<p>Que gera e sistema de equações:</p>
+<p><span class="math display">\[
+\begin{cases}
+0.7\pi_1 + 0.3\pi_2 + 0.1\pi_3 = \pi_1 \\
+0.2\pi_1 + 0.5\pi_2 + 0.3\pi_3 = \pi_2 \\
+0.1\pi_1 + 0.2\pi_2 + 0.6\pi_3 = \pi_3 \\
+\pi_1 + \pi_2 + \pi_3 = 1
+\end{cases}
+\]</span></p>
+</div></div>
+</div>
+<hr>
+<div style="font-size: .7em">
+<div class="columns">
+<div class="column">
+<p>O pode ser reorganizado como:</p>
+<p><span class="math display">\[
+\begin{cases}
+-0.3\pi_1 + 0.3\pi_2 + 0.1\pi_3 = 0 \\
+0.2\pi_1 - 0.5\pi_2 + 0.3\pi_3 = 0 \\
+0.1\pi_1 + 0.2\pi_2 - 0.4\pi_3 = 0 \\
+\pi_1 + \pi_2 + \pi_3 = 1
+\end{cases}
+\]</span></p>
+</div><div class="column">
+<p>Que tem solução</p>
+<p><span class="math display">\[
+\vec{v_{ss}} = \begin{bmatrix} \frac{7}{17} \\ \frac{11}{34} \\ \frac{9}{34} \end{bmatrix} ~ \sim \begin{bmatrix}
+0.4117 \\
+0.3235 \\
+0.2647
+\end{bmatrix}
+\]</span></p>
+</div></div>
+</div>
+</section>
+<section id="exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral-4" class="slide level2">
+<h2>Exemplo de aplicação: Cadeias de Markov para Recifes de Coral</h2>
+<div style="font-size: .7em">
+<p><strong>Interpretação do vetor de Estado Estacionário</strong></p>
+<p>No longo prazo, a distribuição das probabilidades entre os estados é:</p>
+<ul>
+<li><span class="math inline">\(\pi_1 = \frac{7}{17} ~ \sim 0.4117\)</span></li>
+<li><span class="math inline">\(\pi_2 = \frac{11}{34} ~ \sim 0.3235\)</span></li>
+<li><span class="math inline">\(\pi_3 = \frac{9}{34} ~ \sim 0.2647\)</span></li>
+</ul>
+</div>
+<div title="Conclusão">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Conclusão</strong></p>
+</div>
+<div class="callout-content">
+<p>A existência de um vetor estacionário indica que, independentemente do estado inicial, a cadeia de Markov converge para essa distribuição de probabilidade quando o sistema está em equilíbrio.</p>
+<p>Portanto, mantendo as condições atuais que resultam na matriz de transição vigente, espera-se que, a longo prazo, aproximadamente 41,18% do recife de coral permanecerá em condições <em>Saudáveis</em>, 32,35% estará <em>Moderadamente Degradado</em> e 26,47% será <em>Severamente Degradado</em>.</p>
 </div>
 </div>
 </div>

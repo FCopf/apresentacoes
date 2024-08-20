@@ -23,8 +23,9 @@ format:
 7. Inversa de uma matriz
 8. Inversa de uma matriz pelo método de Gauss-Jordan
 9. Matrizes elementares
+10. Cadeias de Markov para Recifes de Coral
 
----
+
 
 ## Definição de matriz
 
@@ -154,7 +155,7 @@ c\times a_{21} & c \times a_{22} & \cdots & c \times a_{2n} \\
 c \times a_{m1} & c \times a_{m2} & \cdots & c \times a_{mn}
 \end{bmatrix}$$
 
----
+
 
 ## Multiplicação de matrizes
 
@@ -209,7 +210,7 @@ $$AB = [c_{ij}] = \begin{bmatrix}
 \sum_{k=1}^{n} a_{mk} b_{k1} & \sum_{k=1}^{n} a_{mk} b_{k2} & \cdots & \sum_{k=1}^{n} a_{mk} b_{kp}
 \end{bmatrix}$$
 
----
+
 
 ## Multiplicação de matrizes
 
@@ -288,7 +289,7 @@ a_{1m} & a_{2m} & \cdots & a_{nm}
 :::
 
 ::::
----
+
 
 ## Transposta de uma matriz
 
@@ -328,7 +329,7 @@ Sejam $A$, $B$ e $C$ matrizes de mesma ordem, e $c$ e $d$ escalares. Então:
 :::
 
 
----
+
 
 ## Combinações lineares em matrizes
 
@@ -457,7 +458,7 @@ que $A$ é invertível.
 
 :::
 
----
+
 
 ## Inversa de uma matriz
 
@@ -535,7 +536,7 @@ $B = \begin{bmatrix}
 
 :::
 
----
+
 
 ## Inversa de uma matriz
 
@@ -634,7 +635,7 @@ $A^{-1} = \begin{bmatrix}
 
 :::
 
----
+
 
 ## Inversa de uma matriz
 
@@ -1000,3 +1001,203 @@ d. A forma escalonada reduzida de $A$ é $I_n$.
 e. $A$ é um produto de matrizes elementares.
 
 :::
+
+## Exemplo de aplicação: Cadeias de Markov para Recifes de Coral
+
+::: {style="font-size: .7em"}
+
+**Problema**
+
+Os recifes de coral enfrentam várias ameaças ambientais, como branqueamento, acidificação dos oceanos e destruição física. Essas ameaças podem ser modeladas usando uma Cadeia de Markov para entender a probabilidade de um recife estar em um certo estado de saúde ao longo do tempo.
+
+**Estados**
+
+Definimos três estados possíveis para a saúde de um recife de coral:
+
+- **S1:** Saudável
+- **S2:** Moderadamente Degradado
+- **S3:** Severamente Degradado
+
+**Matriz de Transição**
+
+A matriz de transição de estados, $P$, representa as probabilidades de transição entre os estados de saúde de um recife de coral de um período para o outro.
+
+$$P = \begin{bmatrix}
+0.7 & 0.3 & 0.1 \\
+0.2 & 0.5 & 0.3 \\
+0.1 & 0.2 & 0.6
+\end{bmatrix}$$
+
+Cada elemento $P_{ij}$ na matriz representa a probabilidade de transição do estado $j$ na coluna para o estado $i$ na linha. Por exemplo, $P_{12} = 0.2$ indica que há uma probabilidade de 20% de um recife saudável ($S1$) passar para o estado moderadamente degradado ($S2$) no próximo período.
+
+:::
+
+## Exemplo de aplicação: Cadeias de Markov para Recifes de Coral
+
+::: {style="font-size: .7em"}
+
+**Estado inicial**
+
+Vamos considerar que inicialmente no tempo $t_0$ 80% dos recifes estão saudáveis, 15% estão moderadamente degradados e 5% estão severamente degradados. Isso pode ser representado pelo vetor de estado inicial:
+
+$$\vec{v_0} = \begin{bmatrix}
+0.8 \\
+0.15 \\
+0.05
+\end{bmatrix}$$
+
+**Estado em $t + 1$**
+
+Para determinar o estado dos recifes após um período de tempo $t_1$, multiplicamos o vetor de estado inicial pela matriz de transição:
+
+$$
+\vec{v_1} = P \times \vec{v_0} = \begin{bmatrix}
+0.7 & 0.3 & 0.1 \\
+0.2 & 0.5 & 0.3 \\
+0.1 & 0.2 & 0.6
+\end{bmatrix} \times \begin{bmatrix}
+0.8 \\
+0.15 \\
+0.05
+\end{bmatrix} = \begin{bmatrix}
+0.61 \\
+0.25 \\
+0.14
+\end{bmatrix}
+$$
+
+Isso significa que, após um período, 61% dos recifes estarão saudáveis, 25% estarão moderadamente degradados e 14% estarão severamente degradados.
+
+:::
+
+## Exemplo de aplicação: Cadeias de Markov para Recifes de Coral
+
+::: {style="font-size: .7em"}
+
+**Estado Estacionário**
+
+O estado estacionário é um vetor de probabilidades que representa a distribuição dos estados de um sistema em equilíbrio, onde as probabilidades de estar em cada estado não mudam com o tempo. Para uma cadeia de Markov, isso ocorre quando o vetor de estado não muda após uma multiplicação pela matriz de transição.
+
+Se $\vec{v_{ss}}$ é um vetor de estado estacionário e $P$ é a matriz de transição, então:
+  
+$$
+\vec{v_{ss}} = P \times \vec{v_{ss}}
+$$
+
+Portanto, precisamos resolver o sistema de equações:
+
+$$
+\begin{bmatrix}
+0.7 & 0.3 & 0.1 \\
+0.2 & 0.5 & 0.3 \\
+0.1 & 0.2 & 0.6
+\end{bmatrix} \times \begin{bmatrix}
+\pi_1 \\
+\pi_2 \\
+\pi_3
+\end{bmatrix} = \begin{bmatrix}
+\pi_1 \\
+\pi_2 \\
+\pi_3
+\end{bmatrix}
+$$
+
+:::
+
+## Exemplo de aplicação: Cadeias de Markov para Recifes de Coral
+
+::: {style="font-size: .7em"}
+
+**Resolução do Sistema**
+
+:::: columns
+
+::: {.column}
+
+Há ainda uma condição adicional de que a soma das probabilidades em $\vec{v_t}$ seja 1:
+
+$$
+\pi_1 + \pi_2 + \pi_3 = 1
+$$
+:::
+
+::: {.column}
+
+Que gera e sistema de equações:
+
+$$
+\begin{cases}
+0.7\pi_1 + 0.3\pi_2 + 0.1\pi_3 = \pi_1 \\
+0.2\pi_1 + 0.5\pi_2 + 0.3\pi_3 = \pi_2 \\
+0.1\pi_1 + 0.2\pi_2 + 0.6\pi_3 = \pi_3 \\
+\pi_1 + \pi_2 + \pi_3 = 1
+\end{cases}
+$$
+:::
+::::
+
+:::
+
+<hr>
+
+::: {style="font-size: .7em"}
+:::: columns
+
+::: {.column}
+
+O pode ser reorganizado como:
+
+$$
+\begin{cases}
+-0.3\pi_1 + 0.3\pi_2 + 0.1\pi_3 = 0 \\
+0.2\pi_1 - 0.5\pi_2 + 0.3\pi_3 = 0 \\
+0.1\pi_1 + 0.2\pi_2 - 0.4\pi_3 = 0 \\
+\pi_1 + \pi_2 + \pi_3 = 1
+\end{cases}
+$$
+
+:::
+
+::: {.column}
+
+Que tem solução
+
+$$
+\vec{v_{ss}} = \begin{bmatrix} \frac{7}{17} \\ \frac{11}{34} \\ \frac{9}{34} \end{bmatrix} ~ \sim \begin{bmatrix}
+0.4117 \\
+0.3235 \\
+0.2647
+\end{bmatrix}
+$$
+
+:::
+
+::::
+
+:::
+
+## Exemplo de aplicação: Cadeias de Markov para Recifes de Coral
+
+::: {style="font-size: .7em"}
+
+**Interpretação do vetor de Estado Estacionário**
+
+No longo prazo, a distribuição das probabilidades entre os estados é:
+
+-   $\pi_1 = \frac{7}{17} ~ \sim 0.4117$
+-   $\pi_2 = \frac{11}{34} ~ \sim 0.3235$
+-   $\pi_3 = \frac{9}{34} ~ \sim 0.2647$
+
+:::
+
+::: {.callout-tip title="Conclusão"}
+
+A existência de um vetor estacionário indica que, independentemente do estado inicial, a cadeia de Markov converge para essa distribuição de probabilidade quando o sistema está em equilíbrio.
+
+Portanto, mantendo as condições atuais que resultam na matriz de transição vigente, espera-se que, a longo prazo, aproximadamente 41,18% do recife de coral permanecerá em condições *Saudáveis*, 32,35% estará *Moderadamente Degradado* e 26,47% será *Severamente Degradado*.
+
+:::
+
+
+
+

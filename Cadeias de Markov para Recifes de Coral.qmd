@@ -15,21 +15,21 @@ Os recifes de coral enfrentam várias ameaças ambientais, como branqueamento, a
 
 Definimos três estados possíveis para a saúde de um recife de coral:
 
--   **S1:** Saudável
--   **S2:** Moderadamente Degradado
--   **S3:** Severamente Degradado
+- **S1:** Saudável
+- **S2:** Moderadamente Degradado
+- **S3:** Severamente Degradado
 
 **Matriz de Transição**
 
 A matriz de transição de estados, $P$, representa as probabilidades de transição entre os estados de saúde de um recife de coral de um período para o outro.
 
 $$P = \begin{bmatrix}
-0.7 & 0.2 & 0.1 \\
-0.3 & 0.5 & 0.2 \\
-0.1 & 0.3 & 0.6
+0.7 & 0.3 & 0.1 \\
+0.2 & 0.5 & 0.3 \\
+0.1 & 0.2 & 0.6
 \end{bmatrix}$$
 
-Cada elemento $P_{ij}$ na matriz representa a probabilidade de transição do estado $i$ para o estado $j$. Por exemplo, $P_{12} = 0.2$ indica que há uma probabilidade de 20% de um recife saudável ($S1$) passar para o estado moderadamente degradado ($S2$) no próximo período.
+Cada elemento $P_{ij}$ na matriz representa a probabilidade de transição do estado $j$ na coluna para o estado $i$ na linha. Por exemplo, $P_{12} = 0.2$ indica que há uma probabilidade de 20% de um recife saudável ($S1$) passar para o estado moderadamente degradado ($S2$) no próximo período.
 
 Vamos considerar que inicialmente no tempo $t_0$ 80% dos recifes estão saudáveis, 15% estão moderadamente degradados e 5% estão severamente degradados. Isso pode ser representado pelo vetor de estado inicial:
 
@@ -41,128 +41,75 @@ $$\vec{v_0} = \begin{bmatrix}
 
 Para determinar o estado dos recifes após um período de tempo $t_1$, multiplicamos o vetor de estado inicial pela matriz de transição:
 
-$$\vec{v_1} = \vec{v_0} \times P = \begin{bmatrix}
-0.8 & 0.15 & 0.05
+$$
+\vec{v_1} = P \times \vec{v_0} = \begin{bmatrix}
+0.7 & 0.3 & 0.1 \\
+0.2 & 0.5 & 0.3 \\
+0.1 & 0.2 & 0.6
 \end{bmatrix} \times \begin{bmatrix}
-0.7 & 0.2 & 0.1 \\
-0.3 & 0.5 & 0.2 \\
-0.1 & 0.3 & 0.6
-\end{bmatrix}$$
+0.8 \\
+0.15 \\
+0.05
+\end{bmatrix} 
+$$
 
-Calculando:
+Realizando a multiplicação, obtemos:
 
-$$\vec{v_1} = \begin{bmatrix}
-0.8(0.7) + 0.15(0.3) + 0.05(0.1) \\
-0.8(0.2) + 0.15(0.5) + 0.05(0.3) \\
-0.8(0.1) + 0.15(0.2) + 0.05(0.6)
-\end{bmatrix} = \begin{bmatrix}
-0.635 \\
-0.2425 \\
-0.1225
-\end{bmatrix}$$
+$$
+\vec{v_1} = \begin{bmatrix}
+0.61 \\
+0.25 \\
+0.14
+\end{bmatrix}
+$$
 
-Isso indica que, após um período, aproximadamente 63,5% dos recifes estarão saudáveis, 24,25% estarão moderadamente degradados, e 12,25% estarão severamente degradados.
+Isso significa que, após um período, 61% dos recifes estarão saudáveis, 25% estarão moderadamente degradados e 14% estarão severamente degradados.
 
 ## Estado Estacionário
 
-O estado estacionário é um vetor de probabilidades que representa a distribuição dos estados de um sistema em equilíbrio, onde as probabilidades de estar em cada estado não mudam com o tempo. Para uma cadeia de Markov, isso ocorre quando o vetor de estado não muda após uma multiplicação pela matriz de transição.
+Um estado estacionário é alcançado quando o vetor de estado não muda mais após a aplicação da matriz de transição. Isso significa que:
 
-**Propriedade:** Se $\vec{v}$ é um vetor de estado estacionário e $P$ é a matriz de transição, então:
+$$
+\vec{v_{ss}} = P \times \vec{v_{ss}}
+$$
 
-$$ \vec{v} \times P = \vec{v} $$
+Portanto, precisamos resolver o sistema de equações:
 
-Isso significa que a multiplicação do vetor de estado estacionário pela matriz de transição retorna o mesmo vetor.
-
-Vamos continuar com a matriz de transição $P$ que definimos anteriormente:
-
-$$P = \begin{bmatrix}
-0.7 & 0.2 & 0.1 \\
-0.3 & 0.5 & 0.2 \\
-0.1 & 0.3 & 0.6
-\end{bmatrix}$$
-
-Para encontrar o vetor de estado estacionário $\vec{v}_{ss}$, resolvemos a equação:
-
-$$ \vec{v}_{ss} \times P = \vec{v}_{ss} $$
-
-em que
-
-$\vec{v}_{ss} = \begin{bmatrix}
+$$
+\begin{bmatrix}
+0.7 & 0.3 & 0.1 \\
+0.2 & 0.5 & 0.3 \\
+0.1 & 0.2 & 0.6
+\end{bmatrix} \times \begin{bmatrix}
 \pi_1 \\
 \pi_2 \\
 \pi_3
-\end{bmatrix}$
-
-Para encontrar o vetor de estado estacionário $\vec{v}_{ss}$, precisamos resolver:
-
-$$
-\vec{v}_{ss} \times P = \vec{v}_{ss}
-$$
-
-Ou seja,
-
-$$
-\begin{bmatrix}
-\pi_1 & \pi_2 & \pi_3
-\end{bmatrix} \times \begin{bmatrix}
-0.7 & 0.2 & 0.1 \\
-0.3 & 0.5 & 0.2 \\
-0.1 & 0.3 & 0.6
 \end{bmatrix} = \begin{bmatrix}
-\pi_1 & \pi_2 & \pi_3
+\pi_1 \\
+\pi_2 \\
+\pi_3
 \end{bmatrix}
 $$
 
-Isso gera o sistema de equações:
-
-$\begin{cases}
-\pi_1 \cdot 0.7 + \pi_2 \cdot 0.3 + \pi_3 \cdot 0.1 &= \pi_1 \\
-\pi_1 \cdot 0.2 + \pi_2 \cdot 0.5 + \pi_3 \cdot 0.3 &= \pi_2 \\
-\pi_1 \cdot 0.1 + \pi_2 \cdot 0.2 + \pi_3 \cdot 0.6 &= \pi_3
-\end{cases}$
-
-Que simplificado fica:
-
-$\begin{cases}
--0.3\pi_1 + 0.3\pi_2 + 0.1\pi_3 = 0 \\
-0.2\pi_1 - 0.5\pi_2 + 0.3\pi_3 = 0 \\
-0.1\pi_1 + 0.2\pi_2 - 0.4\pi_3 = 0
-\end{cases}$
-
-Há ainda uma condição adicional de que a soma das probabilidades seja 1, portanto $\pi_1 + \pi_2 + \pi_3 = 1$
-
-De modo que:
-
-$\begin{cases}
--0.3\pi_1 + 0.3\pi_2 + 0.1\pi_3 = 0 \\
-0.2\pi_1 - 0.5\pi_2 + 0.3\pi_3 = 0 \\
-0.1\pi_1 + 0.2\pi_2 - 0.4\pi_3 = 0 \\
-\pi_1 + \pi_2 + \pi_3 = 1
-\end{cases}$
-
-## Resolução do Estado Estacionário de Cadeias de Markov
-
-Para encontrar o vetor de estado estacionário $\vec{v}_{ss}$, resolvemos o sistema de equações:
-
-$$
-\begin{bmatrix}
-\pi_1 & \pi_2 & \pi_3
-\end{bmatrix} \times \begin{bmatrix}
-0.7 & 0.2 & 0.1 \\
-0.3 & 0.5 & 0.2 \\
-0.1 & 0.3 & 0.6
-\end{bmatrix} = \begin{bmatrix}
-\pi_1 & \pi_2 & \pi_3
-\end{bmatrix}
-$$
-
-Além disso, temos a condição adicional:
+Além disso, há ainda uma condição adicional de que a soma das probabilidades em $\vec{v_t}$ seja 1:
 
 $$
 \pi_1 + \pi_2 + \pi_3 = 1
 $$
 
-Assim, o sistema de equações é:
+### Resolução do Sistema
+
+O sistema de equações é:
+
+$$
+\begin{cases}
+0.7\pi_1 + 0.3\pi_2 + 0.1\pi_3 = \pi_1 \\
+0.2\pi_1 + 0.5\pi_2 + 0.3\pi_3 = \pi_2 \\
+0.1\pi_1 + 0.2\pi_2 + 0.6\pi_3 = \pi_3 \\
+\pi_1 + \pi_2 + \pi_3 = 1
+\end{cases}
+$$
+Que pode ser reorganizado como:
 
 $$
 \begin{cases}
@@ -173,171 +120,70 @@ $$
 \end{cases}
 $$
 
-### Simplificação das Equações
-
-Primeiro, simplificamos as equações:
-
--   Dividindo a primeira equação por 0.1:
+E em seguida, podemos multiplicar as linhas 1 a 3 por 10 para simplificar o processo e eliminação de variáveis:
 
 $$
--3\pi_1 + 3\pi_2 + \pi_3 = 0 \quad \text{(1)}
-$$
-
--   Dividindo a segunda equação por 0.1:
-
-$$
-2\pi_1 - 5\pi_2 + 3\pi_3 = 0 \quad \text{(2)}
-$$
-
--   Dividindo a terceira equação por 0.1:
-
-$$
-\pi_1 + 2\pi_2 - 4\pi_3 = 0 \quad \text{(3)}
-$$
-
-### Resolver o Sistema de Equações
-
-#### Expressar $\pi_1$ em termos de $\pi_2$ e $\pi_3$ usando a equação (1).
-
-Isolamos $\pi_1$:
-
-$$
-\pi_1 = \frac{3\pi_2 + \pi_3}{3} \quad \text{(4)}
-$$
-
-#### Substituir $\pi_1$ nas equações (2) e (3).
-
-Substituindo (4) na equação (2):
-
-$$
-2\left(\frac{3\pi_2 + \pi_3}{3}\right) - 5\pi_2 + 3\pi_3 = 0
-$$
-
-Simplificando:
-
-$$
-\frac{6\pi_2 + 2\pi_3}{3} - 5\pi_2 + 3\pi_3 = 0
-$$
-
-Multiplicando tudo por 3:
-
-$$
-6\pi_2 + 2\pi_3 - 15\pi_2 + 9\pi_3 = 0
-$$
-
-Simplificando:
-
-$$
--9\pi_2 + 11\pi_3 = 0 \quad \text{(5)}
-$$
-
-Substituindo (4) na equação (3):
-
-$$
-\frac{3\pi_2 + \pi_3}{3} + 2\pi_2 - 4\pi_3 = 0
-$$
-
-Simplificando:
-
-$$
-\frac{3\pi_2 + \pi_3}{3} + 2\pi_2 - 4\pi_3 = 0
-$$
-
-Multiplicando tudo por 3:
-
-$$
-3\pi_2 + \pi_3 + 6\pi_2 - 12\pi_3 = 0
-$$
-
-Simplificando:
-
-$$
-9\pi_2 - 11\pi_3 = 0 \quad \text{(6)}
-$$
-
-#### Resolver o sistema (5) e (6).
-
-As equações (5) e (6) são equivalentes. Portanto, apenas uma delas é necessária.
-
-Da equação (5):
-
-$$
--9\pi_2 + 11\pi_3 = 0
-$$
-
-Isolando $\pi_2$:
-
-$$
-\pi_2 = \frac{11}{9}\pi_3 \quad \text{(7)}
-$$
-
-#### Substituir $\pi_2$ na equação de normalização.
-
-Usando a equação de normalização:
-
-$$
+\begin{cases}
+-3\pi_1 + 3\pi_2 + \pi_3 = 0 \\
+2\pi_1 - 5\pi_2 + 3\pi_3 = 0 \\
+\pi_1 + 2\pi_2 - 4\pi_3 = 0 \\
 \pi_1 + \pi_2 + \pi_3 = 1
+\end{cases}
 $$
 
-Substituindo (4) e (7):
+#### Passo 1: Eliminação de Variáveis
+
+Podemos simplificar o sistema resolvendo uma equação em termos de outra.
+
+1. Da primeira equação:
+   $$
+   3\pi_2 = 3\pi_1 - \pi_3 \implies \pi_2 = \pi_1 - \frac{1}{3}\pi_3
+   $$
+
+2. Substituímos $\pi_2$ na segunda equação:
+   $$
+   2\pi_1 - 5\left(\pi_1 - \frac{1}{3}\pi_3\right) + 3\pi_3 = 0
+   $$
+   Simplificando:
+   $$
+   2\pi_1 - 5\pi_1 + \frac{5}{3}\pi_3 + 3\pi_3 = 0 \implies -3\pi_1 + \frac{5}{3}\pi_3 + \frac{9}{3}\pi_3 = 0 \implies -3\pi_1 + \frac{14}{3}\pi_3 = 0 \implies \pi_1 = \frac{14}{9}\pi_3
+   $$
+
+3. Substituindo $\pi_1$ e $\pi_2$ na equação $\pi_1 + \pi_2 + \pi_3 = 1$:
+   $$
+   \frac{14}{9}\pi_3 + \left(\frac{14}{9}\pi_3 - \frac{1}{3}\pi_3\right) + \pi_3 = 1
+   $$
+
+   Simplificando:
+   $$
+   \frac{14 + 14 - 3 + 9 }{9}\pi_3 = 1 \implies \pi_3 = \frac{9}{34}
+   $$
+
+#### Passo 2: Substituindo para Encontrar $\pi_1$ e $\pi_2$
+
+1. $\pi_1 = \frac{14}{9}\pi_3 = \frac{14}{9} \times \frac{9}{34} = \frac{14}{34} = \frac{7}{17}$
+
+2. $\pi_2 = \pi_1 - \frac{1}{3}\pi_3 = \frac{7}{17} - \frac{1}{3} \times \frac{9}{34} = \frac{7}{17} - \frac{3}{34} = \frac{14 - 3}{34} = \frac{11}{34}$
+
+Portanto, o vetor de estado estacionário é:
 
 $$
-\frac{3\left(\frac{11}{9}\pi_3\right) + \pi_3}{3} + \frac{11}{9}\pi_3 + \pi_3 = 1
+\vec{v_{ss}} = \begin{bmatrix} \frac{7}{17} \\ \frac{11}{34} \\ \frac{9}{34} \end{bmatrix}
 $$
 
-Simplificando:
+### Interpretação do vetor de Estado Estacionário
+
+No longo prazo, as proporções dos estados dos recifes de coral serão:
 
 $$
-\frac{\frac{33}{9}\pi_3 + \pi_3}{3} + \frac{11}{9}\pi_3 + \pi_3 = 1
-$$
-
-$$
-\frac{42}{9}\pi_3 + \frac{11}{9}\pi_3 + \pi_3 = 1
-$$
-
-$$
-\frac{34}{9}\pi_3 = 1
-$$
-
-$$
-\pi_3 = \frac{9}{34}
-$$
-
-Substituindo $\pi_3$ em (7):
-
-$$
-\pi_2 = \frac{11}{9} \times \frac{9}{34} = \frac{11}{34}
-$$
-
-Finalmente, substituindo $\pi_2$ e $\pi_3$ em (4):
-
-$$
-\pi_1 = \frac{3 \times \frac{11}{34} + \frac{9}{34}}{3} = \frac{42}{102} = \frac{7}{17}
-$$
-
-### Resultado Final
-
-O vetor de estado estacionário é:
-
-$$
-\vec{v}_{ss} = \begin{bmatrix}
-\pi_1 \\
-\pi_2 \\
-\pi_3
-\end{bmatrix} = \begin{bmatrix}
-\frac{7}{17} \\
-\frac{11}{34} \\
-\frac{9}{34}
-\end{bmatrix} ~ \sim \begin{bmatrix}
+\vec{v_{ss}} = \begin{bmatrix} \frac{7}{17} \\ \frac{11}{34} \\ \frac{9}{34} \end{bmatrix} ~ \sim \begin{bmatrix}
 0.4117 \\
 0.3235 \\
 0.2647
 \end{bmatrix}
 $$
 
-## Interpretação
-
-No estado estacionário, a distribuição das probabilidades entre os estados é:
+Portanto, no estado estacionário, a distribuição das probabilidades entre os estados é:
 
 -   $\pi_1 = \frac{7}{17} ~ \sim 0.4117$
 -   $\pi_2 = \frac{11}{34} ~ \sim 0.3235$
@@ -346,4 +192,5 @@ No estado estacionário, a distribuição das probabilidades entre os estados é
 A existência de um vetor estacionário indica que, independentemente do estado inicial, a cadeia de Markov converge para essa distribuição de probabilidade quando o sistema está em equilíbrio.
 
 Portanto, mantendo as condições atuais que resultam na matriz de transição vigente, espera-se que, a longo prazo, aproximadamente 41,18% do recife de coral permanecerá em condições *Saudáveis*, 32,35% estará *Moderadamente Degradado* e 26,47% será *Severamente Degradado*.
+
 
