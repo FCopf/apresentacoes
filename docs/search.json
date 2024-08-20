@@ -744,7 +744,7 @@
     "href": "matrizes.html#conteúdo-da-aula",
     "title": "Matrizes",
     "section": "Conteúdo da aula",
-    "text": "Conteúdo da aula\n\nDefinição de matriz\nAdição de matrizes\nMultiplicação por um escalar\nMultiplicação de matrizes\nTransposta de uma matriz\nÁlgebra de matrizes\nInversa de uma matriz\nInversa de uma matriz pelo método de Gauss-Jordan\nMatrizes elementares\nDiscussão e aplicações: Cadeias de Markov\nDiscussão e aplicações: Crescimento populacional\nDiscussão e aplicações: Grafos e dígrafos",
+    "text": "Conteúdo da aula\n\nDefinição de matriz\nAdição de matrizes\nMultiplicação por um escalar\nMultiplicação de matrizes\nTransposta de uma matriz\nÁlgebra de matrizes\nInversa de uma matriz\nInversa de uma matriz pelo método de Gauss-Jordan\nMatrizes elementares",
     "crumbs": [
       "Matrizes"
     ]
@@ -1254,7 +1254,7 @@
     "href": "matrizes.html#exemplo-de-matrizes-elementares-para-calcular-a-inversa-1",
     "title": "Matrizes",
     "section": "Exemplo de Matrizes Elementares para Calcular a Inversa",
-    "text": "Exemplo de Matrizes Elementares para Calcular a Inversa\n\nEstabelecidas as matrizes elementares \\(E_1\\) a \\(E_6\\), tem-se a seguinte relação:\n\\[E_6 \\times E_5 \\times E_4 \\times E_3 \\times E_2 \\times E_1 \\times A = I\\]\nE consequentemente:\n\\[E_1^{-1} \\times E_2^{-1} \\times E_3^{-1} \\times E_4^{-1} \\times E_5^{-1} \\times E_6^{-1} = A\\]\n\n\n\n\n\n\n\n\n\nO Teorema Fundamental das Matrizes Invertíveis - versão 1\n\n\nSeja \\(A\\) uma matriz \\(n \\times n\\). As seguintes afirmações são equivalentes:\n\n\\(A\\) é invertível.\n\\(A\\vec{x} = \\vec{b}\\) tem uma única solução para cada \\(\\vec{b}\\) em \\(\\mathbb{R}^n\\).\n\\(A\\vec{x} = 0\\) tem apenas a solução trivial.\nA forma escalonada reduzida de \\(A\\) é \\(I_n\\).\n\\(A\\) é um produto de matrizes elementares.",
+    "text": "Exemplo de Matrizes Elementares para Calcular a Inversa\n\nEstabelecidas as matrizes elementares \\(E_1\\) a \\(E_6\\), tem-se a seguinte relação:\n\\[E_6 \\times E_5 \\times E_4 \\times E_3 \\times E_2 \\times E_1 \\times A = I\\]\nE consequentemente:\n\\[E_1^{-1} \\times E_2^{-1} \\times E_3^{-1} \\times E_4^{-1} \\times E_5^{-1} \\times E_6^{-1} = A\\]\n\n\n\n\n\n\n\n\n\nO Teorema Fundamental das Matrizes Invertíveis - versão 1\n\n\nSeja \\(A\\) uma matriz \\(n \\times n\\). As seguintes afirmações são equivalentes:\n\n\\(A\\) é invertível.\n\\(A\\vec{x} = \\vec{b}\\) tem uma única solução para cada \\(\\vec{b}\\) em \\(\\mathbb{R}^n\\).\n\\(A\\vec{x} = 0\\) tem apenas a solução trivial.\nA forma escalonada reduzida de \\(A\\) é \\(I_n\\).\n\\(A\\) é um produto de matrizes elementares.\n\n\n\n\n\n\n\n\n\nBICT Mar - Unifesp",
     "crumbs": [
       "Matrizes"
     ]
@@ -1318,5 +1318,47 @@
     "crumbs": [
       "Matrizes"
     ]
+  },
+  {
+    "objectID": "matrizes_aplicacoes.html#exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral",
+    "href": "matrizes_aplicacoes.html#exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral",
+    "title": "Matrizes",
+    "section": "Exemplo de aplicação: Cadeias de Markov para Recifes de Coral",
+    "text": "Exemplo de aplicação: Cadeias de Markov para Recifes de Coral\n\nProblema\nOs recifes de coral enfrentam várias ameaças ambientais, como branqueamento, acidificação dos oceanos e destruição física. Essas ameaças podem ser modeladas usando uma Cadeia de Markov para entender a probabilidade de um recife estar em um certo estado de saúde ao longo do tempo.\nEstados\nDefinimos três estados possíveis para a saúde de um recife de coral:\n\nS1: Saudável\nS2: Moderadamente Degradado\nS3: Severamente Degradado\n\nMatriz de Transição\nA matriz de transição de estados, \\(P\\), representa as probabilidades de transição entre os estados de saúde de um recife de coral de um período para o outro.\n\\[P = \\begin{bmatrix}\n0.7 & 0.2 & 0.1 \\\\\n0.3 & 0.5 & 0.2 \\\\\n0.1 & 0.3 & 0.6\n\\end{bmatrix}\\]\nCada elemento \\(P_{ij}\\) na matriz representa a probabilidade de transição do estado \\(i\\) para o estado \\(j\\). Por exemplo, \\(P_{12} = 0.2\\) indica que há uma probabilidade de 20% de um recife saudável (\\(S1\\)) passar para o estado moderadamente degradado (\\(S2\\)) no próximo período."
+  },
+  {
+    "objectID": "matrizes_aplicacoes.html#exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral-1",
+    "href": "matrizes_aplicacoes.html#exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral-1",
+    "title": "Matrizes",
+    "section": "Exemplo de aplicação: Cadeias de Markov para Recifes de Coral",
+    "text": "Exemplo de aplicação: Cadeias de Markov para Recifes de Coral\n\nVamos considerar que inicialmente 80% dos recifes estão saudáveis, 15% estão moderadamente degradados e 5% estão severamente degradados. Isso pode ser representado pelo vetor de estado inicial:\n\\[\\vec{v_0} = \\begin{bmatrix}\n0.8 \\\\\n0.15 \\\\\n0.05\n\\end{bmatrix}\\]\nPara determinar o estado dos recifes após um período, multiplicamos o vetor de estado inicial pela matriz de transição:\n\\[\\vec{v_1} = \\vec{v_0} \\times P = \\begin{bmatrix}\n0.8 & 0.15 & 0.05\n\\end{bmatrix} \\times \\begin{bmatrix}\n0.7 & 0.2 & 0.1 \\\\\n0.3 & 0.5 & 0.2 \\\\\n0.1 & 0.3 & 0.6\n\\end{bmatrix}\\]\nCalculando:\n\\[\\vec{v_1} = \\begin{bmatrix}\n0.8(0.7) + 0.15(0.3) + 0.05(0.1) \\\\\n0.8(0.2) + 0.15(0.5) + 0.05(0.3) \\\\\n0.8(0.1) + 0.15(0.2) + 0.05(0.6)\n\\end{bmatrix} = \\begin{bmatrix}\n0.635 \\\\\n0.2425 \\\\\n0.1225\n\\end{bmatrix}\\]\nIsso indica que, após um período, aproximadamente 63,5% dos recifes estarão saudáveis, 24,25% estarão moderadamente degradados, e 12,25% estarão severamente degradados."
+  },
+  {
+    "objectID": "matrizes_aplicacoes.html#exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral-2",
+    "href": "matrizes_aplicacoes.html#exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral-2",
+    "title": "Matrizes",
+    "section": "Exemplo de aplicação: Cadeias de Markov para Recifes de Coral",
+    "text": "Exemplo de aplicação: Cadeias de Markov para Recifes de Coral\n\nEstado Estacionário\nO estado estacionário é um vetor de probabilidades que representa a distribuição dos estados de um sistema em equilíbrio, onde as probabilidades de estar em cada estado não mudam com o tempo. Para uma cadeia de Markov, isso ocorre quando o vetor de estado não muda após uma multiplicação pela matriz de transição.\nPropriedade: Se \\(\\vec{v}\\) é um vetor de estado estacionário e \\(P\\) é a matriz de transição, então:\n\\[ \\vec{v} \\times P = \\vec{v} \\]\nIsso significa que a multiplicação do vetor de estado estacionário pela matriz de transição retorna o mesmo vetor.\nVamos continuar com a matriz de transição \\(P\\) que definimos anteriormente:\n\\[P = \\begin{bmatrix}\n0.7 & 0.2 & 0.1 \\\\\n0.3 & 0.5 & 0.2 \\\\\n0.1 & 0.3 & 0.6\n\\end{bmatrix}\\]\nPara encontrar o vetor de estado estacionário \\(\\vec{v}_{ss}\\), resolvemos a equação:\n\\[ \\vec{v}_{ss} \\times P = \\vec{v}_{ss} \\]\nem que\n\\(\\vec{v}_{ss} = \\begin{bmatrix}\n\\pi_1 \\\\\n\\pi_2 \\\\\n\\pi_3\n\\end{bmatrix}\\)"
+  },
+  {
+    "objectID": "matrizes_aplicacoes.html#exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral-3",
+    "href": "matrizes_aplicacoes.html#exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral-3",
+    "title": "Matrizes",
+    "section": "Exemplo de aplicação: Cadeias de Markov para Recifes de Coral",
+    "text": "Exemplo de aplicação: Cadeias de Markov para Recifes de Coral\n\nPara encontrar o vetor de estado estacionário \\(\\vec{v}_{ss}\\), precisamos resolver:\n\\[\n\\vec{v}_{ss} \\times P = \\vec{v}_{ss}\n\\]\nOu seja,\n\\[\n\\begin{bmatrix}\n\\pi_1 & \\pi_2 & \\pi_3\n\\end{bmatrix} \\times \\begin{bmatrix}\n0.7 & 0.2 & 0.1 \\\\\n0.3 & 0.5 & 0.2 \\\\\n0.1 & 0.3 & 0.6\n\\end{bmatrix} = \\begin{bmatrix}\n\\pi_1 & \\pi_2 & \\pi_3\n\\end{bmatrix}\n\\]\n\n\nIsso gera o sistema de equações:\n\\(\\begin{cases}\n\\pi_1 \\cdot 0.7 + \\pi_2 \\cdot 0.3 + \\pi_3 \\cdot 0.1 &= \\pi_1 \\\\\n\\pi_1 \\cdot 0.2 + \\pi_2 \\cdot 0.5 + \\pi_3 \\cdot 0.3 &= \\pi_2 \\\\\n\\pi_1 \\cdot 0.1 + \\pi_2 \\cdot 0.2 + \\pi_3 \\cdot 0.6 &= \\pi_3\n\\end{cases}\\)\n\nQue simplificado fica:\n\\(\\begin{cases}\n-0.3\\pi_1 + 0.3\\pi_2 + 0.1\\pi_3 = 0 \\\\\n0.2\\pi_1 - 0.5\\pi_2 + 0.3\\pi_3 = 0 \\\\\n0.1\\pi_1 + 0.2\\pi_2 - 0.4\\pi_3 = 0\n\\end{cases}\\)"
+  },
+  {
+    "objectID": "matrizes_aplicacoes.html#exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral-4",
+    "href": "matrizes_aplicacoes.html#exemplo-de-aplicação-cadeias-de-markov-para-recifes-de-coral-4",
+    "title": "Matrizes",
+    "section": "Exemplo de aplicação: Cadeias de Markov para Recifes de Coral",
+    "text": "Exemplo de aplicação: Cadeias de Markov para Recifes de Coral\n\nHá ainda uma condição adicional de que a soma das probabilidades seja 1, portanto \\(\\pi_1 + \\pi_2 + \\pi_3 = 1\\)\nDe modo que:\n\\[\\begin{cases}\n-0.3\\pi_1 + 0.3\\pi_2 + 0.1\\pi_3 = 0 \\\\\n0.2\\pi_1 - 0.5\\pi_2 + 0.3\\pi_3 = 0 \\\\\n0.1\\pi_1 + 0.2\\pi_2 - 0.4\\pi_3 = 0 \\\\\n\\pi_1 + \\pi_2 + \\pi_3 = 1\n\\end{cases}\\]\nUtilizando métodos algébricos, no estado estacionário, a distribuição das probabilidades entre os estados será (Link para resolução completa):\n\\(\\pi_1 = \\frac{7}{17} ~ \\sim 0.4117\\)\n\\(\\pi_2 = \\frac{11}{34} ~ \\sim 0.3235\\)\n\\(\\pi_3 = \\frac{9}{34} ~ \\sim 0.2647\\)\n\n\n\n\n\n\n\n\nConclusão\n\n\nA existência de um vetor estacionário indica que, independentemente do estado inicial, a cadeia de Markov converge para essa distribuição de probabilidade quando o sistema está em equilíbrio.\nPortanto, mantendo as condições atuais que resultam na matriz de transição vigente, espera-se que, a longo prazo, aproximadamente 41,18% do recife de coral permanecerá em condições Saudáveis, 32,35% estará Moderadamente Degradado e 26,47% será Severamente Degradado."
+  },
+  {
+    "objectID": "matrizes_aplicacoes.html#discussão-e-aplicações-crescimento-populacional",
+    "href": "matrizes_aplicacoes.html#discussão-e-aplicações-crescimento-populacional",
+    "title": "Matrizes",
+    "section": "Discussão e aplicações: Crescimento populacional",
+    "text": "Discussão e aplicações: Crescimento populacional\n\nModelo: Utilização de matrizes para modelar a dinâmica populacional.\nExemplo: Modelos de Leslie.\n\n\n\n\n\nBICT Mar - Unifesp"
   }
 ]

@@ -1,0 +1,279 @@
+---
+title: "Modelos de Crescimento Populacional em Peixes Utilizando a Matriz de Leslie"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+## O Problema
+
+Modelar o crescimento populacional de peixes pode ser feito utilizando a Matriz de Leslie, uma ferramenta que descreve a dinâmica populacional de espécies com diferentes grupos etários. Este modelo é útil para prever a distribuição etária de uma população ao longo do tempo e compreender como as taxas de natalidade e sobrevivência afetam o crescimento populacional.
+
+**Estados**
+
+Definimos quatro grupos etários para a população de peixes:
+
+- **E1:** Jovens
+- **E2:** Adultos Jovens
+- **E3:** Adultos
+- **E4:** Velhos
+
+**Matriz de Leslie**
+
+A Matriz de Leslie, $L$, representa as taxas de natalidade e sobrevivência dos diferentes grupos etários e pode ser representada como:
+
+$$
+L = \begin{bmatrix}
+b_1 & b_2 & b_3 & b_4 \\
+s_{11} & 0 & 0 & 0 \\
+0 & s_{22} & 0 & 0 \\
+0 & 0 & s_{33} & 0
+\end{bmatrix}
+$$
+
+onde $b_3$ é a taxa de natalidade para o grupo etário dos adultos e $b_4$ é a taxa de natalidade para o grupo etário dos velhos, e $s_{ii}$ é a taxa de sobrevivência para cada grupo etário.
+
+Vamos considerar uma Matriz de Leslie com os seguintes valores:
+
+$$
+L = \begin{bmatrix}
+0 & 0 & 1.2 & 1.5 \\
+0.6 & 0 & 0 & 0 \\
+0 & 0.7 & 0 & 0 \\
+0 & 0 & 0.8 & 0
+\end{bmatrix}
+$$
+
+Cada elemento $L_{ij}$ na matriz representa a contribuição do grupo etário $i$ para o grupo etário $j$ na próxima geração. Por exemplo, $L_{14} = 1.5$ indica que os peixes do grupo etário 4 têm uma taxa de natalidade de 1.5 filhotes por peixe.
+
+## População Inicial
+
+Vamos considerar uma população inicial com 100 peixes jovens, 80 peixes adultos jovens, 30 peixes adultos e 10 peixes velhos. Isso pode ser representado pelo vetor de estado inicial:
+
+$$
+\vec{v_0} = \begin{bmatrix}
+100 \\
+80 \\
+30 \\
+10
+\end{bmatrix}
+$$
+
+## Projeção da População para a Próxima Geração
+
+Para determinar a distribuição etária dos peixes após um período de tempo, multiplicamos o vetor de estado inicial pela Matriz de Leslie:
+
+$$
+\vec{v_1} = L \times \vec{v_0} = \begin{bmatrix}
+0 & 0 & 1.2 & 1.5 \\
+0.6 & 0 & 0 & 0 \\
+0 & 0.7 & 0 & 0 \\
+0 & 0 & 0.8 & 0
+\end{bmatrix} \times \begin{bmatrix}
+100 \\
+80 \\
+30 \\
+10
+\end{bmatrix}
+$$
+
+Calculando:
+
+$$
+\vec{v_1} = \begin{bmatrix}
+0 \cdot 100 + 0 \cdot 80 + 1.2 \cdot 30 + 1.5 \cdot 10 \\
+0.6 \cdot 100 + 0 \cdot 80 + 0 \cdot 30 + 0 \cdot 10 \\
+0 \cdot 100 + 0.7 \cdot 80 + 0 \cdot 30 + 0 \cdot 10 \\
+0 \cdot 100 + 0 \cdot 80 + 0.8 \cdot 30 + 0 \cdot 10
+\end{bmatrix} = \begin{bmatrix}
+36 + 15 \\
+60 \\
+56 \\
+24
+\end{bmatrix} = \begin{bmatrix}
+51 \\
+60 \\
+56 \\
+24
+\end{bmatrix}
+$$
+
+Isso indica que, após um período, a população será composta por aproximadamente 51 peixes jovens, 60 peixes adultos jovens, 56 peixes adultos e 24 peixes velhos.
+
+## Estado Estacionário
+
+O estado estacionário é um vetor de distribuições etárias que representa a estrutura da população em equilíbrio, onde a distribuição etária não muda com o tempo. Para uma Matriz de Leslie, isso ocorre quando o vetor de estado não muda após uma multiplicação pela matriz.
+
+**Propriedade:** Se $\vec{v}$ é um vetor de estado estacionário e $L$ é a Matriz de Leslie, então:
+
+$$
+\vec{v} = L \times \vec{v}
+$$
+
+Isso significa que a multiplicação do vetor de estado estacionário pela Matriz de Leslie retorna o mesmo vetor.
+
+Vamos continuar com a Matriz de Leslie $L$ que definimos anteriormente:
+
+$$
+L = \begin{bmatrix}
+0 & 0 & 1.2 & 1.5 \\
+0.6 & 0 & 0 & 0 \\
+0 & 0.7 & 0 & 0 \\
+0 & 0 & 0.8 & 0
+\end{bmatrix}
+$$
+
+Para encontrar o vetor de estado estacionário $\vec{v}_{ss}$, resolvemos a equação:
+
+$$
+\vec{v}_{ss} = L \times \vec{v}_{ss}
+$$
+
+Ou seja,
+
+$$
+\begin{bmatrix}
+\pi_1 \\
+\pi_2 \\
+\pi_3 \\
+\pi_4
+\end{bmatrix} = \begin{bmatrix}
+0 & 0 & 1.2 & 1.5 \\
+0.6 & 0 & 0 & 0 \\
+0 & 0.7 & 0 & 0 \\
+0 & 0 & 0.8 & 0
+\end{bmatrix} \times \begin{bmatrix}
+\pi_1 \\
+\pi_2 \\
+\pi_3 \\
+\pi_4
+\end{bmatrix}
+$$
+
+Isso gera o sistema de equações:
+
+$$
+\begin{cases}
+\pi_1 = 1.2 \pi_3 + 1.5 \pi_4 \\
+\pi_2 = 0.6 \pi_1 \\
+\pi_3 = 0.7 \pi_2 \\
+\pi_4 = 0.8 \pi_3
+\end{cases}
+$$
+
+Há ainda uma condição adicional de que a soma das proporções deve ser 1, portanto:
+
+$$
+\pi_1 + \pi_2 + \pi_3 + \pi_4 = 1
+$$
+
+## Resolução do Estado Estacionário
+
+Para encontrar o vetor de estado estacionário $\vec{v}_{ss}$, resolvemos o sistema de equações:
+
+$$
+\begin{cases}
+\pi_1 = 1.2 \pi_3 + 1.5 \pi_4 \\
+\pi_2 = 0.6 \pi_1 \\
+\pi_3 = 0.7 \pi_2 \\
+\pi_4 = 0.8 \pi_3 \\
+\pi_1 + \pi_2 + \pi_3 + \pi_4 = 1
+\end{cases}
+$$
+
+### Simplificação das Equações
+
+Primeiro, expressamos as equações em termos de $\pi_4$:
+
+- Da quarta equação:
+
+$$
+\pi_4 = 0.8 \pi_3
+$$
+
+- Da terceira equação, substituindo $\pi_4$:
+
+$$
+\pi_3 = 0.7 \times 0.8 \pi_3 = 0.56 \pi_3
+$$
+
+Então,
+
+$$
+\pi_3 = 0.8 \pi_4
+$$
+
+- Da segunda equação, substituindo $\pi_1$:
+
+$$
+\pi_2 = 0.6 \pi_1
+$$
+
+- Da primeira equação, substituindo $\pi_1$ e $\pi_2$:
+
+$$
+\pi_1 = 1.2 \pi_3 + 1.5 \pi_4
+$$
+
+- Substituindo os valores encontrados:
+
+$$
+\pi_1 = 1.2 \times 0.8 \pi_4 + 1.5 \pi_4 = 0.96 \pi_4 + 1.5 \pi_4 = 2.46 \pi_4
+$$
+
+Então:
+
+$$
+\pi_2 = 0.6 \times 2.46 \pi_4 = 1.476 \pi_4
+$$
+
+Substituindo na condição de normalização:
+
+$$
+\pi_1 + \pi_2 + \pi_3 + \pi_4 = 1
+$$
+
+$$
+2.46 \pi_4 + 1.476 \pi_4 + 0.8 \pi_4 + \pi_4 = 1
+$$
+
+Simplificando:
+
+$$
+5.736 \pi_4 = 1
+$$
+
+$$
+\pi_4 = \frac{1}{5.736} \approx 0.174
+$$
+
+Substituindo $\pi_4$ nas equações para $\pi_1$, $\pi_2$ e $\pi_3$:
+
+$$
+\pi_1 = 2.46 \times 0.174 \approx 0.428
+$$
+
+$$
+\pi_2 = 1.476 \times 0.174 \approx 0.257
+$$
+
+$$
+\pi_3 = 0.8 \times 0.174 \approx 0.139
+$$
+
+Então, o vetor de estado estacionário é:
+
+$$
+\vec{v}_{ss} = \begin{bmatrix}
+0.428 \\
+0.257 \\
+0.139 \\
+0.174
+\end{bmatrix}
+$$
+
+## Conclusão
+
+A Matriz de Leslie é uma ferramenta poderosa para modelar o crescimento populacional e entender a dinâmica das diferentes faixas etárias em uma população de peixes. Através da análise da matriz e do vetor de estado inicial, podemos prever a estrutura da população ao longo do tempo e identificar o estado estacionário da população, que fornece informações sobre a estrutura da população em equilíbrio.
