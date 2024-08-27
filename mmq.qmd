@@ -1,0 +1,291 @@
+---
+title: "Regressão Linear Simples e o Método dos Mínimos Quadrados"
+institute: "9833 - BASES DA MATEMÁTICA E ESTATÍSTICA PARA CIÊNCIAS DO MAR"
+author: "Fabio Cop Ferreira e William Remo Pedroso Conti"
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: imagens/BMEC-Mar-icon.png
+    footer: BICT Mar - Unifesp
+---
+
+## Conteúdo da Aula
+
+1. Introdução à Regressão Linear Simples
+2. Definição dos Resíduos
+3. Método dos Mínimos Quadrados
+4. Representação Vetorial dos Resíduos
+5. Geometria da Solução de Mínimos Quadrados
+6. Solução Matricial do Método dos Mínimos Quadrados
+
+## Introdução à Regressão Linear Simples
+
+A regressão linear simples é um método para modelar a relação entre uma variável dependente $y$ e uma variável independente $x$. A equação da reta ajustada é dada por:
+
+$$ y = \beta_0 + \beta_1 x $$
+
+::: {style="font-size: .6em"}
+
+:::: columns
+::: {.column width="30%"}
+
+| Observação | $x_i$ | $y_i$ |
+|------------|---------|---------|
+| $1$      | $x_1$ | $y_1$ |
+| $2$      | $x_2$ | $y_2$ |
+| $3$      | $x_3$ | $y_3$ |
+| $\vdots$ | $\vdots$ | $\vdots$ |
+| $n$      | $x_n$ | $y_n$ |
+
+
+:::
+
+::: {.column width="70%"}
+
+![](imagens/diagrama_regressao.png){style="background-color:#ffffff; width:600px"}
+
+:::
+::::
+
+:::
+
+## Definição dos Resíduos
+
+Na figura abaixo, os resíduos $e_i$ representam as diferenças entre os valores observados $y_i$ e os valores ajustados $\hat{y}_i$ pela reta de regressão:
+
+$$ e_i = y_i - (\beta_0 + \beta_1 x_i) $$
+
+Portando na regressão linear, assume-se que o valor ajustado em $y$ é dado por:
+
+$$ \hat{y} = \beta_0 + \beta_1 x + e$$
+
+::: {style="font-size: .6em"}
+
+:::: columns
+::: {.column width="30%"}
+
+| Observação | $x_i$ | $y_i$ |
+|------------|---------|---------|
+| $1$      | $x_1$ | $y_1$ |
+| $2$      | $x_2$ | $y_2$ |
+| $3$      | $x_3$ | $y_3$ |
+| $\vdots$ | $\vdots$ | $\vdots$ |
+| $n$      | $x_n$ | $y_n$ |
+
+
+:::
+
+::: {.column width="70%"}
+
+![](imagens/diagrama_regressao.png){style="background-color:#ffffff; width:500px"}
+
+:::
+::::
+
+:::
+
+## Método dos Mínimos Quadrados
+
+O Método dos Mínimos Quadrados busca minimizar a soma dos quadrados dos resíduos:
+
+$$ SQ_{res} = \sum_{i=1}^{n} e_i^2 = e_1^2 + e_2^2 + \cdots + e_n^2 $$
+
+Que pode ser representada como:
+
+$$
+\begin{cases}
+e_1 = y_1 - (\beta_0 + \beta_1 x_1) \\
+e_2 = y_2 - (\beta_0 + \beta_1 x_2) \\
+\vdots \\
+e_n = y_n - (\beta_0 + \beta_1 x_n) \\
+\end{cases}
+$$
+
+## Representação Vetorial dos Resíduos
+
+$$
+\left[ \begin{array}{c}
+e_1 \\
+e_2 \\
+\vdots \\
+e_n \\
+\end{array} \right]
+= 
+\left[ \begin{array}{c}
+y_1 - (\beta_0 + \beta_1 x_1) \\
+y_2 - (\beta_0 + \beta_1 x_2) \\
+\vdots \\
+y_n - (\beta_0 + \beta_1 x_n) \\
+\end{array} \right] 
+=
+\left[ \begin{array}{c}
+y_1 \\
+y_2 \\
+\vdots \\
+y_n
+\end{array} \right]
+-
+\left(
+\beta_0
+\left[ \begin{array}{c}
+1 \\
+1 \\
+\vdots \\
+1 \\
+\end{array} \right]
++
+\beta_1
+\left[ \begin{array}{c}
+x_1 \\
+x_2 \\
+\vdots \\
+x_n \\
+\end{array} \right]
+\right)
+$$
+
+<hr>
+
+Definimos os vetores:
+
+$$\vec{e} =
+\left[ \begin{array}{c}
+e_1 \\
+e_2 \\
+\vdots \\
+e_n \\
+\end{array} \right];
+\vec{y} =
+\left[ \begin{array}{c}
+y_1 \\
+y_2 \\
+\vdots \\
+y_n \\
+\end{array} \right];
+\vec{f}_0 =
+\left[ \begin{array}{c}
+1 \\
+1 \\
+\vdots \\
+1 \\
+\end{array} \right];
+\vec{f}_1 =
+\left[ \begin{array}{c}
+x_1 \\
+x_2 \\
+\vdots \\
+x_n \\
+\end{array} \right]$$
+
+## Representação Vetorial dos Resíduos
+
+Podemos portanto representar os resíduos como vetore em que o vetor $\vec{e}$ é igual ao vetor $y$ menos uma **combinação linear** dos vetores $\vec{f}_0$ e $\vec{f}_0$ com constantes $\beta_0$ e $\beta_1$, onde:
+
+$$ \vec{e} = \vec{y} - (\beta_0 \vec{f}_0 + \beta_1 \vec{f}_1) $$
+
+## Geometria da Solução de Mínimos Quadrados
+
+A norma ao quadrado do vetor $\vec{e} =
+\left[ \begin{array}{c}
+e_1 \\
+e_2 \\
+\vdots \\
+e_n \\
+\end{array} \right]$ é calculada por
+
+$$\Vert\vec{e}\Vert^{2}=\vec{e}\cdot\vec{e}=e_{1}^{2}+e_{2}^{2}+\cdots+e_{n}^{2}$$
+
+::: {.callout-tip title='Representação da Solução do MMQ no GeoGebra'}
+
+O Método dos Mínimos Quadrados determina $\beta_0$ e $\beta_1$ de modo a *minimizar o comprimento* (a norma) do vetor $\vec{e}$ que pode ser obtida impondo que o vetor $\vec{e}$ seja ortogonal aos vetores $\vec{f_0}$ e $\vec{f_1}$, ou seja:
+
+$$ \vec{f_0} \cdot \vec{e} = 0 $$
+$$ \vec{f_1} \cdot \vec{e} = 0 $$
+
+<a href="https://www.geogebra.org/calculator/eyk8ammw" style="color:#FF6347;">https://www.geogebra.org/calculator/eyk8ammw</a>
+
+:::
+
+## Geometria da Solução de Mínimos Quadrados
+
+$$
+\left\{\begin{array} {c}
+\vec{f_0} \cdot \vec{e} = 0 \Leftrightarrow \vec{f_0}\cdot(\vec{y}-\beta_0\vec{f_0}-\beta_1\vec{f_1})=0\\
+\vec{f_1} \cdot \vec{e} = 0 \Leftrightarrow \vec{f_1}\cdot(\vec{y}-\beta_0\vec{f_0}-\beta_1\vec{f_1})=0
+\end{array} \right.
+$$
+que é equivalente a:
+$$
+\left\{\begin{array} {c}
+\beta_0\vec{f_0}\cdot\vec{f_0}+\beta_1\vec{f_0}\cdot\vec{f_1}=\vec{f_0}\cdot\vec{y}\\
+\beta_0\vec{f_1}\cdot\vec{f_0}+\beta_1\vec{f_1}\cdot\vec{f_1}=\vec{f_1}\cdot\vec{y}
+\end{array} \right.
+,
+$$
+que ainda pode ser escrito na forma matricial:
+$$
+\left[ \begin{array}{cc}
+\vec{f_0}\cdot\vec{f_0} & \vec{f_0}\cdot\vec{f_1}\\
+\vec{f_1}\cdot\vec{f_0} & \vec{f_1}\cdot\vec{f_1}
+\end{array} \right]
+\left[ \begin{array}{c}
+\beta_0\\
+\beta_1
+\end{array} \right]
+=
+\left[ \begin{array}{c}
+\vec{f_0}\cdot\vec{y}\\
+\vec{f_1}\cdot\vec{y}
+\end{array} \right]
+$$
+
+## Solução Matricial do Método dos Mínimos Quadrados
+
+A combinação linear:
+
+$$
+\left[ \begin{array}{cc}
+\vec{f_0}\cdot\vec{f_0} & \vec{f_0}\cdot\vec{f_1}\\
+\vec{f_1}\cdot\vec{f_0} & \vec{f_1}\cdot\vec{f_1}
+\end{array} \right]
+\left[ \begin{array}{c}
+\beta_0\\
+\beta_1
+\end{array} \right]
+=
+\left[ \begin{array}{c}
+\vec{f_0}\cdot\vec{y}\\
+\vec{f_1}\cdot\vec{y}
+\end{array} \right]
+$$
+
+por ser expressa pelas matrizes:
+
+$$X = \left[ \begin{array}{ccc}
+\vec{f_0} & \vdots & \vec{f_1}
+\end{array} \right] = 
+\left[ \begin{array}{cc}
+1 & x_1 \\
+1 & x_2 \\
+\vdots & \vdots \\
+1 & x_n \\
+\end{array} \right]; 
+Y = \left[ \begin{array}{c}
+y_1 \\
+y_2 \\
+\vdots \\
+y_n \\
+\end{array} \right];
+B = \left[ \begin{array}{c}
+\beta_0 \\
+\beta_1 \\
+\end{array} \right]
+$$
+
+E finalmente:
+
+$$B = (X^{T} X)^{-1}(X^{T}Y)$$
+

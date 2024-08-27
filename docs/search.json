@@ -1360,5 +1360,103 @@
     "title": "Matrizes",
     "section": "Discussão e aplicações: Crescimento populacional",
     "text": "Discussão e aplicações: Crescimento populacional\n\nModelo: Utilização de matrizes para modelar a dinâmica populacional.\nExemplo: Modelos de Leslie.\n\n\n\n\n\nBICT Mar - Unifesp"
+  },
+  {
+    "objectID": "mmq.html#conteúdo-da-aula",
+    "href": "mmq.html#conteúdo-da-aula",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "Conteúdo da Aula",
+    "text": "Conteúdo da Aula\n\nIntrodução à Regressão Linear Simples\nDefinição dos Resíduos\nMétodo dos Mínimos Quadrados\nRepresentação Vetorial dos Resíduos\nGeometria da Solução de Mínimos Quadrados\nSolução Matricial do Método dos Mínimos Quadrados"
+  },
+  {
+    "objectID": "mmq.html#introdução-à-regressão-linear-simples",
+    "href": "mmq.html#introdução-à-regressão-linear-simples",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "Introdução à Regressão Linear Simples",
+    "text": "Introdução à Regressão Linear Simples\nA regressão linear simples é um método para modelar a relação entre uma variável dependente \\(y\\) e uma variável independente \\(x\\). A equação da reta ajustada é dada por:\n\\[ y = \\beta_0 + \\beta_1 x \\]\n\n\n\n\n\n\nObservação\n\\(x_i\\)\n\\(y_i\\)\n\n\n\n\n\\(1\\)\n\\(x_1\\)\n\\(y_1\\)\n\n\n\\(2\\)\n\\(x_2\\)\n\\(y_2\\)\n\n\n\\(3\\)\n\\(x_3\\)\n\\(y_3\\)\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n\\(n\\)\n\\(x_n\\)\n\\(y_n\\)"
+  },
+  {
+    "objectID": "mmq.html#definição-dos-resíduos",
+    "href": "mmq.html#definição-dos-resíduos",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "Definição dos Resíduos",
+    "text": "Definição dos Resíduos\nNa figura abaixo, os resíduos \\(e_i\\) representam as diferenças entre os valores observados \\(y_i\\) e os valores ajustados \\(\\hat{y}_i\\) pela reta de regressão:\n\\[ e_i = y_i - (\\beta_0 + \\beta_1 x_i) \\]\nPortando na regressão linear, assume-se que o valor ajustado em \\(y\\) é dado por:\n\\[ \\hat{y} = \\beta_0 + \\beta_1 x + e\\]\n\n\n\n\n\n\nObservação\n\\(x_i\\)\n\\(y_i\\)\n\n\n\n\n\\(1\\)\n\\(x_1\\)\n\\(y_1\\)\n\n\n\\(2\\)\n\\(x_2\\)\n\\(y_2\\)\n\n\n\\(3\\)\n\\(x_3\\)\n\\(y_3\\)\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n\\(n\\)\n\\(x_n\\)\n\\(y_n\\)"
+  },
+  {
+    "objectID": "mmq.html#método-dos-mínimos-quadrados",
+    "href": "mmq.html#método-dos-mínimos-quadrados",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "Método dos Mínimos Quadrados",
+    "text": "Método dos Mínimos Quadrados\nO Método dos Mínimos Quadrados busca minimizar a soma dos quadrados dos resíduos:\n\\[ SQ_{res} = \\sum_{i=1}^{n} e_i^2 = e_1^2 + e_2^2 + \\cdots + e_n^2 \\]\nQue pode ser representada como:\n\\[\n\\begin{cases}\ne_1 = y_1 - (\\beta_0 + \\beta_1 x_1) \\\\\ne_2 = y_2 - (\\beta_0 + \\beta_1 x_2) \\\\\n\\vdots \\\\\ne_n = y_n - (\\beta_0 + \\beta_1 x_n) \\\\\n\\end{cases}\n\\]"
+  },
+  {
+    "objectID": "mmq.html#representação-vetorial-dos-resíduos",
+    "href": "mmq.html#representação-vetorial-dos-resíduos",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "Representação Vetorial dos Resíduos",
+    "text": "Representação Vetorial dos Resíduos\n\\[\n\\left[ \\begin{array}{c}\ne_1 \\\\\ne_2 \\\\\n\\vdots \\\\\ne_n \\\\\n\\end{array} \\right]\n=\n\\left[ \\begin{array}{c}\ny_1 - (\\beta_0 + \\beta_1 x_1) \\\\\ny_2 - (\\beta_0 + \\beta_1 x_2) \\\\\n\\vdots \\\\\ny_n - (\\beta_0 + \\beta_1 x_n) \\\\\n\\end{array} \\right]\n=\n\\left[ \\begin{array}{c}\ny_1 \\\\\ny_2 \\\\\n\\vdots \\\\\ny_n\n\\end{array} \\right]\n-\n\\left(\n\\beta_0\n\\left[ \\begin{array}{c}\n1 \\\\\n1 \\\\\n\\vdots \\\\\n1 \\\\\n\\end{array} \\right]\n+\n\\beta_1\n\\left[ \\begin{array}{c}\nx_1 \\\\\nx_2 \\\\\n\\vdots \\\\\nx_n \\\\\n\\end{array} \\right]\n\\right)\n\\]\n\nDefinimos os vetores:\n\\[\\vec{e} =\n\\left[ \\begin{array}{c}\ne_1 \\\\\ne_2 \\\\\n\\vdots \\\\\ne_n \\\\\n\\end{array} \\right];\n\\vec{y} =\n\\left[ \\begin{array}{c}\ny_1 \\\\\ny_2 \\\\\n\\vdots \\\\\ny_n \\\\\n\\end{array} \\right];\n\\vec{f}_0 =\n\\left[ \\begin{array}{c}\n1 \\\\\n1 \\\\\n\\vdots \\\\\n1 \\\\\n\\end{array} \\right];\n\\vec{f}_1 =\n\\left[ \\begin{array}{c}\nx_1 \\\\\nx_2 \\\\\n\\vdots \\\\\nx_n \\\\\n\\end{array} \\right]\\]"
+  },
+  {
+    "objectID": "mmq.html#geometria-da-solução-de-mínimos-quadrados",
+    "href": "mmq.html#geometria-da-solução-de-mínimos-quadrados",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "Geometria da Solução de Mínimos Quadrados",
+    "text": "Geometria da Solução de Mínimos Quadrados\nA norma ao quadrado do vetor \\(\\vec{e} =\n\\left[ \\begin{array}{c}\ne_1 \\\\\ne_2 \\\\\n\\vdots \\\\\ne_n \\\\\n\\end{array} \\right]\\) é calculada por\n\\[\\Vert\\vec{e}\\Vert^{2}=\\vec{e}\\cdot\\vec{e}=e_{1}^{2}+e_{2}^{2}+\\cdots+e_{n}^{2}\\]\n\n\n\n\n\n\n\nRepresentação da Solução do MMQ no GeoGebra\n\n\nO Método dos Mínimos Quadrados determina \\(\\beta_0\\) e \\(\\beta_1\\) de modo a minimizar o comprimento (a norma) do vetor \\(\\vec{e}\\) que pode ser obtida impondo que o vetor \\(\\vec{e}\\) seja ortogonal aos vetores \\(\\vec{f_0}\\) e \\(\\vec{f_1}\\), ou seja:\n\\[ \\vec{f_0} \\cdot \\vec{e} = 0 \\] \\[ \\vec{f_1} \\cdot \\vec{e} = 0 \\]\nhttps://www.geogebra.org/calculator/eyk8ammw"
+  },
+  {
+    "objectID": "mmq.html#implementação-em-google-sheets",
+    "href": "mmq.html#implementação-em-google-sheets",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "Implementação em Google Sheets",
+    "text": "Implementação em Google Sheets\nOs cálculos podem ser realizados de forma prática utilizando planilhas eletrônicas. Neste caso, a planilha Google Sheets será utilizada para a resolução dos sistemas de equações lineares."
+  },
+  {
+    "objectID": "mmq.html#conclusão",
+    "href": "mmq.html#conclusão",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "Conclusão",
+    "text": "Conclusão\nCompreender a geometria e a álgebra por trás do Método dos Mínimos Quadrados permite uma visão mais profunda dos processos de ajuste de modelos. A prática com ferramentas computacionais, como Google Sheets, torna o processo mais acessível para os estudantes.\n\n\n\n\nBICT Mar - Unifesp"
+  },
+  {
+    "objectID": "mmq.html#representação-matricial-dos-resíduos",
+    "href": "mmq.html#representação-matricial-dos-resíduos",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "Representação Matricial dos Resíduos",
+    "text": "Representação Matricial dos Resíduos\n\\(\\left[ \\begin{array}{c}\ne_1 \\\\\ne_2 \\\\\n\\vdots \\\\\ne_n \\\\\n\\end{array} \\right]\n=\n\\left[ \\begin{array}{c}\ny_1 - (\\beta_0 + \\beta_1 x_1) \\\\\ny_2 - (\\beta_0 + \\beta_1 x_2) \\\\\n\\vdots \\\\\ny_n - (\\beta_0 + \\beta_1 x_n) \\\\\n\\end{array} \\right]\n=\n\\left[ \\begin{array}{c}\ny_1 \\\\\ny_2 \\\\\n\\vdots \\\\\ny_n\n\\end{array} \\right]\n-\n\\left(\n\\beta_0\n\\left[ \\begin{array}{c}\n1 \\\\\n1 \\\\\n\\vdots \\\\\n1 \\\\\n\\end{array} \\right]\n+\n\\beta_1\n\\left[ \\begin{array}{c}\nx_1 \\\\\nx_2 \\\\\n\\vdots \\\\\nx_n \\\\\n\\end{array} \\right]\n\\right)\\)"
+  },
+  {
+    "objectID": "mmq.html#representação-vetorial-dos-resíduos-1",
+    "href": "mmq.html#representação-vetorial-dos-resíduos-1",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "Representação Vetorial dos Resíduos",
+    "text": "Representação Vetorial dos Resíduos\nPodemos portanto representar os resíduos como vetore em que o vetor \\(\\vec{e}\\) é igual ao vetor \\(y\\) menos uma combinação linear dos vetores \\(\\vec{f}_0\\) e \\(\\vec{f}_0\\) com constantes \\(\\beta_0\\) e \\(\\beta_1\\), onde:\n\\[ \\vec{e} = \\vec{y} - (\\beta_0 \\vec{f}_0 + \\beta_1 \\vec{f}_1) \\]"
+  },
+  {
+    "objectID": "mmq.html#mmq",
+    "href": "mmq.html#mmq",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "MMQ",
+    "text": "MMQ\n\\(\\vec{d}=\\vec{y}-\\widehat{\\vec{y}}\\) é equivalente a impor ele seja ortogonal a \\(\\vec{x_{1}}\\) e a \\(\\vec{x_{2}}\\), isto é, (voltando à sua escrita dada em \\(\\eqref{eq3}\\)) \\[\n\\left\\{\\begin{array} {c}\n\\vec{x_{1}}\\cdot(\\vec{y}-m\\vec{x_{1}}-b\\vec{x_{2}})=0\\\\\n\\vec{x_{2}}\\cdot(\\vec{y}-m\\vec{x_{1}}-b\\vec{x_{2}})=0\n\\end{array} \\right.\n,\n\\] que é equivalente a \\[\n\\left\\{\\begin{array} {c}\nm\\vec{x_{1}}\\cdot\\vec{x_{1}}+b\\vec{x_{1}}\\cdot\\vec{x_{2}}=\\vec{x_{1}}\\cdot\\vec{y}\\\\\nm\\vec{x_{2}}\\cdot\\vec{x_{1}}+b\\vec{x_{2}}\\cdot\\vec{x_{2}}=\\vec{x_{2}}\\cdot\\vec{y}\n\\end{array} \\right.\n,\n\\] que ainda pode ser escrito na forma matricial \\[\n\\left[ \\begin{array}{cc}\n\\vec{x_{1}}\\cdot\\vec{x_{1}} & \\vec{x_{1}}\\cdot\\vec{x_{2}}\\\\\n\\vec{x_{2}}\\cdot\\vec{x_{1}} & \\vec{x_{2}}\\cdot\\vec{x_{2}}\n\\end{array} \\right]\n\\left[ \\begin{array}{c}\nm\\\\\nb\n\\end{array} \\right]\n=\n\\left[ \\begin{array}{c}\n\\vec{x_{1}}\\cdot\\vec{y}\\\\\n\\vec{x_{2}}\\cdot\\vec{y}\n\\end{array} \\right].\n\\]"
+  },
+  {
+    "objectID": "mmq.html#geometria-da-solução-de-mínimos-quadrados-1",
+    "href": "mmq.html#geometria-da-solução-de-mínimos-quadrados-1",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "Geometria da Solução de Mínimos Quadrados",
+    "text": "Geometria da Solução de Mínimos Quadrados\n\\[\n\\left\\{\\begin{array} {c}\n\\vec{f_0} \\cdot \\vec{e} = 0 \\Leftrightarrow \\vec{f_0}\\cdot(\\vec{y}-\\beta_0\\vec{f_0}-\\beta_1\\vec{f_1})=0\\\\\n\\vec{f_1} \\cdot \\vec{e} = 0 \\Leftrightarrow \\vec{f_1}\\cdot(\\vec{y}-\\beta_0\\vec{f_0}-\\beta_1\\vec{f_1})=0\n\\end{array} \\right.\n\\] que é equivalente a: \\[\n\\left\\{\\begin{array} {c}\n\\beta_0\\vec{f_0}\\cdot\\vec{f_0}+\\beta_1\\vec{f_0}\\cdot\\vec{f_1}=\\vec{f_0}\\cdot\\vec{y}\\\\\n\\beta_0\\vec{f_1}\\cdot\\vec{f_0}+\\beta_1\\vec{f_1}\\cdot\\vec{f_1}=\\vec{f_1}\\cdot\\vec{y}\n\\end{array} \\right.\n,\n\\] que ainda pode ser escrito na forma matricial: \\[\n\\left[ \\begin{array}{cc}\n\\vec{f_0}\\cdot\\vec{f_0} & \\vec{f_0}\\cdot\\vec{f_1}\\\\\n\\vec{f_1}\\cdot\\vec{f_0} & \\vec{f_1}\\cdot\\vec{f_1}\n\\end{array} \\right]\n\\left[ \\begin{array}{c}\n\\beta_0\\\\\n\\beta_1\n\\end{array} \\right]\n=\n\\left[ \\begin{array}{c}\n\\vec{f_0}\\cdot\\vec{y}\\\\\n\\vec{f_1}\\cdot\\vec{y}\n\\end{array} \\right]\n\\]"
+  },
+  {
+    "objectID": "mmq.html#mepresentação-matricial-do-método-dos-mínimos-quadrados",
+    "href": "mmq.html#mepresentação-matricial-do-método-dos-mínimos-quadrados",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "Mepresentação Matricial do Método dos Mínimos Quadrados",
+    "text": "Mepresentação Matricial do Método dos Mínimos Quadrados\nA combinação linear:\n\\[\n\\left[ \\begin{array}{cc}\n\\vec{f_0}\\cdot\\vec{f_0} & \\vec{f_0}\\cdot\\vec{f_1}\\\\\n\\vec{f_1}\\cdot\\vec{f_0} & \\vec{f_1}\\cdot\\vec{f_1}\n\\end{array} \\right]\n\\left[ \\begin{array}{c}\n\\beta_0\\\\\n\\beta_1\n\\end{array} \\right]\n=\n\\left[ \\begin{array}{c}\n\\vec{f_0}\\cdot\\vec{y}\\\\\n\\vec{f_1}\\cdot\\vec{y}\n\\end{array} \\right]\n\\]\npor ser expressa pelas matrizes:\n\\[X = \\left[ \\begin{array}{ccc}\n\\vec{f_0} & \\vdots & \\vec{f_1}\n\\end{array} \\right] =\n\\left[ \\begin{array}{cc}\n1 & x_1 \\\\\n1 & x_2 \\\\\n\\vdots & \\vdots \\\\\n1 & x_n \\\\\n\\end{array} \\right];\nY = \\left[ \\begin{array}{c}\ny_1 \\\\\ny_2 \\\\\n\\vdots \\\\\ny_n \\\\\n\\end{array} \\right];\nB = \\left[ \\begin{array}{c}\n\\beta_0 \\\\\n\\beta_1 \\\\\n\\end{array} \\right]\n\\]\nE finalmente:\n\\[B = (X^{T} X)^{-1}(X^{T}Y)\\]"
+  },
+  {
+    "objectID": "mmq.html#solução-matricial-do-método-dos-mínimos-quadrados",
+    "href": "mmq.html#solução-matricial-do-método-dos-mínimos-quadrados",
+    "title": "Regressão Linear Simples e o Método dos Mínimos Quadrados",
+    "section": "Solução Matricial do Método dos Mínimos Quadrados",
+    "text": "Solução Matricial do Método dos Mínimos Quadrados\nA combinação linear:\n\\[\n\\left[ \\begin{array}{cc}\n\\vec{f_0}\\cdot\\vec{f_0} & \\vec{f_0}\\cdot\\vec{f_1}\\\\\n\\vec{f_1}\\cdot\\vec{f_0} & \\vec{f_1}\\cdot\\vec{f_1}\n\\end{array} \\right]\n\\left[ \\begin{array}{c}\n\\beta_0\\\\\n\\beta_1\n\\end{array} \\right]\n=\n\\left[ \\begin{array}{c}\n\\vec{f_0}\\cdot\\vec{y}\\\\\n\\vec{f_1}\\cdot\\vec{y}\n\\end{array} \\right]\n\\]\npor ser expressa pelas matrizes:\n\\[X = \\left[ \\begin{array}{ccc}\n\\vec{f_0} & \\vdots & \\vec{f_1}\n\\end{array} \\right] =\n\\left[ \\begin{array}{cc}\n1 & x_1 \\\\\n1 & x_2 \\\\\n\\vdots & \\vdots \\\\\n1 & x_n \\\\\n\\end{array} \\right];\nY = \\left[ \\begin{array}{c}\ny_1 \\\\\ny_2 \\\\\n\\vdots \\\\\ny_n \\\\\n\\end{array} \\right];\nB = \\left[ \\begin{array}{c}\n\\beta_0 \\\\\n\\beta_1 \\\\\n\\end{array} \\right]\n\\]\nE finalmente:\n\\[B = (X^{T} X)^{-1}(X^{T}Y)\\]\n\n\n\n\nBICT Mar - Unifesp"
   }
 ]
