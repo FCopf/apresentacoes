@@ -18,6 +18,7 @@ website:
       - href: comprimento_angulo.qmd
       - href: sistema_equacoes_lineares.qmd
       - href: matrizes.qmd
+      - href: mmq.qmd
       
 
 format:
